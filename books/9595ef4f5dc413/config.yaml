@@ -14,6 +14,7 @@ topics:
 published: true
 price: 0
 toc_depth: 2
+allow_override: true
 chapters:
   - "83e92b"
   - "2a688b"
