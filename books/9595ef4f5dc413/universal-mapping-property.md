@@ -6,7 +6,7 @@ free: false
 ## 定義
 
 圏$\mathbf C$, $\mathbf D$, 関手$F: \mathbf C \to \mathbf D$を考える。
-この時、関手$F: \mathbf C \to \mathbf D$から圏$\mathbf D$の対象Aへの普遍射(*Universal morphism*)は、圏$\mathbf C$の対象$X$と圏$D$の射$u: F(X) \to A$の組$(X, u)$で表され、以下の普遍性(*Universal property*)を満たす。
+この時、関手$F: \mathbf C \to \mathbf D$から圏$\mathbf D$の対象Aへの普遍射(*Universal morphism*)は、圏$\mathbf C$の対象$X$と圏$D$の射$u: F(X) \to A$の組$(X, u)$で表され、以下の普遍性(*Universal mapping property, UMP*)を満たす。
 
 - $Y$が$\mathbf C$の対象で$f: F(Y) \to A$が$\mathbf D$の射であるような場合、常に$\mathbf C$の射$g: Y \to X$が一意に存在して、次の図を可換にする
 
