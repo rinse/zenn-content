@@ -56,5 +56,5 @@ chapters:
   - "yoneda-lemma"
   - "yoneda-embedding"
   - "monoidal-category"
-  - "fedfeb"
+  - "monad"
   - "kan-extension"
