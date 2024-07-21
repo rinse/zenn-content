@@ -10,6 +10,6 @@ free: false
 関手$F: \mathbf C \to \mathbf{Set}$が表現可能関手である場合、局所的に小さな圏$\mathbf C$の任意の対象$X$に対して$\mathbf{Set}$の同型射$\epsilon_X$が存在する。
 $\epsilon_X$は同型射であるので、$\epsilon_X$の逆射$\epsilon^{-1}_X$が存在して、$\epsilon_X \circ \epsilon^{-1}_X = \rm{id}_{F(X)}$, $\epsilon^{-1}_X \circ \epsilon_X = \rm{id}_{\hom_C(A, X)}$を満たす。　
 
-![representable_functor](https://storage.googleapis.com/zenn-user-upload/082ca0da7d80-20231206.png)
+![representable_functor](https://storage.googleapis.com/zenn-user-upload/150c9e2e727b-20240721.png)
 
-https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZiBDIl0sWzAsMSwiQSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMywxLCJIb21fQyhBLCBYKSJdLFs1LDEsIkhvbV9DKEEsIFgnKSJdLFswLDIsIlgiXSxbMSwyLCJYJyJdLFszLDIsIkYoWCkiXSxbNSwyLCJGKFgnKSJdLFszLDQsIkhvbV9DKEEsIGYpIl0sWzUsNiwiZiJdLFs3LDgsIkYoZikiXSxbMyw3LCJcXGVwc2lsb25fWCIsMCx7ImN1cnZlIjotMX1dLFs0LDgsIlxcZXBzaWxvbl97WCd9IiwwLHsiY3VydmUiOi0xfV0sWzcsMywiXFxlcHNpbG9uXnstMX1fWCIsMCx7ImN1cnZlIjotMX1dLFs4LDQsIlxcZXBzaWxvbl57LTF9X3tYJ30iLDAseyJjdXJ2ZSI6LTF9XSxbMSw1LCJhIl1d
+https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZiBDIl0sWzAsMSwiQSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzUsMSwiXFxob21fQyhBLCBYJykiXSxbMCwyLCJYIl0sWzEsMiwiWCciXSxbMywyLCJGKFgpIl0sWzUsMiwiRihYJykiXSxbMyw0LCJcXGhvbV9DKEEsIGYpPWZcXGNpcmMgLSJdLFs1LDYsImYiXSxbNyw4LCJGKGYpIl0sWzMsNywiXFxlcHNpbG9uX1giLDAseyJjdXJ2ZSI6LTF9XSxbNCw4LCJcXGVwc2lsb25fe1gnfSIsMCx7ImN1cnZlIjotMX1dLFs3LDMsIlxcZXBzaWxvbl57LTF9X1giLDAseyJjdXJ2ZSI6LTF9XSxbOCw0LCJcXGVwc2lsb25eey0xfV97WCd9IiwwLHsiY3VydmUiOi0xfV0sWzEsNSwiYSJdXQ==
