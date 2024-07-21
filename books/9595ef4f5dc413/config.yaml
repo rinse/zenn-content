@@ -44,7 +44,7 @@ chapters:
   - "universal-mapping-property"
   - "product"
   - "limit"
-  - "adjoint-functor3"
+  - "adjoint-functors3"
   - "pullback"
   - "monic-and-epic-morphisms"
   - "equaliser"
