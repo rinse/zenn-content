@@ -1,5 +1,5 @@
 ---
-title: "完備と余完備"
+title: "完備"
 free: false
 ---
 
