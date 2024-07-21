@@ -20,7 +20,7 @@ https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZiAxIl0sWzAsMSwiXFxhc3QiXSxbMSwxL
 ここで$F_A(\ast) = A$, $F_B(\ast) = B$, $\eta_\ast = f$である。
 
 一般に、$\mathbf C$の対象$X$を関手$F_X: \mathbf 1 \to \mathbf C$に、射$f: X \to Y$を自然変換$\eta: F_X \Rightarrow F_Y$に対応させることができる。
-この対象を関手に、射を自然変換に対応させることを、格上げと呼ぶ。
+この対象を関手に、射を自然変換に対応させることを、格上げ(*Elevation*)と呼ぶ。
 
 しばしば、格上げした対象をチルダを使って表すことがある。
 
