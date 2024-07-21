@@ -37,7 +37,7 @@ chapters:
   - "category-of-functors"
   - "e38d71"
   - "product-category"
-  - "b03846"
+  - "bifunctor"
   - "hom-functor"
   - "adjoint-functors2"
   - "diagram-and-index-category"
