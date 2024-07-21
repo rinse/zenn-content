@@ -5,7 +5,7 @@ free: false
 
 ## 定義
 
-積とは、任意の圏$\mathbf C$の対象$X_1 \times X_2$と、2つの射$p_1: X_1 \times X_2 \to X_1$と$p_2: X_1 \times X_2 \to X_2$の3つ組で、以下の普遍性を満たすものをいう。
+積(*product*)とは、任意の圏$\mathbf C$の対象$X_1 \times X_2$と、2つの射$p_1: X_1 \times X_2 \to X_1$と$p_2: X_1 \times X_2 \to X_2$の3つ組で、以下の普遍性を満たすものをいう。
 
 $\mathbf C$の任意の対象$Y$および$f_1: Y \to X_1$ , $f_2: Y \to X_2$が与えられたとき、一意な射$u: Y \to X_1 \times X_2$が存在して、以下の図式を可換にする。
 
