@@ -5,7 +5,7 @@ free: false
 
 ## 自然変換と関手の水平合成
 
-圏$\mathbf C$, $\mathbf D$, $\mathbf E$, 関手$F, F': \mathbf C \to \mathbf D$とそれら間の自然変換$\sigma: F \Rightarrow F'$, 関手$G: \mathbf D \to \mathbf E$があったとき、圏$\mathbf C$の任意の対象$X$における射$\sigma_X$を関手$\mathbf G$で$\mathbf E$に写した射$G(\sigma_X)$の族を、自然変換$\sigma$と関手$G$の水平合成と呼び、$G \ast \sigma : G \circ F \Rightarrow G \circ F'$と表す。
+圏$\mathbf C$, $\mathbf D$, $\mathbf E$, 関手$F, F': \mathbf C \to \mathbf D$とそれら間の自然変換$\sigma: F \Rightarrow F'$, 関手$G: \mathbf D \to \mathbf E$があったとき、圏$\mathbf C$の任意の対象$X$における射$\sigma_X$を関手$\mathbf G$で$\mathbf E$に写した射$G(\sigma_X)$の族を、自然変換$\sigma$と関手$G$の水平合成(*horizontal composition*)と呼び、$G \ast \sigma : G \circ F \Rightarrow G \circ F'$と表す。
 
 $$
 (G \ast \sigma)_X \overset{\mathrm{def}}{=} G(\sigma_X)
