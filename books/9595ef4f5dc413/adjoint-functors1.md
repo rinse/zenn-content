@@ -13,14 +13,14 @@ https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmYgQyJdLFszLDAsIlxcbWF0aGJmIEQiX
 
 ## 導入
 
-随伴関手(*Adjunction functors*)とは、圏同値よりも緩い同値関係を作る関手対のことだ。
+随伴関手(*Adjoint functors*)とは、圏同値よりも緩い同値関係を作る関手対のことだ。
 
 圏同値を構成するのは、関手$F: \mathbf D \to \mathbf C$, $G: \mathbf C \to \mathbf D$と自然変換$\epsilon: 1_C \Rightarrow F \circ G$と$\eta: 1_D \Rightarrow G \circ F$であった。
 随伴関手も構成要素は同様だが、自然変換に対する条件が緩くなっている。
 
 ## 定義
 
-圏$\mathbf C$, $\mathbf D$の間の随伴とは、関手$F: \mathbf D \to \mathbf C$と関手$G: \mathbf C \to \mathbf D$と自然変換$\epsilon: F \circ G \Rightarrow 1_C$と$\eta: 1_D \Rightarrow G \circ F$がが存在して、かつ$1_F = (\epsilon \ast F) \circ (F \ast \eta)$と$1_G = (G \ast \epsilon) \circ (\eta \ast G)$（counit-unit 恒等式）がそれぞれ成り立つことをいう。
+圏$\mathbf C$, $\mathbf D$の間の随伴(*Adjunction*)とは、関手$F: \mathbf D \to \mathbf C$と関手$G: \mathbf C \to \mathbf D$と自然変換$\epsilon: F \circ G \Rightarrow 1_C$と$\eta: 1_D \Rightarrow G \circ F$がが存在して、かつ$1_F = (\epsilon \ast F) \circ (F \ast \eta)$と$1_G = (G \ast \epsilon) \circ (\eta \ast G)$（counit-unit 恒等式）がそれぞれ成り立つことをいう。
 
 このとき$F$, $G$を随伴関手と呼び、$F \dashv G$と書く。また$F$を$G$の左随伴、同じことだが、$G$を$F$の右随伴と呼ぶ。
 また自然変換$\epsilon: F \circ G \Rightarrow 1_C$を余単位(*counit*)、$\eta: 1_D \Rightarrow G \circ F$を単位(*unit*)と呼ぶ。
