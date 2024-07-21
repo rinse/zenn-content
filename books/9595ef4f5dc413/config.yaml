@@ -18,7 +18,7 @@ allow_override: true
 chapters:
   - "category"
   - "commutative-diagram"
-  - "54f2b1"
+  - "largeness-of-categories"
   - "category-examples"
   - "aab586"
   - "66b209"
