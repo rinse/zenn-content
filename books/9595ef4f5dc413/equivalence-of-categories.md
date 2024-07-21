@@ -36,7 +36,7 @@ https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmYgQyJdLFszLDAsIlxcbWF0aGJmIEQiX
 ![nearly_isomorphic_categories](https://storage.googleapis.com/zenn-user-upload/3a617318cea3-20231125.png)
 
 同型な対象については対応関係がなくても問題にしない、圏同型よりもゆるい同値関係があれば、より便利に使えそうだ。
-圏同値は、まさにこのような関係をいう。
+圏同値(*Equivalence of categories*)は、まさにこのような関係をいう。
 
 ### 定義
 
