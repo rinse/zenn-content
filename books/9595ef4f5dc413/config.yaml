@@ -53,6 +53,7 @@ chapters:
   - "representable-functor"
   - "c03a0f"
   - "yoneda-lemma"
+  - "yoneda-embedding"
   - "7c5bc2"
   - "fedfeb"
   - "kan-extension"
