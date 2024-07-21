@@ -47,6 +47,20 @@ https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsI
 
 https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsIEEpIl0sWzQsMSwiXFxob21fQyhZLCBBKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMCwxLCJBIl0sWzMsMiwiXFxob21fQyhYLCBCKSJdLFs0LDIsIlxcaG9tX0MoWSwgQikiXSxbMCwyLCJCIl0sWzUsMSwiXFxtYXRocm17TmF0fV97SF9BIFxcUmlnaHRhcnJvdyBIX0J9Il0sWzUsMiwiXFxob21fXFxtYXRoYmZ7Q30oQSwgQikiXSxbNiwwLCJcXG1hdGhiZntTZXR9XlxcbWF0aGJme0NeXFxtYXRocm17b3B9fSJdLFs2LDEsIlxcaG9tX0MoXFxfLCBBKSJdLFs2LDIsIlxcaG9tX0MoXFxfLCBCKSJdLFsyLDEsIlkiXSxbMSwxLCJYIl0sWzgsOSwieSJdLFsxMSwxMiwiXFx0aGV0YSJdLFsxLDIsIi0gXFxjaXJjIGYiXSxbNSw2LCItIFxcY2lyYyBmIiwyXSxbMTQsNCwiYSIsMl0sWzE0LDcsImIiXSxbMTMsMTQsImYiLDJdLFsxLDUsIlxcdGhldGFfWCIsMl0sWzIsNiwiXFx0aGV0YV9ZIl0sWzQsNywidiIsMl1d
 
+## 米田埋め込みは忠実充満
+
+米田埋め込み$H^-$および$H_-$は[忠実充満関手](full-and-faithful-functors)である。
+
+関手$F: \mathbf{C} \to \mathbf{D}$が忠実充満であるとは、局所的に小さな圏$\mathbf{C}$の任意の二対象$X$, $Y$について集合の圏上の射$\hom_\mathbf{C}(X, Y) \to \hom_\mathbf{D}(F(X), F(Y))$が単射かつ全射であることをいうのだった。
+
+これを米田埋め込み$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$に当てはめると、局所的に小さな圏$\mathbf{C^{\mathrm{op}}}$の任意の二対象$X$, $Y$について集合の圏上の射$\hom_{\mathbf{C}^\mathrm{op}}(X, Y) \to \hom_{\mathbf{Set}^{\mathbf{C}}}(H^X, H^Y)$が単射かつ全射になればよい。
+
+ところで、自然変換$\hom_C(A, \_) \Rightarrow \hom_C(B, \_)$と圏$\mathbf{C}$の射$B \to A$（あるいは同じことだが圏$\mathbf{C}^{\mathrm{op}}$の射$A \to B$）の間には米田写像があるのだった。米田写像は同型写像であるから、米田埋め込みは忠実充満関手である。
+
+![yoneda-embedding-is-full-and-faithful](https://storage.googleapis.com/zenn-user-upload/f0c9b0096885-20240721.png)
+
+https://q.uiver.app/#q=WzAsMTEsWzAsMCwiXFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX0iXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzEsMSwiWCJdLFswLDEsIkEiXSxbMiwxLCJZIl0sWzAsMiwiQiJdLFszLDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFxcXykiXSxbMywyLCJcXGhvbV9DKEIsIFxcXykiXSxbNCwxLCJcXGhvbV97XFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX19KEEsIEIpIl0sWzQsMiwiXFxob21fe1xcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q319KFxcaG9tX0MoQSwgXFxfKSwgXFxob21fQyhCLCBcXF8pKSJdLFs0LDIsImYiLDJdLFsyLDMsImEiLDJdLFsyLDUsImIiXSxbNyw4LCJcXGV0YSJdLFszLDUsInciLDJdLFs5LDEwLCJ5Il1d
+
 ## 表記
 
 米田埋め込みは、$Y$や$よ$（ひらがな！）と書かれることがある。
