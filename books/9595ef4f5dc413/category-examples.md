@@ -6,38 +6,26 @@ free: false
 ## Set
 
 集合の圏$\mathbf{Set}$とは、すべての集合を対象に持ち、それらの間の写像を射として持つ圏である。
+
 すべての集合を対象に持つため、その対象のあつまりは真クラスを成す。ゆえに$\mathbf{Set}$は大きい圏である。
 
-$\mathbf{Set}$は大きいのでとても書ききれないが、ごく一部を取り出して図に書き出してみれば、このような感じだろう。
+## ひらがなの圏
 
-![Set_category](https://storage.googleapis.com/zenn-user-upload/8c61e5abbcd8-20231203.png)
+[圏](category)の定義を満たしていれば、あらゆるものは圏である。例えば射は必ずしも関数っぽいものである必要はないし、圏自体が数学的に有意義なものである必要はない。
 
-https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiZiB7U2V0fSJdLFswLDEsIlxcZW1wdHkiXSxbMSwxLCJcXFIiXSxbMSwyLCJbMCwgXFxpbmZ0eSkiXSxbMiwxLCJcXFoiXSxbMiwzLCJ8IC0gfCJdLFsxLDIsImYiXSxbMiw0LCJcXGxmbG9vciAtIFxccmZsb29yIl1d
+ここでは対象が文字で射が文字列であるようなひらがなの圏を考えてみよう。
 
-## 1
+- 対象: すべてのひらがな
+- 射: ひらがなから成る文字列。ただし先頭の文字が始域で、末尾の文字が終域
+- 射の合成は次の通り定義する：
+    - $ひらがな: ひ \to な$
+    - $なしごれん: な \to ん$
+    - $なしごれん \circ ひらがな = ひらがなしごれん: ひ \to ん$
+- 単位射は1文字の文字列(E.g. $あ: あ \to あ$)
 
-自明な圏$\mathbf{1}$は、ただ一つの対象$\ast$とただ一つの射$\mathrm{id}_{\ast}$から成る圏だ。
-$\mathbf{1}$のような、自明な射（単位射）しか持たないような圏を離散圏(*Discrete category*)と呼ぶ。
+![category_of_characters](https://storage.googleapis.com/zenn-user-upload/8e3281df86f9-20240724.png)
 
-![1](https://storage.googleapis.com/zenn-user-upload/b693cb462694-20231203.png)
-
-https://q.uiver.app/#q=WzAsMyxbMCwxLCJcXGFzdCJdLFswLDAsIlxcbWF0aGJmIDEiXSxbMSwxLCJcXGFzdCJdLFswLDIsImlkX1xcYXN0Il1d
-
-## 2
-
-離散圏$\mathbf{2}$とは、二つの対象$1$, $2$と二つの射$\mathrm{id}_{1}$, $\mathrm{id}_2$のみから成る圏である。
-
-$\mathbf{2}$を見るのは、二つの対象の積を定義のために図式の形として用いる場合だろう。
-
-以降、離散圏をそれが持つ対象の数に応じて$\mathbf{3}$, $\mathbf{4}$などと書く。
-
-![2](https://storage.googleapis.com/zenn-user-upload/33b7705e7c51-20231203.png)
-
-https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiAyIl0sWzAsMSwiMSJdLFsxLDEsIjIiXV0=
-
-## 0
-
-空圏$\mathbf{0}$とは、対象を一つも持たず、それゆえ射も一つも持たない圏である。
+このようにすると、このひらがなの圏は圏の定義をきちんと満たすことが分かる。
 
 ## Hask
 

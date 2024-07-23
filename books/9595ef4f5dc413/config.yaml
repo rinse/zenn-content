@@ -18,8 +18,9 @@ allow_override: true
 chapters:
   - "category"
   - "commutative-diagram"
-  - "largeness-of-categories"
   - "category-examples"
+  - "discrete-categories"
+  - "largeness-of-categories"
   - "isomorphism"
   - "opposite-categories"
   - "functor"
