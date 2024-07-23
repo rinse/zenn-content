@@ -24,7 +24,7 @@ https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiZntDfSJdLFsxLDEsIkEiXSxbMiwxLCJCI
 
 ## 定理1. (E, e)がイコライザであるとき、eはモノ射である
 
-$(E, e)$がイコライザであるとき、$e$は[モノ射](https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/82db73#%E3%83%A2%E3%83%8E%E5%B0%84)である。
+$(E, e)$がイコライザであるとき、$e$は[モノ射](monic-and-epic-morphisms#%E3%83%A2%E3%83%8E%E5%B0%84)である。
 
 ### 証明
 

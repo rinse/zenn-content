@@ -37,7 +37,7 @@ https://q.uiver.app/#q=WzAsOSxbMCwxLCJUXjMiXSxbMSwxLCJUXjIiXSxbMCwyLCJUXjIiXSxbM
 2. 自己関手の圏$\mathbf{C}^\mathbf{C}$には対象として恒等関手$1_C$が自明に存在する。これを単位対象に定める。
 3. 関手の合成は結合的な演算であるから、モノイダル積の結合律を保証する自明な射$1$が存在する。
     - $G(F(A)) = (G \circ F)(A)$なので、$1$は（単なる自然同型ではなく）自明な射(各対象に対して恒等射となる)のはず。
-    - 証明は[関手の合成](https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/91e65c#%E9%96%A2%E6%89%8B%E3%81%AE%E5%90%88%E6%88%90)を参照。
+    - 証明は[関手の合成](functor#%E9%96%A2%E6%89%8B%E3%81%AE%E5%90%88%E6%88%90)を参照。
 4. $1_C \circ T = T$であるから、左単位律を保証する自明な射$1_T$が存在する。
 5. $T \circ 1_C = T$であるから、右単位律を保証する自明な射$1_T$が存在する。
 

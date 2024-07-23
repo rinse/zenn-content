@@ -3,7 +3,7 @@ title: "コイコライザ"
 free: false
 ---
 
-コイコライザは、[イコライザ](https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/7d35d8)の双対である。
+コイコライザは、[イコライザ](equaliser)の双対である。
 
 ## 定義
 
@@ -26,7 +26,7 @@ https://q.uiver.app/#q=WzAsNSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCI
 
 ## 命題
 
-$(Q, q)$がコイコライザであるとき、$q$は[エピ射](https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/82db73#%E3%82%A8%E3%83%94%E5%B0%84)である。
+$(Q, q)$がコイコライザであるとき、$q$は[エピ射](monic-and-epic-morphisms#%E3%82%A8%E3%83%94%E5%B0%84)である。
 
 すなわち$y_1 \circ q = y_2 \circ q$であれば、$y_1 = y_2$であることが、普遍性の定義により分かる。
 

@@ -11,7 +11,7 @@ $$
 1_G \circ \eta = \eta \circ 1_F = \eta
 $$
 
-（ただし$\circ$は自然変換の[垂直合成](fa185d)）
+（ただし$\circ$は自然変換の[垂直合成](vertical-composition)）
 
 ### 証明
 
@@ -37,7 +37,7 @@ https://q.uiver.app/#q=WzAsMTYsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJYIl0sWzMsMCwiX
 
 ## 恒等な自然変換と水平合成
 
-ある自然変換と恒等な自然変換との[水平合成](0f4e84)を考えると、これは単に自然変換と関手の水平合成である。
+ある自然変換と恒等な自然変換との[水平合成](horizontal-composition)を考えると、これは単に自然変換と関手の水平合成である。
 
 圏$\mathbf{C}$, $\mathbf{D}$, $\mathbf{E}$, 関手$F, F': \mathbf{C} \to \mathbf{D}$とその間の自然変換$\eta: F \Rightarrow F'$, 関手$G: \mathbf{D} \to \mathbf{E}$があるとき、$1_G \ast \eta = G \ast \eta: G \circ F \Rightarrow G \circ F'$である。
 
