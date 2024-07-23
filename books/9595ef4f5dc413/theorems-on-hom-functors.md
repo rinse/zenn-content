@@ -1,5 +1,5 @@
 ---
-title: "hom関手に関わる定理"
+title: "対象と射は同一視できる"
 free: false
 ---
 
