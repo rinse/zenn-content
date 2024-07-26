@@ -17,10 +17,10 @@ toc_depth: 2
 allow_override: true
 chapters:
   - "category"
-  - "commutative-diagram"
   - "category-examples"
   - "discrete-categories"
   - "largeness-of-categories"
+  - "commutative-diagram"
   - "isomorphism"
   - "opposite-categories"
   - "functor"
