@@ -60,3 +60,8 @@ https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmYgQyJdLFszLDAsIlxcbWF0aGJmIEQiX
 
 ![nearly_isomorphic_categories](https://storage.googleapis.com/zenn-user-upload/2d913b31c18f-20231125.png)
 
+## 記法
+
+このドキュメントでは、圏同型を同型の記号を使って$\mathbf{C} \simeq \mathbf{D}$と書くことにして、圏同値をそれよりも弱い同値関係として$\mathbf{C} \sim \mathbf{D}$と書くことにする。
+
+圏同型が$\mathbf{C} \cong \mathbf{D}$で圏同値が$\mathbf{C} \simeq \mathbf{D}$であるドキュメントも多いので、混同しないように注意されたい。（尤も圏同型はほとんど使わないし、圏同型・圏同値などと日本語を併せて使うので混乱のおそれはないと思うが）
