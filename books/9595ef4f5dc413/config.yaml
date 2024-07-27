@@ -24,6 +24,7 @@ chapters:
   - "isomorphism"
   - "opposite-categories"
   - "functor"
+  - "opposite-functors"
   - "full-and-faithful-functors"
   - "category-of-small-categories"
   - "natural-transformation"
