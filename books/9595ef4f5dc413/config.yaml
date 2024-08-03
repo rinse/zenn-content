@@ -53,6 +53,8 @@ chapters:
   - "coequaliser"
   - "complete"
   - "limit-as-equaliser"
+  - forgetful-functors
+  - free-functors
   - "representable-functor"
   - "theorems-on-hom-functors"
   - "yoneda-lemma"
