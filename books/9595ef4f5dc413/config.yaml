@@ -62,3 +62,6 @@ chapters:
   - "monoidal-category"
   - "monad"
   - "kan-extension"
+  - initial-objects
+  - f-algebra
+  - catamorphism
