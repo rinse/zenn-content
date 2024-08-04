@@ -5,7 +5,7 @@ free: false
 
 極限とは、普遍性の特殊な場合である。積などの幅広い概念が極限に一般化される。
 
-単に極限と言ったときには、圏$\mathbf{J}$を形とする図式$D: \mathbf{J} \to \mathbf{C}$の圏$\mathbf{C}$上の極限(*Limit*)を指す。
+単に極限と言ったときには、圏$\mathbf{J}$を形とする図式$D: \mathbf{J} \to \mathbf{C}$の極限(*Limit*)を指す。
 図式については[添え字圏と図式](diagram-and-index-category)を参照。
 
 ## 定義
@@ -29,6 +29,10 @@ https://q.uiver.app/#q=WzAsNyxbNCwwLCJcXG1hdGhiZiBDIl0sWzQsMSwiTiJdLFszLDIsIkQoQ
 ![limit](https://storage.googleapis.com/zenn-user-upload/590e1fc45b5e-20231028.png)
 
 https://q.uiver.app/#q=WzAsOCxbNCwwLCJcXG1hdGhiZiBDIl0sWzMsMywiRChBKSJdLFs1LDMsIkQoQikiXSxbMCwwLCJcXG1hdGhiZiBKIl0sWzAsMSwiQSJdLFsxLDEsIkIiXSxbNCwyLCJMIl0sWzQsMSwiTiJdLFsxLDIsIkQoZikiXSxbNCw1LCJmIl0sWzYsMiwiXFxldGFfQiJdLFs2LDEsIlxcZXRhX0EiLDJdLFs3LDEsIlxcZXBzaWxvbl9BIiwyLHsiY3VydmUiOjF9XSxbNywyLCJcXGVwc2lsb25fQiIsMCx7ImN1cnZlIjotMX1dLFs3LDYsInUiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
+
+## 記法
+
+図式$F$の極限$(L, \eta)$を$\varprojlim{F}$と書くことがある。
 
 ## 普遍性を用いた定義
 
