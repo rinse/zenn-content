@@ -29,6 +29,7 @@ chapters:
   - "category-of-small-categories"
   - "natural-transformation"
   - "comma-category"
+  - "variants-of-comma-category"
   - "slice-category"
   - "natural-isomorphism"
   - "vertical-composition"
