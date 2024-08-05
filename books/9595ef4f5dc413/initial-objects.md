@@ -31,7 +31,7 @@ free: false
 
 ### 普遍射
 
-関手$F$から対象$A$への普遍射は[コンマ圏](comma-category)$F \downarrow A$における終対象である。
+関手$F$から対象$A$への普遍射は[関手の上方の対象から成る圏](variants-of-comma-category)$F \downarrow A$における終対象である。
 
 ### 極限
 
