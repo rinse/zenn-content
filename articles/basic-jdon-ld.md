@@ -108,7 +108,7 @@ JSON-LDでは、基本的にプロパティ名を[IRI](https://datatracker.ietf.
 {
   "@context": {
     "name": "https://schema.org/name",
-    "birthDate": "https://schema.org/birthDate",
+    "birthDate": "https://schema.org/birthDate"
   },
   "name": "John Smith",
   "birthDate": "2004-01-26"
