@@ -28,6 +28,7 @@ chapters:
   - "full-and-faithful-functors"
   - "category-of-small-categories"
   - "natural-transformation"
+  - constant-functors
   - "comma-category"
   - "variants-of-comma-category"
   - "slice-category"
