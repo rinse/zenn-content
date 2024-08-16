@@ -3,7 +3,7 @@ title: "随伴関手2"
 free: false
 ---
 
-[随伴関手1](https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/16aece)では、自然変換である単位$\eta: 1_{\mathbf D} \Rightarrow G \circ F$と余単位$\epsilon: F \circ G \Rightarrow 1_{\mathbf C}$をを用いて定義した。
+[随伴関手1](adjoint-functors)では、自然変換である単位$\eta: 1_{\mathbf D} \Rightarrow G \circ F$と余単位$\epsilon: F \circ G \Rightarrow 1_{\mathbf C}$をを用いて定義した。
 ここでは同等の随伴関手を、hom集合を用いて定義する。
 
 ## 定義
