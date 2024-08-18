@@ -54,6 +54,7 @@ chapters:
   - adjunction-hom-functor
   - full-and-faithful-functors
   - representable-functor
+  - collection-of-natural-transformations
   - yoneda-lemma
   - yoneda-embedding
   - product-category

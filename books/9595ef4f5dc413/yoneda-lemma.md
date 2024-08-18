@@ -7,9 +7,9 @@ free: false
 
 ## 補題
 
-局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定したhom関手$\hom_C(A, \_)$, 関手$F: \mathbf{C} \to \mathbf{Set}$および自然変換$\hom_C(A, \_) \Rightarrow F$のすべての集合$\mathrm{Nat}_{\hom_C(A, \_) \Rightarrow F} \overset{\mathrm{def}}{=} \{ \eta \mid \eta: \hom_C(A, \_) \Rightarrow F \}$を考える。
+局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定したhom関手$\hom_C(A, \_)$, 関手$F: \mathbf{C} \to \mathbf{Set}$および自然変換$\hom_C(A, \_) \Rightarrow F$のすべての集合$\mathrm{Nat}(\hom_C(A, \_) \Rightarrow F)$を考える。
 
-このとき米田写像(*Yoneda map*)と呼ばれる同型写像$y: \mathrm{Nat}_{\hom_C(A, \_) \Rightarrow F} \to F(A)$が存在する。これは$A$および$F$について自然である。
+このとき集合の圏に米田写像(*Yoneda map*)と呼ばれる同型写像$y: \mathrm{Nat}(\hom_C(A, \_) \Rightarrow F) \to F(A)$が存在する。これは$A$および$F$について自然である。
 
 ![yoneda_lemma](https://storage.googleapis.com/zenn-user-upload/64f7ba3a772c-20231212.png)
 
@@ -35,7 +35,7 @@ $$
 \end{aligned}
 $$
 
-いま、米田写像$y: \mathrm{Nat}_{\hom_C(A, \_) \Rightarrow F} \to F(A)$を以下の通り定める。
+いま、米田写像$y: \mathrm{Nat}(\hom_C(A, \_) \Rightarrow F) \to F(A)$を以下の通り定める。
 これは自然変換$\tau$を、そのうちの（圏$\mathbf{C}$の対象）$A$に対応する要素$\tau_A$で$\mathrm{id}_A$を送ったものに対応づけるものである。
 
 $$
@@ -49,7 +49,7 @@ $$
 
 可換図式より、適当な射$h: A \to Y$を考えたとき、$\eta_Y(h) = F(h)(\eta_A(\mathrm{id}_A))$が得られる。
 
-また、逆向きの写像$w: F(A) \to \mathrm{Nat}_{\hom_C(A, \_) \Rightarrow F}$を以下の通り定める。
+また、逆向きの写像$w: F(A) \to \mathrm{Nat}(\hom_C(A, \_) \Rightarrow F)$を以下の通り定める。
 これは圏$\mathbf{Set}$の対象$F(A)$を自然変換$\hom_C(A, \_) \Rightarrow F$に対応づけるものである。
 
 $$
@@ -90,9 +90,9 @@ $$
 上の補題では共変hom関手を用いたが、反変hom関手を用いれば双対を得ることができる。
 この双対も米田の補題と呼ばれ、余米田の補題とは区別されるが、それは後のページに回すことにする。
 
-すなわち、局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定した反変hom関手$\hom_C(\_, A)$, 反変関手$F: \mathbf{C} \to \mathbf{Set}$および自然変換$\hom_C(\_, A) \Rightarrow F$のすべての集合$\mathrm{Nat}_{\hom_{C}(\_, A) \Rightarrow F} \overset{\mathrm{def}}{=} \{ \eta \mid \eta: \hom_{C}(\_, A) \Rightarrow F \}$を考える。
+局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定した反変hom関手$\hom_C(\_, A)$, 反変関手$F: \mathbf{C} \to \mathbf{Set}$および自然変換$\hom_C(\_, A) \Rightarrow F$のすべての集合$\mathrm{Nat}(\hom_{C}(\_, A) \Rightarrow F)$を考える。
 
-このとき$A$および$F$について自然な同型写像$y: \mathrm{Nat}_{\hom_C(\_, A) \Rightarrow F} \to F(A)$が存在する。
+このとき$A$および$F$について自然な同型写像$y: \mathrm{Nat}(\hom_C(\_, A) \Rightarrow F) \to F(A)$が存在する。
 
 ## Haskellでの米田写像の実装
 

@@ -3,9 +3,9 @@ title: "米田埋め込み"
 free: false
 ---
 
-[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\mathrm{Nat}_{\hom_{\mathbf{C}}(A, \_) \Rightarrow F}$と集合$F(A)$との間にある同型射のことであった。
+[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow F)$と集合$F(A)$との間にある同型射のことであった。
 
-ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \mathrm{Nat}_{\hom_{\mathbf{C}}(A, \_) \Rightarrow \hom_{\mathbf{C}}(B, \_)} \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
+ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow \hom_{\mathbf{C}}(B, \_)) \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
 
 ここで$\hom_{\mathbf{C}}(B, A)$とは圏$\mathbf{C}$の対象$B$から対象$A$に伸びる射全体の集合である。
 
