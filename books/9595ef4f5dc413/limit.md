@@ -5,8 +5,7 @@ free: false
 
 極限とは、普遍性の特殊な場合である。積などの幅広い概念が極限に一般化される。
 
-単に極限と言ったときには、圏$\mathbf{J}$を形とする図式$D: \mathbf{J} \to \mathbf{C}$の極限(*Limit*)を指す。
-図式については[添え字圏と図式](diagram-and-index-category)を参照。
+単に極限と言ったときには、圏$\mathbf{J}$を形とする[図式](diagram-and-index-category)$D: \mathbf{J} \to \mathbf{C}$の極限(*Limit*)を指す。
 
 ## 定義
 

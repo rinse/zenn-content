@@ -13,6 +13,12 @@ $$
 A \simeq B
 $$
 
+[![isomorphism](https://storage.googleapis.com/zenn-user-upload/50c54c9bdf2e-20240818.png)](https://q.uiver.app/#q=WzAsNSxbMCwxLCJBIl0sWzAsMiwiQSJdLFsxLDEsIkIiXSxbMCwwLCJcXG1hdGhiZntDfSJdLFsxLDIsIkIiXSxbMCwyLCJmIl0sWzIsMSwiZyIsMV0sWzAsMSwiXFxtYXRocm17aWR9X0EiLDJdLFsyLDQsIlxcbWF0aHJte2lkfV9CIl0sWzEsNCwiZiIsMl0sWzIsMSwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMSwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+同型の定義は、上の可換図式でいうと、左上の$A$から$f$, $g$を通って左下の$A$に行く操作が$\mathbf{id}_A$に等しいことと、右上の$B$から$g$, $f$を通って右下の$B$に行く操作が$\mathbf{id}_B$に等しいことが同時に成り立つことを要求している。
+
+このとき$A$と$B$とが「ほぼ同じ」、つまり同型であり、圏論の議論では同一のものと見なして問題ない。
+
 ## 記法
 
 同型は合同(Congruent)の記号を使って以下のように書き表すこともある。
