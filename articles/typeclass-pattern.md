@@ -3,7 +3,7 @@ title: "型クラスパターン"
 emoji: "📝"
 type: "tech"
 topics: ["Kotlin", "Java"]
-published: false
+published: true
 ---
 
 ## 型クラスパターンとは
