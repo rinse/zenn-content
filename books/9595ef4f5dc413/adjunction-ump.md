@@ -1,5 +1,5 @@
 ---
-title: "随伴関手3"
+title: "随伴関手 普遍性"
 free: false
 ---
 
@@ -47,9 +47,9 @@ https://q.uiver.app/#q=WzAsNyxbMCwwLCJcXG1hdGhiZiBDIl0sWzIsMSwiQSJdLFszLDEsIkcoW
 https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZntDfSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzAsMSwiRihBXzEpIl0sWzAsMiwiRihBXzIpIl0sWzIsMSwiQV8xIl0sWzMsMSwiRyhGKEFfMSkpIl0sWzMsMiwiRyhGKEFfMikpIl0sWzIsMiwiQV8yIl0sWzIsMywiRihoKSJdLFs0LDUsInVfMSJdLFs1LDYsIkcoRihoKSkiXSxbMCwxLCJHIiwwLHsib2Zmc2V0IjotMn1dLFs0LDcsImgiLDJdLFs3LDYsInVfMiIsMl0sWzEsMCwiRiIsMCx7Im9mZnNldCI6LTJ9XV0=
 
 このとき普遍性により$G(F(h)) \circ u_1 = u_2 \circ h$を満たすから、$u_i: A_i \to G(F(A_i))$を自然変換$1_{\mathbf{D}} \Rightarrow G \circ F$と捉えることができる。
-この$u_i$は明らかに[unit](adjoint-functors1#定義)である。
+この$u_i$は明らかに[unit](adjunction-unit-counit#定義)である。
 
-$F \dashv G$が成り立つのであれば、ここから[counit](adjoint-functors1#定義)も得ることができるはずだが、それはどうすれば得られるのだろうか？
+$F \dashv G$が成り立つのであれば、ここから[counit](adjunction-unit-counit#定義)も得ることができるはずだが、それはどうすれば得られるのだろうか？
 
 同じ議論だが、左随伴関手から右随伴関手を得るときにはcounitを得られるが、ここからunitをどう得るのだろうか？
 

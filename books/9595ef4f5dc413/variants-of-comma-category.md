@@ -1,11 +1,11 @@
 ---
-title: "コンマ圏の亜種"
+title: "コンマ圏の特殊な例"
 free: false
 ---
 
-コンマ圏にはスライス圏を含む亜種がいくつか存在する。それらは非常に重要な性質を持つので紹介する。
+コンマ圏の特殊な事例には、スライス圏を含む有用な構成が存在する。
 
-これらの亜種はまとめてコンマ圏と呼ばれることもあるので、単にコンマ圏というときにはその構成要素に注意を払わなければならない。
+これらの亜種を指して単にコンマ圏と呼ぶこともあるので、単にコンマ圏というときにはその構成に注意を払わなければならない。
 
 ## 関手の上方の対象から成る圏
 
@@ -33,6 +33,14 @@ $F \downarrow A$の終対象は、対象$\lang t, T \rang$であって、$F \dow
 
 ![terminal-object-of-f-down-a](https://storage.googleapis.com/zenn-user-upload/6af7ab470a44-20240806.png)
 
+### コンマ圏を使った表現
+
+$F \downarrow C$は、コンマ圏$F \downarrow \Delta_C$と表すことができる。
+
+ただし$\Delta_C: \mathbf{1} \to \mathbf{C}$は$\ast \in \mathrm{ob}(\mathbf{1})$を$C \in \mathrm{ob}(\mathbf{C})$に写す定関手である。
+
+[![F-downarrow-A](https://storage.googleapis.com/zenn-user-upload/5aa5f8b8b3a4-20240816.png)](https://q.uiver.app/#q=WzAsMTYsWzMsMCwiXFxtYXRoYmZ7Q30iXSxbNCwxLCJcXERlbHRhX0MoXFxhc3QpIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMywxLCJGKEQpIl0sWzMsMiwiRihEJykiXSxbMiwxLCJEIl0sWzIsMiwiRCciXSxbMSwwLCJGIFxcZG93bmFycm93IEMiXSxbMSwxLCJcXGxhbmcgZiwgRCBcXHJhbmciXSxbMSwyLCJcXGxhbmcgZicsIEQnIFxccmFuZyJdLFswLDAsIkYgXFxkb3duYXJyb3cgXFxEZWx0YV9DIl0sWzUsMCwiXFxtYXRoYmZ7MX0iXSxbNSwxLCJcXGFzdCJdLFswLDEsIlxcbGFuZyBmLCBELCBcXGFzdCBcXHJhbmciXSxbMCwyLCJcXGxhbmcgZicsIEQnLCBcXGFzdCBcXHJhbmciXSxbNCwyLCJcXERlbHRhX0MoKikiXSxbOCw5LCJkIiwyXSxbMyw0LCJGKGQpIiwyXSxbMywxLCJmIl0sWzIsMCwiRiJdLFs1LDYsImQiLDJdLFsxMywxNCwiXFxsYW5nIGQsIFxcbWF0aHJte2lkfV9cXGFzdCBcXHJhbmciLDJdLFsxMSwwLCJcXERlbHRhX0MiLDJdLFs0LDE1LCJmJyIsMl0sWzEsMTUsIlxcRGVsdGFfQyhcXG1hdGhybXtpZH1fXFxhc3QpIl1d)
+
 ## 関手の下方の対象から成る圏
 
 圏$\mathbf{C}$, $\mathbf{E}$, 関手$G: \mathbf{C} \to \mathbf{E}$を考える。
@@ -43,19 +51,48 @@ $F \downarrow A$の終対象は、対象$\lang t, T \rang$であって、$F \dow
 
 [![category-of-objects-g-under-c](https://storage.googleapis.com/zenn-user-upload/0d3b9e4bbb5a-20240806.png)](https://q.uiver.app/#q=WzAsMTgsWzYsMCwiXFxtYXRoYmZ7YyBcXGRvd25hcnJvdyBHfSJdLFszLDAsIlxcbWF0aGJme0N9Il0sWzMsMSwiQyJdLFs0LDEsIkcoRSkiXSxbNiwxLCJcXGxhbmcgZywgRSBcXHJhbmciXSxbMSwwLCJcXG1hdGhiZntEfSJdLFs1LDEsIkUiXSxbNCwyLCJHKEUnKSJdLFs1LDIsIkUnIl0sWzYsMiwiXFxsYW5nIGcnLCBFJyBcXHJhbmciXSxbMiwxLCJGKEQpIl0sWzIsMiwiRihEJykiXSxbMSwxLCJEIl0sWzEsMiwiRCciXSxbMCwwLCJcXG1hdGhiZntGIFxcZG93bmFycm93IGN9Il0sWzAsMSwiXFxsYW5nIGYsIEQgXFxyYW5nIl0sWzAsMiwiXFxsYW5nIGYnLCBEJyBcXHJhbmciXSxbNSwwLCJcXG1hdGhiZntFfSJdLFsyLDMsImciXSxbMiw3LCJnJyIsMl0sWzMsNywiRyhlKSJdLFs0LDksImUiXSxbMTUsMTYsImQiLDJdLFsxMCwxMSwiRihkKSIsMl0sWzEwLDIsImYiXSxbMTEsMiwiZiciLDJdLFs1LDEsIkYiXSxbMTIsMTMsImQiLDJdLFsxLDE3LCJHIl0sWzYsOCwiZSJdXQ=)
 
+### コンマ圏を使った表現
+
+$C \downarrow G$は$\Delta_C \downarrow G$で表すことができる。
+
+[![C-downarrow-G](https://storage.googleapis.com/zenn-user-upload/d1b225cbbe9c-20240817.png)](https://q.uiver.app/#q=WzAsMTYsWzEsMCwiQyBcXGRvd25hcnJvdyBHIl0sWzMsMCwiXFxtYXRoYmZ7Q30iXSxbMiwwLCJcXG1hdGhiZnsxfSJdLFs1LDAsIlxcbWF0aGJme0V9Il0sWzIsMSwiXFxhc3QiXSxbMywxLCJcXERlbHRhX0MoXFxhc3QpIl0sWzMsMiwiXFxEZWx0YV9DKFxcYXN0KSJdLFs0LDEsIkcoRSkiXSxbNSwxLCJFIl0sWzUsMiwiRSciXSxbNCwyLCJHKEUnKSJdLFswLDAsIlxcRGVsdGFfQyBcXGRvd25hcnJvdyBHIl0sWzEsMSwiXFxsYW5nIGcsIEUgXFxyYW5nIl0sWzEsMiwiXFxsYW5nIGcnLCBFJyBcXHJhbmciXSxbMCwxLCJcXGxhbmcgZywgXFxhc3QsIEUgXFxyYW5nIl0sWzAsMiwiXFxsYW5nIGcnLCBcXGFzdCwgRScgXFxyYW5nIl0sWzMsMSwiRyIsMl0sWzIsMSwiRiJdLFs1LDYsIlxcRGVsdGFfQyhcXG1hdGhybXtpZH1fXFxhc3QpIiwyXSxbOCw5LCJlIl0sWzcsMTAsIkcoZSkiXSxbNSw3LCJnIl0sWzYsMTAsImcnIiwyXSxbMTIsMTMsImUiLDJdLFsxNCwxNSwiXFxsYW5nIFxcbWF0aHJte2lkfV9cXGFzdCwgZSBcXHJhbmciLDJdXQ==)
 
 ## 上方の対象から成る圏
 
-[スライス圏](slice-category)を参照。
-スライス圏$\mathbf{C}/A$はコンマ圏の記法を使って$\mathbf{C} \downarrow A$と書かれることもある。
+圏$\mathbf{C}$を考える。圏$\mathbf{C}$の上方の対象から成る圏$\mathbf{C} \downarrow A$ は、以下の通り構成される圏である。
+
+1. 圏$\mathbf{C}$の射であって、余域が$A$であるものすべてを対象とする
+2. 圏$\mathbf{C}$の射であって、$f = f' \circ c$を満たす射$c$を$f$から$f'$への射とする
+
+[![C-downarrow-c](https://storage.googleapis.com/zenn-user-upload/c9ef2c8970d0-20240817.png)](https://q.uiver.app/#q=WzAsNyxbMCwwLCJcXG1hdGhiZntDfSBcXGRvd25hcnJvdyBBIl0sWzEsMCwiXFxtYXRoYmZ7Q30iXSxbMSwxLCJDIl0sWzEsMiwiQyciXSxbMiwxLCJBIl0sWzAsMSwiZiJdLFswLDIsImYnIl0sWzIsMywiYyIsMl0sWzIsNCwiZiJdLFszLDQsImYnIiwyXSxbNSw2LCJjIiwyXSxbMyw0LCJcXGNpcmNsZWFycm93cmlnaHQiXV0=)
+
+### スライス圏
+
+この構成はスライス圏とも呼ばれ、$\mathbf{C} / A$とも書かれる。
+
+[スライス圏](slice-category)も参照。
+
+### コンマ圏を使った表現
+
+$\mathbf{C} \downarrow A$は$1_\mathbf{C} \downarrow \Delta_A$で表すことができる。
+
+[![1c-downarrow-DeltaA](https://storage.googleapis.com/zenn-user-upload/b0bf636803c1-20240817.png)](https://q.uiver.app/#q=WzAsMTYsWzMsMCwiXFxtYXRoYmZ7Q30iXSxbMSwwLCJcXG1hdGhiZntDfSBcXGRvd25hcnJvdyBBIl0sWzQsMSwiXFxEZWx0YV9BKFxcYXN0KSJdLFsyLDAsIlxcbWF0aGJme0N9Il0sWzUsMCwiXFxtYXRoYmZ7MX0iXSxbNSwxLCJcXGFzdCJdLFs0LDIsIlxcRGVsdGFfQShcXGFzdCkiXSxbMywxLCJDIl0sWzMsMiwiQyciXSxbMiwxLCJDIl0sWzIsMiwiQyciXSxbMSwxLCJmIl0sWzEsMiwiZyJdLFswLDAsIjFfXFxtYXRoYmZ7Q30gXFxkb3duYXJyb3cgXFxEZWx0YV9BIl0sWzAsMSwiXFxsYW5nIGYsIEMsIFxcYXN0IFxccmFuZyJdLFswLDIsIlxcbGFuZyBmJywgQycsIFxcYXN0IFxccmFuZyJdLFszLDAsIjFfXFxtYXRoYmZ7Q30iXSxbNCwwLCJcXERlbHRhX0EiLDJdLFsyLDYsIlxcRGVsdGFfQShcXG1hdGhybXtpZH1fXFxhc3QpIl0sWzcsOCwiYyIsMl0sWzcsMiwiZiJdLFs4LDYsImYnIiwyXSxbOSwxMCwiYyIsMl0sWzExLDEyLCJjIiwyXSxbMTQsMTUsIlxcbGFuZyBjLCBcXG1hdGhybXtpZH1fXFxhc3QgXFxyYW5nIiwyXV0=)
 
 ## 下方の対象から成る圏
-
-コスライス圏$A / \mathbf{C}$とも呼ばれる。
 
 圏$\mathbf{C}$を考える。圏$\mathbf{C}$の下方の対象から成る圏$A \downarrow \mathbf{C}$ は、以下の通り構成される圏である。
 
 1. 圏$\mathbf{C}$の射であって、域が$A$であるものすべてを対象とする
-2. 圏$\mathbf{C}$の射であって、$g = a \circ f$を満たす射$a$を$f$から$g$への射とする
+2. 圏$\mathbf{C}$の射であって、$f' = c \circ f$を満たす射$c$を$f$から$f'$への射とする
 
-[![category-of-objects-over-a](https://storage.googleapis.com/zenn-user-upload/5998a640f08a-20240806.png)](https://q.uiver.app/#q=WzAsNyxbMCwwLCJcXG1hdGhiZntDfSJdLFsxLDIsIkMiXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFsyLDAsIkEgXFxkb3duYXJyb3cgXFxtYXRoYmZ7Q30iXSxbMiwxLCJmIl0sWzIsMiwiZyJdLFsyLDMsImYiXSxbMiwxLCJnIiwyXSxbMywxLCJhIl0sWzIsMSwiXFxjaXJjbGVhcnJvd3JpZ2h0Il0sWzUsNiwiYSJdXQ==)
+[![category-of-objects-over-a](https://storage.googleapis.com/zenn-user-upload/97ef568892c0-20240817.png)](https://q.uiver.app/#q=WzAsNyxbMCwwLCJcXG1hdGhiZntDfSJdLFsxLDIsIkMnIl0sWzAsMSwiQSJdLFsxLDEsIkMiXSxbMiwwLCJBIFxcZG93bmFycm93IFxcbWF0aGJme0N9Il0sWzIsMSwiZiJdLFsyLDIsImYnIl0sWzIsMywiZiJdLFsyLDEsImYnIiwyXSxbMywxLCJjIl0sWzIsMSwiXFxjaXJjbGVhcnJvd3JpZ2h0Il0sWzUsNiwiYyJdXQ==)
+
+### コスライス圏
+
+この構成はコスライス圏とも呼ばれ、$A / \mathbf{C}$とも書かれる。
+
+### コンマ圏を使った表現
+
+$A \downarrow \mathbf{C}$は$\Delta_A \downarrow 1_\mathbf{C}$で表すことができる。
+
+[![DeltaA-downarrow-1c](https://storage.googleapis.com/zenn-user-upload/4d5450aedbe0-20240817.png)](https://q.uiver.app/#q=WzAsMTYsWzMsMCwiXFxtYXRoYmZ7Q30iXSxbNCwyLCJDJyJdLFs0LDEsIkMiXSxbMSwwLCJBIFxcZG93bmFycm93IFxcbWF0aGJme0N9Il0sWzEsMSwiZiJdLFsxLDIsImYnIl0sWzIsMCwiXFxtYXRoYmZ7MX0iXSxbMywxLCJcXERlbHRhX0EoXFxhc3QpIl0sWzMsMiwiXFxEZWx0YV9DKFxcYXN0KSJdLFsyLDEsIlxcYXN0Il0sWzUsMCwiXFxtYXRoYmZ7Q30iXSxbNSwxLCJDIl0sWzUsMiwiQyciXSxbMCwwLCJcXERlbHRhX0EgXFxkb3duYXJyb3cgMV9cXG1hdGhiZntDfSJdLFswLDEsIlxcbGFuZyBmLCBcXGFzdCwgQyBcXHJhbmciXSxbMCwyLCJcXGxhbmcgZicsIFxcYXN0LCBDJyBcXHJhbmciXSxbMiwxLCJjIl0sWzQsNSwiYyJdLFs3LDgsIlxcRGVsdGFfQShcXG1hdGhybXtpZH1fXFxhc3QpIiwyXSxbNywyLCJmIl0sWzgsMSwiZiciLDJdLFs2LDAsIlxcRGVsdGFfQSJdLFsxMCwwLCIxX1xcbWF0aGJme0N9IiwyXSxbMTEsMTIsImMiXSxbMTQsMTUsImMiXV0=)

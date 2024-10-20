@@ -5,17 +5,13 @@ free: false
 
 ## 格上げ
 
-離散圏$\mathbf 1$からある圏$\mathbf C$への関手を考える。
+[離散圏](discrete-categories)$\mathbf 1$からある圏$\mathbf C$への関手を考える。
 
-![1toC](https://storage.googleapis.com/zenn-user-upload/3ae17ee1d249-20231112.png)
-
-https://q.uiver.app/#q=WzAsNSxbMCwxLCJcXGFzdCJdLFsyLDEsIkEiXSxbMywxLCJCIl0sWzAsMCwiXFxtYXRoYmYgMSJdLFsyLDAsIlxcbWF0aGJmIEMiXSxbMSwyLCJmIl1d
+[![1toC](https://storage.googleapis.com/zenn-user-upload/3ae17ee1d249-20231112.png)](https://q.uiver.app/#q=WzAsNSxbMCwxLCJcXGFzdCJdLFsyLDEsIkEiXSxbMywxLCJCIl0sWzAsMCwiXFxtYXRoYmYgMSJdLFsyLDAsIlxcbWF0aGJmIEMiXSxbMSwyLCJmIl1d)
 
 関手$F_A: \mathbf 1 \to \mathbf C$を$\mathbf 1$の対象$\ast$を$\mathbf C$の対象$A$に、関手$F_B: \mathbf 1 \to \mathbf C$を$\mathbf 1$の対象$\ast$を$\mathbf C$の対象$B$に写すものとすると、上図を下のように書き換えることができる。自然変換を強調するために、$\mathbf 1$に自明な射を書き足している。
 
-![F_X](https://storage.googleapis.com/zenn-user-upload/625aca3e2471-20231206.png)
-
-https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZiAxIl0sWzAsMSwiXFxhc3QiXSxbMSwxLCJcXGFzdCJdLFszLDAsIlxcbWF0aGJmIEMiXSxbMywxLCJGX0EoXFxhc3QpIl0sWzQsMSwiRl9BKFxcYXN0KSJdLFszLDIsIkZfQihcXGFzdCkiXSxbNCwyLCJGX0IoXFxhc3QpIl0sWzEsMiwiaWRfXFxhc3QiXSxbNCw1LCJGX0EoaWRfXFxhc3QpID0gaWRfQSJdLFs2LDcsIkZfQihcXGFzdCkgPSBpZF9CIiwyXSxbNCw2LCJcXGV0YV9cXGFzdCA9IGYiLDJdLFs1LDcsIlxcZXRhX1xcYXN0ID0gZiJdXQ==
+[![F_X](https://storage.googleapis.com/zenn-user-upload/1f2f9d5b2a2a-20240818.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZiAxIl0sWzAsMSwiXFxhc3QiXSxbMSwxLCJcXGFzdCJdLFsyLDAsIlxcbWF0aGJmIEMiXSxbMiwxLCJGX0EoXFxhc3QpIl0sWzMsMSwiRl9BKFxcYXN0KSJdLFsyLDIsIkZfQihcXGFzdCkiXSxbMywyLCJGX0IoXFxhc3QpIl0sWzEsMiwiXFxtYXRocm17aWR9X1xcYXN0Il0sWzQsNSwiRl9BKFxcbWF0aHJte2lkfV9cXGFzdCkgPSBcXG1hdGhybXtpZH1fQSJdLFs2LDcsIkZfQihcXG1hdGhybXtpZH1fXFxhc3QpID0gXFxtYXRocm17aWR9X0IiLDJdLFs0LDYsIlxcZXRhX1xcYXN0ID0gZiIsMl0sWzUsNywiXFxldGFfXFxhc3QgPSBmIl1d)
 
 ここで$F_A(\ast) = A$, $F_B(\ast) = B$, $\eta_\ast = f$である。
 

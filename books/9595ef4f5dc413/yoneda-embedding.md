@@ -3,9 +3,9 @@ title: "米田埋め込み"
 free: false
 ---
 
-[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\mathrm{Nat}_{\hom_{\mathbf{C}}(A, \_) \Rightarrow F}$と集合$F(A)$との間にある同型射のことであった。
+[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow F)$と集合$F(A)$との間にある同型射のことであった。
 
-ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \mathrm{Nat}_{\hom_{\mathbf{C}}(A, \_) \Rightarrow \hom_{\mathbf{C}}(B, \_)} \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
+ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow \hom_{\mathbf{C}}(B, \_)) \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
 
 ここで$\hom_{\mathbf{C}}(B, A)$とは圏$\mathbf{C}$の対象$B$から対象$A$に伸びる射全体の集合である。
 
@@ -28,9 +28,7 @@ https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbNCwxLCJcXGhvbV9DKEEsI
 
 この関手$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$を米田埋め込みと呼ぶ。
 
-![yoneda](https://storage.googleapis.com/zenn-user-upload/675c5acf4fd4-20240721.png)
-
-https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXG1hdGhybXtOYXR9X3tIXkEgXFxSaWdodGFycm93IEheQn0iXSxbNSwyLCJcXGhvbV9DKEIsIEEpIl0sWzYsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs2LDEsIlxcaG9tX0MoQSwgXFxfKSJdLFs2LDIsIlxcaG9tX0MoQiwgXFxfKSJdLFs0LDYsImYiXSxbNSw0LCJhIl0sWzEsMiwiZiBcXGNpcmMgLSJdLFs3LDgsImYgXFxjaXJjIC0iLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbMTMsMTQsIlxcZXRhIl0sWzksNSwidyJdXQ==
+[![yoneda](https://storage.googleapis.com/zenn-user-upload/8be696975151-20240820.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXG1hdGhybXtOYXR9KEheQSBcXFJpZ2h0YXJyb3cgSF5CKSJdLFs1LDIsIlxcaG9tX0MoQiwgQSkiXSxbNiwwLCJcXG1hdGhiZntTZXR9XlxcbWF0aGJme0N9Il0sWzYsMSwiSF5BIl0sWzYsMiwiSF5CIl0sWzQsNiwiZiIsMl0sWzUsNCwiYSJdLFsxLDIsImYgXFxjaXJjIC0iLDJdLFs3LDgsImYgXFxjaXJjIC0iLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbMTMsMTQsIlxcZXRhIl0sWzksNSwidyJdXQ==)
 
 ## 双対
 
@@ -43,9 +41,7 @@ https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsI
 
 この関手$H_-: \mathbf{C} \to \mathbf{Set}^\mathbf{C^\mathrm{op}}$も同様に米田埋め込みと呼ぶ。
 
-![yoyoneda](https://storage.googleapis.com/zenn-user-upload/e937c481d8b7-20240721.png)
-
-https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsIEEpIl0sWzQsMSwiXFxob21fQyhZLCBBKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMCwxLCJBIl0sWzMsMiwiXFxob21fQyhYLCBCKSJdLFs0LDIsIlxcaG9tX0MoWSwgQikiXSxbMCwyLCJCIl0sWzUsMSwiXFxtYXRocm17TmF0fV97SF9BIFxcUmlnaHRhcnJvdyBIX0J9Il0sWzUsMiwiXFxob21fXFxtYXRoYmZ7Q30oQSwgQikiXSxbNiwwLCJcXG1hdGhiZntTZXR9XlxcbWF0aGJme0NeXFxtYXRocm17b3B9fSJdLFs2LDEsIlxcaG9tX0MoXFxfLCBBKSJdLFs2LDIsIlxcaG9tX0MoXFxfLCBCKSJdLFsyLDEsIlkiXSxbMSwxLCJYIl0sWzgsOSwieSJdLFsxMSwxMiwiXFx0aGV0YSJdLFsxLDIsIi0gXFxjaXJjIGYiXSxbNSw2LCItIFxcY2lyYyBmIiwyXSxbMTQsNCwiYSIsMl0sWzE0LDcsImIiXSxbMTMsMTQsImYiLDJdLFsxLDUsIlxcdGhldGFfWCIsMl0sWzIsNiwiXFx0aGV0YV9ZIl0sWzQsNywidiIsMl1d
+[![coyoneda](https://storage.googleapis.com/zenn-user-upload/8b6c61ca3c66-20240820.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsIEEpIl0sWzQsMSwiXFxob21fQyhZLCBBKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMCwxLCJBIl0sWzMsMiwiXFxob21fQyhYLCBCKSJdLFs0LDIsIlxcaG9tX0MoWSwgQikiXSxbMCwyLCJCIl0sWzUsMSwiXFxtYXRocm17TmF0fShIX0EgXFxSaWdodGFycm93IEhfQikiXSxbNSwyLCJcXGhvbV9cXG1hdGhiZntDfShBLCBCKSJdLFs2LDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q15cXG1hdGhybXtvcH19Il0sWzYsMSwiSF9BIl0sWzYsMiwiSF9CIl0sWzIsMSwiWSJdLFsxLDEsIlgiXSxbOCw5LCJ5Il0sWzExLDEyLCJcXHRoZXRhIl0sWzEsMiwiLSBcXGNpcmMgZiJdLFs1LDYsIi0gXFxjaXJjIGYiLDJdLFsxNCw0LCJhIiwyXSxbMTQsNywiYiJdLFsxMywxNCwiZiIsMl0sWzEsNSwiXFx0aGV0YV9YIiwyXSxbMiw2LCJcXHRoZXRhX1kiXSxbNCw3LCJ2IiwyXV0=)
 
 ## 米田埋め込みは忠実充満
 
@@ -57,9 +53,7 @@ https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsI
 
 ところで、自然変換$\hom_C(A, \_) \Rightarrow \hom_C(B, \_)$と圏$\mathbf{C}$の射$B \to A$（あるいは同じことだが圏$\mathbf{C}^{\mathrm{op}}$の射$A \to B$）の間には米田写像があるのだった。米田写像は同型写像であるから、米田埋め込みは忠実充満関手である。
 
-![yoneda-embedding-is-full-and-faithful](https://storage.googleapis.com/zenn-user-upload/f0c9b0096885-20240721.png)
-
-https://q.uiver.app/#q=WzAsMTEsWzAsMCwiXFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX0iXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzEsMSwiWCJdLFswLDEsIkEiXSxbMiwxLCJZIl0sWzAsMiwiQiJdLFszLDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFxcXykiXSxbMywyLCJcXGhvbV9DKEIsIFxcXykiXSxbNCwxLCJcXGhvbV97XFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX19KEEsIEIpIl0sWzQsMiwiXFxob21fe1xcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q319KFxcaG9tX0MoQSwgXFxfKSwgXFxob21fQyhCLCBcXF8pKSJdLFs0LDIsImYiLDJdLFsyLDMsImEiLDJdLFsyLDUsImIiXSxbNyw4LCJcXGV0YSJdLFszLDUsInciLDJdLFs5LDEwLCJ5Il1d
+[![yoneda-embedding-is-full-and-faithful](https://storage.googleapis.com/zenn-user-upload/9001591d34cd-20240820.png)](https://q.uiver.app/#q=WzAsMTEsWzAsMCwiXFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX0iXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzEsMSwiWCJdLFswLDEsIkEiXSxbMiwxLCJZIl0sWzAsMiwiQiJdLFszLDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q30iXSxbMywxLCJIXkEiXSxbMywyLCJIXkIiXSxbNCwxLCJcXGhvbV97XFxtYXRoYmZ7Q31ee1xcbWF0aHJte29wfX19KEEsIEIpIl0sWzQsMiwiXFxob21fe1xcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q319KEheQSwgSF5CKSJdLFs0LDIsImYiLDJdLFsyLDMsImEiLDJdLFsyLDUsImIiXSxbNyw4LCJcXGV0YSJdLFszLDUsInciLDJdLFs5LDEwLCJ5Il1d)
 
 ## 表記
 

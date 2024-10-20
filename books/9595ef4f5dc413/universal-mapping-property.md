@@ -40,12 +40,8 @@ https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZiBDIl0sWzIsMSwiQSJdLFszLDEsIkYoW
 
 ## 積の例
 
-積の普遍性を用いた定義を参照。
-
-https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/3e053e#%E6%99%AE%E9%81%8D%E6%80%A7%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E5%AE%9A%E7%BE%A9
+[積の普遍性を用いた定義](product#普遍性を用いた定義)を参照。
 
 ## 極限の例
 
-極限の普遍性を用いた定義を参照。
-
-https://zenn.dev/esnir/books/9595ef4f5dc413/viewer/954f1b
+[極限の普遍性を用いた定義](limit#普遍性を用いた定義)を参照。

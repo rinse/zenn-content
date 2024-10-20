@@ -12,8 +12,6 @@ free: false
 
 しばしば可換図式は四角形の形で使われる。次の図式が可換であるとは、すなわち$g \circ f = g' \circ f$を満たすことである。
 
-![square-commutative-diagram](https://storage.googleapis.com/zenn-user-upload/e9dbbf609f1e-20240727.png)
+[![square-commutative-diagram](https://storage.googleapis.com/zenn-user-upload/0fe5ae6cb001-20240818.png)](https://q.uiver.app/#q=WzAsNyxbMiwwLCJBIl0sWzMsMCwiQiJdLFszLDEsIkMiXSxbMiwxLCJEIl0sWzAsMCwiQSJdLFsxLDAsIkIiXSxbMSwxLCJDIl0sWzAsMSwiZiJdLFsxLDIsImciXSxbMCwzLCJmJyIsMl0sWzMsMiwiZyciLDJdLFs1LDYsImciXSxbNCw1LCJmIl0sWzQsNiwiaCIsMl0sWzQsNiwiXFxjaXJjbGVhcnJvd3JpZ2h0Il0sWzAsMiwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
-本来は上の三角形のように$\circlearrowright$のような記号を入れて可換を明示しなければならないのだが、図形の作成ツールの都合で省略する。
-
-https://q.uiver.app/#q=WzAsNyxbMiwwLCJBIl0sWzMsMCwiQiJdLFszLDEsIkMiXSxbMiwxLCJEIl0sWzAsMCwiQSJdLFsxLDAsIkIiXSxbMSwxLCJDIl0sWzAsMSwiZiJdLFsxLDIsImciXSxbMCwzLCJmJyIsMl0sWzMsMiwiZyciLDJdLFs1LDYsImciXSxbNCw1LCJmIl0sWzQsNiwiaCIsMl0sWzQsNiwiXFxjaXJjbGVhcnJvd3JpZ2h0Il1d
+これ以降、作画ツールの都合で$\circlearrowright$の記号をしばしば省略する。

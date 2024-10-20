@@ -1,5 +1,5 @@
 ---
-title: "随伴関手1"
+title: "随伴関手 unit-counit恒等式"
 free: false
 ---
 

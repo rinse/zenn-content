@@ -17,51 +17,53 @@ toc_depth: 2
 allow_override: true
 chapters:
   - "category"
-  - "category-examples"
+  - examples-of-categories
   - "discrete-categories"
   - "largeness-of-categories"
   - "commutative-diagram"
   - "isomorphism"
   - "opposite-categories"
   - "functor"
-  - "opposite-functors"
-  - "full-and-faithful-functors"
-  - "category-of-small-categories"
   - "natural-transformation"
-  - "comma-category"
-  - "slice-category"
   - "natural-isomorphism"
   - "vertical-composition"
   - "horizontal-composition"
   - "identity_natural_transformation"
   - "equivalence-of-categories"
-  - "adjoint-functors1"
-  - "category-of-functors"
-  - "elevation"
-  - "product-category"
-  - "bifunctor"
-  - "hom-functor"
-  - "adjoint-functors2"
-  - "diagram-and-index-category"
-  - "universal-mapping-property"
-  - "product"
-  - "limit"
-  - "adjoint-functors3"
-  - "pullback"
-  - "monic-and-epic-morphisms"
-  - "equaliser"
-  - "coequaliser"
-  - "complete"
-  - "limit-as-equaliser"
+  - adjunction-unit-counit
+  - universal-mapping-property
+  - product
+  - diagram-and-index-category
+  - category-of-functors
+  - constant-functors
+  - elevation
+  - limit
+  - pullback
+  - monic-and-epic-morphisms
+  - equaliser
+  - coequaliser
+  - complete
+  - adjunction-ump
+  - opposite-functors
+  - category-of-small-categories
+  - comma-category
+  - variants-of-comma-category
+  - slice-category
+  - hom-functor
+  - theorems-on-hom-functors
+  - adjunction-hom-functor
+  - full-and-faithful-functors
+  - representable-functor
+  - collection-of-natural-transformations
+  - yoneda-lemma
+  - yoneda-embedding
+  - product-category
+  - bifunctor
+  - monoidal-category
+  - monad
   - forgetful-functors
   - free-functors
-  - "representable-functor"
-  - "theorems-on-hom-functors"
-  - "yoneda-lemma"
-  - "yoneda-embedding"
-  - "monoidal-category"
-  - "monad"
-  - "kan-extension"
   - initial-objects
   - f-algebra
   - catamorphism
+  - kan-extension

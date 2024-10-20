@@ -13,7 +13,7 @@ $F \dashv U$を満たすとき、$U$の左随伴関手$F$を自由関手と呼�
 
 ## 自由対象
 
-$F$が$U$の左随伴関手であるとき、圏$\mathbf D$の任意の対象$X$に対して$X$から$D$への普遍射$(F(X), \eta_X)$が存在するのだった。^[[随伴関手](adjoint-functors3)]
+$F$が$U$の左随伴関手であるとき、圏$\mathbf D$の任意の対象$X$に対して$X$から$D$への普遍射$(F(X), \eta_X)$が存在するのだった。^[[随伴関手](adjunction-hom-functor)]
 
 これに対して、圏$\mathbf D$のある対象$X$に対して$X$から$D$への普遍射$(F(X), \eta_X)$が存在するとき、$F(X)$を自由対象(*Free object*)、より厳密には$U$に対する$X$上の自由C-対象(Free C-object on $X$ with respect to $U$)と呼ぶ。
 

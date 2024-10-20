@@ -31,11 +31,7 @@ https://q.uiver.app/#q=WzAsMTAsWzAsMSwiQSJdLFswLDAsIlxcbWF0aGJmIEMiXSxbNCwwLCJcX
 
 関手$F: \mathbf C \to \mathbf D$と関手$G: \mathbf D \to \mathbf E$があったとき、それら関手の合成$G \circ F: \mathbf C \to \mathbf E$は関手である。
 
-![Composition of functors](https://storage.googleapis.com/zenn-user-upload/011e0ef08af7-20231013.png)
-
-https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiBDIl0sWzEsMCwiXFxtYXRoYmYgRCJdLFsxLDEsIlxcbWF0aGJmIEUiXSxbMCwxLCJGIl0sWzEsMiwiRyJdLFswLDIsIkcgXFxjaXJjIEYiLDJdXQ==
-
-また任意の圏$\mathbf C$には恒等関手$1_C: \mathbf C \to \mathbf C$が存在して、任意の関手$F: \mathbf A \to \mathbf B$に対して$1_B \circ F = F \circ 1_A = F$を満たす。
+[![Composition of functors](https://storage.googleapis.com/zenn-user-upload/bc3b01829547-20240818.png)](https://q.uiver.app/#q=WzAsMTEsWzAsMSwiXFxtYXRoYmZ7Q30iXSxbMCwyLCJBIl0sWzAsMywiQiJdLFsxLDAsIlxcbWF0aGJme0R9Il0sWzEsMiwiRihBKSJdLFsxLDMsIkYoQikiXSxbMiwxLCJcXG1hdGhiZntFfSJdLFsyLDIsIkcoRihBKSkiXSxbMiwzLCJHKEYoQSkpIl0sWzMsMiwiKEcgXFxjaXJjIEYpKEEpIl0sWzMsMywiKEcgXFxjaXJjIEYpKEEpIl0sWzEsMiwiZiJdLFs0LDUsIkYoZikiXSxbNyw4LCJHKEYoZikpIl0sWzAsMywiRiJdLFszLDYsIkciXSxbMCw2LCJHIFxcY2lyYyBGIiwyXSxbOSwxMCwiKEcgXFxjaXJjIEYpKGYpIl1d)
 
 ### 証明
 
@@ -51,10 +47,11 @@ https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiBDIl0sWzEsMCwiXFxtYXRoYmYgRCJdL
 
 証明終わり。
 
-## 関手の性質
+## 恒等関手
 
-1. 関手は可換性を保つ
-2. 関手は同型射を保つ
+任意の圏$\mathbf C$には恒等関手$1_C: \mathbf C \to \mathbf C$が存在して、任意の関手$F: \mathbf A \to \mathbf B$に対して$1_B \circ F = F \circ 1_A = F$を満たす。
+
+[![identity-functor](https://storage.googleapis.com/zenn-user-upload/dc7f8954937b-20240818.png)](https://q.uiver.app/#q=WzAsNCxbMSwwLCJcXG1hdGhiZntDfSJdLFsyLDEsIlxcbWF0aGJme0R9Il0sWzAsMSwiXFxtYXRoYmZ7Q30iXSxbMywwLCJcXG1hdGhiZntEfSJdLFswLDEsIkYiXSxbMiwwLCIxX1xcbWF0aGJme0N9Il0sWzEsMywiMV9cXG1hdGhiZntEfSIsMl0sWzIsMSwiRiBcXGNpcmMgMV9cXG1hdGhiZntDfSA9IEYiLDJdLFswLDMsIjFfXFxtYXRoYmZ7RH0gXFxjaXJjIEYgPSBGIl1d)
 
 ## 関手の合成の記法
 
