@@ -9,11 +9,10 @@ free: false
 
 ここで$\hom_{\mathbf{C}}(B, A)$とは圏$\mathbf{C}$の対象$B$から対象$A$に伸びる射全体の集合である。
 
-![yoneda](https://storage.googleapis.com/zenn-user-upload/d6e61b97baa5-20240721.png)
+[![yoneda](https://storage.googleapis.com/zenn-user-upload/d6e61b97baa5-20240721.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbNCwxLCJcXGhvbV9DKEEsIFgpIl0sWzUsMSwiXFxob21fQyhBLCBZKSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbNCwyLCJcXGhvbV9DKEIsIFgpIl0sWzUsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNiwxLCJcXG1hdGhybXtOYXR9X3tIXkEgXFxSaWdodGFycm93IEheQn0iXSxbNiwyLCJcXGhvbV9DKEIsIEEpIl0sWzgsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs4LDEsIkheQSJdLFs4LDIsIkheQiJdLFs0LDYsImYiLDJdLFs1LDQsImEiXSxbMSwyLCJmIFxcY2lyYyAtIiwyXSxbNyw4LCJmIFxcY2lyYyAtIiwyXSxbOSw0LCJiIiwyXSxbMSw3LCJcXGV0YV9YIiwyXSxbMiw4LCJcXGV0YV9ZIl0sWzEwLDExLCJ5Il0sWzEzLDE0LCJcXGV0YSJdLFs5LDUsInciXV0=)
 
-https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbNCwxLCJcXGhvbV9DKEEsIFgpIl0sWzUsMSwiXFxob21fQyhBLCBZKSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbNCwyLCJcXGhvbV9DKEIsIFgpIl0sWzUsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNiwxLCJcXG1hdGhybXtOYXR9X3tIXkEgXFxSaWdodGFycm93IEheQn0iXSxbNiwyLCJcXGhvbV9DKEIsIEEpIl0sWzgsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs4LDEsIkheQSJdLFs4LDIsIkheQiJdLFs0LDYsImYiLDJdLFs1LDQsImEiXSxbMSwyLCJmIFxcY2lyYyAtIiwyXSxbNyw4LCJmIFxcY2lyYyAtIiwyXSxbOSw0LCJiIiwyXSxbMSw3LCJcXGV0YV9YIiwyXSxbMiw4LCJcXGV0YV9ZIl0sWzEwLDExLCJ5Il0sWzEzLDE0LCJcXGV0YSJdLFs5LDUsInciXV0=
-
-米田写像により、自然変換$\hom_C(A, \_) \Rightarrow \hom_C(B, \_)$と圏$\mathbf{C}$の射$B \to A$が一対一対応することが確認できる。
+上図式において$w \in \hom_C(A, B)$, $\eta \in \mathrm{Nat}_{H^A \Rightarrow H^B}$であり、
+米田写像$y$により自然変換$\hom_C(A, \_) \Rightarrow \hom_C(B, \_)$と圏$\mathbf{C}$の射$B \to A$が一対一対応することが確認できる。
 
 ## 定義
 
