@@ -3,15 +3,16 @@ title: "米田埋め込み"
 free: false
 ---
 
-[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow F)$と集合$F(A)$との間にある同型射のことであった。
+[米田写像](yoneda-lemma)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定したhom関手$\hom_{\mathbf{C}}(A, \_): \mathbf{C} \to \mathbf{Set}$から集合値関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換全体の集合$\hom_{\mathrm{Set}^C}(\hom_C(A, \_), F)$と集合$F(A)$との間にある同型射のことであった。
 
-ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \mathrm{Nat}(\hom_{\mathbf{C}}(A, \_) \Rightarrow \hom_{\mathbf{C}}(B, \_)) \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
+ここで集合値関手$F$に圏$\mathbf{C}$の対象$B$を固定したhom関手$\hom_{\mathbf{C}}(B, \_)$をとることを考えると、米田の補題により米田写像$y: \hom_{\mathrm{Set}^C}(\hom_{\mathbf{C}}(A, \_), \hom_{\mathbf{C}}(B, \_)) \simeq \hom_{\mathbf{C}}(B, A)$が得られる。
 
 ここで$\hom_{\mathbf{C}}(B, A)$とは圏$\mathbf{C}$の対象$B$から対象$A$に伸びる射全体の集合である。
 
-[![yoneda](https://storage.googleapis.com/zenn-user-upload/d6e61b97baa5-20240721.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbNCwxLCJcXGhvbV9DKEEsIFgpIl0sWzUsMSwiXFxob21fQyhBLCBZKSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbNCwyLCJcXGhvbV9DKEIsIFgpIl0sWzUsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNiwxLCJcXG1hdGhybXtOYXR9X3tIXkEgXFxSaWdodGFycm93IEheQn0iXSxbNiwyLCJcXGhvbV9DKEIsIEEpIl0sWzgsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs4LDEsIkheQSJdLFs4LDIsIkheQiJdLFs0LDYsImYiLDJdLFs1LDQsImEiXSxbMSwyLCJmIFxcY2lyYyAtIiwyXSxbNyw4LCJmIFxcY2lyYyAtIiwyXSxbOSw0LCJiIiwyXSxbMSw3LCJcXGV0YV9YIiwyXSxbMiw4LCJcXGV0YV9ZIl0sWzEwLDExLCJ5Il0sWzEzLDE0LCJcXGV0YSJdLFs5LDUsInciXV0=)
+[![yoneda-lemma-with-hom-functor](https://storage.googleapis.com/zenn-user-upload/1bf6093b791f-20250202.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXGhvbV97XFxtYXRocm17U2V0fV5DfShcXGhvbV9DKEEsIFxcXyksIFxcaG9tX0MoQiwgXFxfKSkiXSxbNSwyLCJcXGhvbV9DKEIsIEEpIl0sWzYsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs2LDEsIlxcaG9tX0MoQSwgXFxfKSJdLFs2LDIsIlxcaG9tX0MoQiwgXFxfKSJdLFs0LDYsImYiXSxbNSw0LCJhIl0sWzEsMiwiXFxob21fQyhBLCBmKSJdLFs3LDgsIlxcaG9tX0MoQiwgZikiLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbOSw1LCJ3Il0sWzEzLDE0LCJcXGV0YSJdXQ==)
 
-上図式において$w \in \hom_C(A, B)$, $\eta \in \mathrm{Nat}_{H^A \Rightarrow H^B}$であり、
+
+上図式において$w \in \hom_C(A, B)$, $\eta \in \hom_{\mathrm{Set}^C}(\hom_C(A, \_), \hom_C(B, \_))$であり、
 米田写像$y$により自然変換$\hom_C(A, \_) \Rightarrow \hom_C(B, \_)$と圏$\mathbf{C}$の射$B \to A$が一対一対応することが確認できる。
 
 ## 定義
@@ -25,7 +26,7 @@ free: false
 
 この関手$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$を米田埋め込みと呼ぶ。
 
-[![yoneda](https://storage.googleapis.com/zenn-user-upload/8be696975151-20240820.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXG1hdGhybXtOYXR9KEheQSBcXFJpZ2h0YXJyb3cgSF5CKSJdLFs1LDIsIlxcaG9tX0MoQiwgQSkiXSxbNiwwLCJcXG1hdGhiZntTZXR9XlxcbWF0aGJme0N9Il0sWzYsMSwiSF5BIl0sWzYsMiwiSF5CIl0sWzQsNiwiZiIsMl0sWzUsNCwiYSJdLFsxLDIsImYgXFxjaXJjIC0iLDJdLFs3LDgsImYgXFxjaXJjIC0iLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbMTMsMTQsIlxcZXRhIl0sWzksNSwidyJdXQ==)
+[![yoneda](https://storage.googleapis.com/zenn-user-upload/e8e80c9dc8b5-20250202.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXGhvbV97XFxtYXRocm17U2V0fV5DfShIXkEsIEheQikiXSxbNSwyLCJcXGhvbV9DKEIsIEEpIl0sWzYsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs2LDEsIkheQSJdLFs2LDIsIkheQiJdLFs0LDYsImYiXSxbNSw0LCJhIl0sWzEsMiwiXFxob21fQyhBLCBmKSJdLFs3LDgsIlxcaG9tX0MoQiwgZikiLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbMTMsMTQsIlxcZXRhIl0sWzksNSwidyJdLFsxLDgsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
 ## 双対
 
@@ -38,7 +39,7 @@ free: false
 
 この関手$H_-: \mathbf{C} \to \mathbf{Set}^\mathbf{C^\mathrm{op}}$も同様に米田埋め込みと呼ぶ。
 
-[![coyoneda](https://storage.googleapis.com/zenn-user-upload/8b6c61ca3c66-20240820.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsIEEpIl0sWzQsMSwiXFxob21fQyhZLCBBKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMCwxLCJBIl0sWzMsMiwiXFxob21fQyhYLCBCKSJdLFs0LDIsIlxcaG9tX0MoWSwgQikiXSxbMCwyLCJCIl0sWzUsMSwiXFxtYXRocm17TmF0fShIX0EgXFxSaWdodGFycm93IEhfQikiXSxbNSwyLCJcXGhvbV9cXG1hdGhiZntDfShBLCBCKSJdLFs2LDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q15cXG1hdGhybXtvcH19Il0sWzYsMSwiSF9BIl0sWzYsMiwiSF9CIl0sWzIsMSwiWSJdLFsxLDEsIlgiXSxbOCw5LCJ5Il0sWzExLDEyLCJcXHRoZXRhIl0sWzEsMiwiLSBcXGNpcmMgZiJdLFs1LDYsIi0gXFxjaXJjIGYiLDJdLFsxNCw0LCJhIiwyXSxbMTQsNywiYiJdLFsxMywxNCwiZiIsMl0sWzEsNSwiXFx0aGV0YV9YIiwyXSxbMiw2LCJcXHRoZXRhX1kiXSxbNCw3LCJ2IiwyXV0=)
+[![contravariant-yoneda](https://storage.googleapis.com/zenn-user-upload/ee1235385b7e-20250202.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKFgsIEEpIl0sWzQsMSwiXFxob21fQyhZLCBBKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMCwxLCJBIl0sWzMsMiwiXFxob21fQyhYLCBCKSJdLFs0LDIsIlxcaG9tX0MoWSwgQikiXSxbMCwyLCJCIl0sWzUsMSwiXFxob21fe1xcbWF0aHJte1NldH1ee0Nee1xcbWF0aHJte29wfX19fShIX0EsIEhfQikiXSxbNSwyLCJcXGhvbV9cXG1hdGhiZntDfShBLCBCKSJdLFs2LDAsIlxcbWF0aGJme1NldH1eXFxtYXRoYmZ7Q15cXG1hdGhybXtvcH19Il0sWzYsMSwiSF9BIl0sWzYsMiwiSF9CIl0sWzIsMSwiWSJdLFsxLDEsIlgiXSxbOCw5LCJ5Il0sWzExLDEyLCJcXHRoZXRhIl0sWzEsMiwiXFxob21fQyhmLCBBKSJdLFs1LDYsIlxcaG9tX0MoZiwgQikiLDJdLFsxNCw0LCJhIiwyXSxbMTQsNywiYiJdLFsxMywxNCwiZiIsMl0sWzEsNSwiXFx0aGV0YV9YIiwyXSxbMiw2LCJcXHRoZXRhX1kiXSxbNCw3LCJ2IiwyXSxbMSw2LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
 
 ## 米田埋め込みは忠実充満
 
