@@ -13,5 +13,3 @@ free: false
 圏$\mathbf C$の対象$\mathrm{ob}(C)$と射$\hom_C$の両方が集合である場合、圏$\mathbf{C}$は**小さい**(*Small*)という。
 
 圏$\mathbf{C}$が小さくない場合でも、任意の2対象$A, B$の間の射$\hom_C(A, B)$が集合であれば、圏$\mathbf{C}$は**局所的に小さい**(*Locally small*)という。
-
-小さくない圏は**大きい**(*Large*)という。ただし大きい圏には小さい圏も含まれる。

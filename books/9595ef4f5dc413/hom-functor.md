@@ -3,7 +3,7 @@ title: "hom関手"
 free: false
 ---
 
-局所的に小さな圏$\mathbf C$とは、任意の対象$A, B \in \rm{ob}(C)$に対して射のあつまり$\hom_C(A, B)$が集合をなすものである。
+[局所的に小さな圏](largeness-of-categories "任意の2対象間の射の全体が集合である圏")$\mathbf C$とは、任意の対象$A, B \in \rm{ob}(C)$に対して射のあつまり$\hom_C(A, B)$が集合をなすものである。
 
 つまり局所的に小さな圏の対象を選ぶ操作は、$\mathbf C$から$\mathbf{Set}$への関手と捉えることができる。
 

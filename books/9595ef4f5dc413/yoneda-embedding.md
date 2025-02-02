@@ -16,9 +16,7 @@ free: false
 
 ## 定義
 
-[表現](representable-functor)を割り当てる操作を考える。
-
-すなわち局所的に小さな圏$\mathbf{C}$があるとき、対象$A \in \mathrm{ob}(\mathbf{C})$を固定してhom関手$\hom_C(A, \_): \mathbf C \to \mathbf{Set}$を得ることを考える。
+局所的に小さな圏$\mathbf{C}$の対象$A \in \mathrm{ob}(\mathbf{C})$を固定した[hom関手](hom-functor)$\hom_C(A, \_): \mathbf C \to \mathbf{Set}$を考える。
 
 このhom関手を$H^A$と書くと、この操作を反変関手$H^-: \mathbf{C} \to \mathbf{Set}^\mathbf{C}$と捉えることができる。すなわち：
 

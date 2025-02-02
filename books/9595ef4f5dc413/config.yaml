@@ -55,6 +55,7 @@ chapters:
   - full-and-faithful-functors
   - representable-functor
   - collection-of-natural-transformations
+  - set-valued-functor
   - yoneda-lemma
   - yoneda-embedding
   - product-category
