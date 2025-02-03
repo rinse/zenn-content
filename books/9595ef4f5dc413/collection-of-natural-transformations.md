@@ -11,20 +11,17 @@ $A$から$B$への射のあつまりは、$\hom_C(A, B)$のように表すのだ
 
 ## 自然変換のあつまり
 
-圏$\mathbf{C}$から$\mathbf{D}$への関手$F$, $G$を考えるとき、$F$から$G$への自然変換のあつまりを考えることができる。これを次のように書くことにする：
+圏$\mathbf{C}$から$\mathbf{D}$への関手$F$, $G$を考えるとき、$F$から$G$への自然変換のあつまりを考えることができる。これを関手圏$\mathbf{D}^C$の射のあつまりと考えることにして、次のように書くことにする：
 
 $$
-\mathrm{Nat}(F, G)
+\hom_{D^C}(F, G)
 $$
 
-この$\mathrm{Nat}(F, G)$は、例えば$\eta: F \Rightarrow G$や$\epsilon: F \Rightarrow G$などのあつまりということだ。
+[![hom_fg](https://storage.googleapis.com/zenn-user-upload/105c68cc7b86-20250203.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMiwwLCJcXG1hdGhiZntEfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMSwiRihBKSJdLFszLDEsIkYoQikiXSxbMiwyLCJHKEEpIl0sWzMsMiwiRyhCKSJdLFs0LDAsIlxcbWF0aGJme0R9XkMiXSxbNCwxLCJGIl0sWzQsMiwiRyJdLFs1LDAsIlxcbWF0aGJme0NMQVNTfSJdLFs1LDEsIlxcaG9tX3tEXkN9KEYsIEcpIl0sWzIsMywiZiJdLFs0LDUsIkYoZikiXSxbNiw3XSxbNCw2LCJcXGV0YV9BIiwyXSxbNSw3LCJcXGV0YV9CIl0sWzksMTAsIlxcZXRhIl1d)
 
-各自然変換は圏$\mathbf{C}$の対象で添え字づけられた圏$\mathbf{D}$の射のあつまりなので、圏$\mathbf{D}$の射のあつまりのあつまりでもある。
+上図において$\eta$は$\hom_{D^C}(F, G)$の適当な要素である。
 
-[![collection-of-natural-transformations](https://storage.googleapis.com/zenn-user-upload/58a52f150ac4-20240819.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMiwxLCJGKEEpIl0sWzMsMSwiRihCKSJdLFsyLDIsIkcoQSkiXSxbMywyLCJHKEIpIl0sWzQsNSwiRihmKSJdLFs2LDcsIkcoZikiLDJdLFs1LDcsIlxcZXRhX0IiLDIseyJvZmZzZXQiOjF9XSxbNCw2LCJcXGV0YV9BIiwyLHsib2Zmc2V0IjoxfV0sWzAsMywiRiIsMCx7Im9mZnNldCI6LTJ9XSxbMCwzLCJHIiwyLHsib2Zmc2V0IjoyfV0sWzEsMiwiZiJdLFs0LDYsIlxcZXBzaWxvbl9BIiwwLHsib2Zmc2V0IjotMX1dLFs1LDcsIlxcZXBzaWxvbl9CIiwwLHsib2Zmc2V0IjotMX1dXQ==)
+## 性質
 
-## 記法
-
-米田の補題では括弧が多く利用されるため、$\mathrm{Nat}(F, G)$では見づらい気がする。
-
-$\mathrm{Nat}(F \Rightarrow G)$とかの方が分かりやすいだろうか？
+- 一般に$\hom_{D^C}(F, C)$は集合になるとは限らない
+- $\mathbf{D}$が集合の圏$\mathbf{Set}$である場合、$\mathbf{C}$が局所的に小さいに場合に限って、$\hom_{\mathrm{Set}^C}(F, G)$は集合になる（米田の補題）
