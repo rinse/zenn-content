@@ -21,20 +21,20 @@ free: false
 
 このhom関手を$H^A$と書くと、この操作を反変関手$H^-: \mathbf{C} \to \mathbf{Set}^\mathbf{C}$と捉えることができる。すなわち：
 
-- 圏$\mathbf{C}$の任意の対象$A$をhom関手$H^A = \hom_A(A, \_)$に写す
+- 圏$\mathbf{C}$の任意の対象$A$をhom関手$H^A = \hom_C(A, \_)$に写す
 - 圏$\mathbf{C}$の任意の射$w: B \to A$を、米田写像によって自然変換$\eta: H^A \Rightarrow H^B$に写す
 
-この関手$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$を米田埋め込みと呼ぶ。
+この関手$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$を米田埋め込み(*Yoneda embedding*)と呼ぶ。
 
 [![yoneda](https://storage.googleapis.com/zenn-user-upload/e8e80c9dc8b5-20250202.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMywxLCJcXGhvbV9DKEEsIFgpIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwxLCJYIl0sWzAsMSwiQSJdLFsyLDEsIlkiXSxbMywyLCJcXGhvbV9DKEIsIFgpIl0sWzQsMiwiXFxob21fQyhCLCBZKSJdLFswLDIsIkIiXSxbNSwxLCJcXGhvbV97XFxtYXRocm17U2V0fV5DfShIXkEsIEheQikiXSxbNSwyLCJcXGhvbV9DKEIsIEEpIl0sWzYsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs2LDEsIkheQSJdLFs2LDIsIkheQiJdLFs0LDYsImYiXSxbNSw0LCJhIl0sWzEsMiwiXFxob21fQyhBLCBmKSJdLFs3LDgsIlxcaG9tX0MoQiwgZikiLDJdLFs5LDQsImIiLDJdLFsxLDcsIlxcZXRhX1giLDJdLFsyLDgsIlxcZXRhX1kiXSxbMTAsMTEsInkiXSxbMTMsMTQsIlxcZXRhIl0sWzksNSwidyJdLFsxLDgsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
 ## 双対
 
-反変hom関手として$\hom_C(\_, A): \mathbf{C} \to \mathbf{Set}$を取ることを考える。
+反変hom関手として$\hom_C(\_, A): \mathbf{C^{\mathrm{op}}} \to \mathbf{Set}$を取ることを考える。
 
 このhom関手を$H_A$と書くと、この操作を関手$H_-: \mathbf{C} \to \mathbf{Set}^\mathbf{C^\mathrm{op}}$と捉えることができる。すなわち：
 
-- 圏$\mathbf{C}$の任意の対象$A$をhom関手$H_A = \hom_A(\_, A)$に写す
+- 圏$\mathbf{C}$の任意の対象$A$をhom関手$H_A = \hom_C(\_, A)$に写す
 - 圏$\mathbf{C}$の任意の射$v: A \to B$を、米田写像によって自然変換$\theta: H_A \Rightarrow H_B$に写す
 
 この関手$H_-: \mathbf{C} \to \mathbf{Set}^\mathbf{C^\mathrm{op}}$も同様に米田埋め込みと呼ぶ。
