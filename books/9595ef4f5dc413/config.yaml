@@ -52,6 +52,7 @@ chapters:
   - hom-functor
   - theorems-on-hom-functors
   - adjunction-hom-functor
+  - adjunction-allows-to-commute-categories
   - full-and-faithful-functors
   - representable-functor
   - collection-of-natural-transformations

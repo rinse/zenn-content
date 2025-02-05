@@ -1,0 +1,68 @@
+---
+title: "随伴とは「行き来ができる」ということ"
+free: false
+---
+
+元ネタ: alg-dさんの動画 [随伴とは「行き来ができる」ということ](https://www.youtube.com/watch?v=uKNTAzi8SgY)
+
+局所的に小さな圏$\mathbf C$と$\mathbf D$の間の随伴関手とは、二つの関手$F: \mathbf D \to \mathbf C$, $G: \mathbf C \to \mathbf D$の対であって、任意の二対象$X \in \mathrm{ob}(\mathbf{C})$, $Y \in \mathrm{ob}(\mathbf{D})$について自然な全単射$\hom_C(F(Y), X) \simeq \hom_D(Y, G(X))$が存在するものであった。
+
+以下の図式で、$\Phi$は自然同型であり、$\Phi_{Y, X}$は全単射である。
+
+[![](https://storage.googleapis.com/zenn-user-upload/236aa4ff90a8-20250205.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGKFkpIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMiwxLCJZIl0sWzEsMSwiWCJdLFszLDEsIkcoWCkiXSxbNSwwLCJcXG1hdGhiZntTZXR9XntEXntcXG1hdGhybXtvcH19IFxcdGltZXMgQ30iXSxbNSwxLCJcXGhvbV9DKEYoXFxfKSwgXFxfKSJdLFs1LDIsIlxcaG9tX0QoXFxfLCBHKFxcXykpIl0sWzQsMCwiXFxtYXRoYmZ7U2V0fSJdLFs0LDEsIlxcaG9tX0MoRihZKSwgWCkiXSxbNCwyLCJcXGhvbV9EKFksIEcoWCkpIl0sWzEsNiwiWCciXSxbMSw0LCJmIl0sWzMsNSwiZyJdLFs3LDgsIlxcUGhpIl0sWzEwLDExLCJcXFBoaV97WSwgWH0iXSxbMCwyLCJGIiwwLHsib2Zmc2V0IjotMn1dLFswLDIsIkciLDIseyJvZmZzZXQiOjJ9XSxbMTcsMTgsIiIsMCx7ImxldmVsIjoxLCJzdHlsZSI6eyJuYW1lIjoiYWRqdW5jdGlvbiJ9fV1d)
+
+ここで圏$\mathbf{C}$の可換図式を$\Phi$を使って圏$\mathbf{D}$に写すと、$\Phi$の自然性によって可換性が保たれることが分かる。
+
+![](https://storage.googleapis.com/zenn-user-upload/4f8814841b96-20250205.png)
+
+また、逆に圏$\mathbf{D}$の可換図式を$\Phi$の逆射で写しても、圏$\mathbf{C}$上で可換性が保たれる。（$\Phi$は[自然同型](natural-isomorphism)なので、任意の要素$\Phi_{Y, X}$について逆射$\Phi^{-1}_{Y, X}$が存在する）
+
+![](https://storage.googleapis.com/zenn-user-upload/a7cb0e66c6ca-20250205.png)
+
+このことは$F \dashv G$であることと同値である。つまり$F$と$G$が随伴関手であるとき、またそのときに限って、可換性を保ったまま図式を行き来させることができる。
+
+https://q.uiver.app/#q=WzAsMjgsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGKFkpIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMiwxLCJZIl0sWzEsMSwiWCJdLFszLDEsIkcoWCkiXSxbNSwwLCJcXG1hdGhiZntTZXR9XntEXntcXG1hdGhybXtvcH19IFxcdGltZXMgQ30iXSxbNSwxLCJcXGhvbV9DKEYoXFxfKSwgXFxfKSJdLFs1LDIsIlxcaG9tX0QoXFxfLCBHKFxcXykpIl0sWzQsMCwiXFxtYXRoYmZ7U2V0fSJdLFs0LDEsIlxcaG9tX0MoRihZKSwgWCkiXSxbNCwyLCJcXGhvbV9EKFksIEcoWCkpIl0sWzAsNCwiRihZJykiXSxbMSw0LCJYJyJdLFsyLDQsIlknIl0sWzMsNCwiRyhYJykiXSxbMCwzLCJGKFkpIl0sWzEsMywiWCJdLFsyLDMsIlkiXSxbMywzLCJHKFgpIl0sWzIsNSwiWSJdLFszLDUsIkcoWCkiXSxbMiw2LCJZJyJdLFszLDYsIkcoWCcpIl0sWzAsNSwiRihZKSJdLFsxLDUsIlgiXSxbMSw2LCJYJyJdLFswLDYsIkYoWScpIl0sWzEsNCwiZiJdLFszLDUsImciXSxbNyw4LCJcXFBoaSJdLFsxMCwxMSwiXFxQaGlfe1ksIFh9Il0sWzEyLDEzLCJmJyIsMl0sWzE2LDE3LCJmIl0sWzE2LDEyLCJGKHEpIiwyXSxbMTcsMTMsInAiXSxbMTgsMTQsInEiLDJdLFsxOSwxNSwiRyhwKSJdLFsxOCwxOSwiXFxQaGlfe1ksIFh9KGYpIl0sWzE0LDE1LCJcXFBoaV97WScsIFgnfShmJykiLDJdLFsxNiwxMywiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTgsMTUsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIwLDIxLCJnIl0sWzIyLDIzLCJnJyIsMl0sWzIwLDIyLCJxIiwyXSxbMjEsMjMsIkcocCkiXSxbMjAsMjMsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzI0LDI1LCJcXFBoaV57LTF9X3tZLCBYfShnKSJdLFsyNSwyNiwicCJdLFsyNCwyNywiRihxKSIsMl0sWzI3LDI2LCJcXFBoaV57LTF9X3tZJywgWCd9KGcnKSIsMl0sWzI0LDI2LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDIsIkYiLDAseyJvZmZzZXQiOi0yfV0sWzAsMiwiRyIsMix7Im9mZnNldCI6Mn1dLFs1Miw1MywiIiwwLHsibGV2ZWwiOjEsInN0eWxlIjp7Im5hbWUiOiJhZGp1bmN0aW9uIn19XV0=
+
+## 他の図式の例
+
+上では可換図式の例に$p$や$q$を使ったが、可換図式であればこれらにこだわる必要はない。
+
+例えばこのように、$p$の向きを逆転させて$f = p \circ f' \circ F(q)$となるような可換図式でもよい。
+
+[![](https://storage.googleapis.com/zenn-user-upload/dd3a082a7d63-20250205.png)](https://q.uiver.app/#q=WzAsMjAsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGKFkpIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMiwxLCJZIl0sWzEsMSwiWCJdLFszLDEsIkcoWCkiXSxbNSwwLCJcXG1hdGhiZntTZXR9XntEXntcXG1hdGhybXtvcH19IFxcdGltZXMgQ30iXSxbNSwxLCJcXGhvbV9DKEYoXFxfKSwgXFxfKSJdLFs1LDIsIlxcaG9tX0QoXFxfLCBHKFxcXykpIl0sWzQsMCwiXFxtYXRoYmZ7U2V0fSJdLFs0LDEsIlxcaG9tX0MoRihZKSwgWCkiXSxbNCwyLCJcXGhvbV9EKFksIEcoWCkpIl0sWzAsNCwiRihZJykiXSxbMSw0LCJYJyJdLFsyLDQsIlknIl0sWzMsNCwiRyhYJykiXSxbMCwzLCJGKFkpIl0sWzEsMywiWCJdLFsyLDMsIlkiXSxbMywzLCJHKFgpIl0sWzEsNCwiZiJdLFszLDUsImciXSxbNyw4LCJcXFBoaSJdLFsxMCwxMSwiXFxQaGlfe1ksIFh9Il0sWzEyLDEzLCJmJyIsMl0sWzE2LDE3LCJmIl0sWzE2LDEyLCJGKHEpIiwyXSxbMTgsMTQsInEiLDJdLFsxOCwxOSwiXFxQaGlfe1ksIFh9KGYpIl0sWzE0LDE1LCJcXFBoaV97WScsIFgnfShmJykiLDJdLFsxNiwxMywiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTgsMTUsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMiwiRiIsMCx7Im9mZnNldCI6LTJ9XSxbMCwyLCJHIiwyLHsib2Zmc2V0IjoyfV0sWzEzLDE3LCJwIl0sWzE1LDE5LCJHKHApIiwyXSxbMzIsMzMsIiIsMCx7ImxldmVsIjoxLCJzdHlsZSI6eyJuYW1lIjoiYWRqdW5jdGlvbiJ9fV1d)
+
+あるいはこのように、$f \circ F(q) = f' \circ F(q')$となるような可換図式でもよい。
+
+[![](https://storage.googleapis.com/zenn-user-upload/7222a8a63b61-20250205.png)](https://q.uiver.app/#q=WzAsMjAsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGKFkpIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMiwxLCJZIl0sWzEsMSwiWCJdLFszLDEsIkcoWCkiXSxbNSwwLCJcXG1hdGhiZntTZXR9XntEXntcXG1hdGhybXtvcH19IFxcdGltZXMgQ30iXSxbNSwxLCJcXGhvbV9DKEYoXFxfKSwgXFxfKSJdLFs1LDIsIlxcaG9tX0QoXFxfLCBHKFxcXykpIl0sWzQsMCwiXFxtYXRoYmZ7U2V0fSJdLFs0LDEsIlxcaG9tX0MoRihZKSwgWCkiXSxbNCwyLCJcXGhvbV9EKFksIEcoWCkpIl0sWzAsNCwiRihZJykiXSxbMSw0LCJYIl0sWzIsNCwiWSciXSxbMCwzLCJGKFkpIl0sWzIsMywiWSJdLFszLDQsIkcoWCkiXSxbMCw1LCJGKFknJykiXSxbMiw1LCJZJyciXSxbMSw0LCJmIl0sWzMsNSwiZyJdLFs3LDgsIlxcUGhpIl0sWzEwLDExLCJcXFBoaV97WSwgWH0iXSxbMTYsMTcsIlxcUGhpX3tZLCBYfShmKSJdLFswLDIsIkYiLDAseyJvZmZzZXQiOi0yfV0sWzAsMiwiRyIsMix7Im9mZnNldCI6Mn1dLFsxMiwxNSwiRihxKSJdLFsxMiwxOCwiRihxJykiLDJdLFsxNSwxMywiZiJdLFsxOCwxMywiZiciLDJdLFsxNCwxNiwicSJdLFsxNCwxOSwicSciLDJdLFsxOSwxNywiXFxQaGlfe1knJywgWH0oZicpIiwyXSxbMTIsMTMsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzE0LDE3LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyNSwyNiwiIiwwLHsibGV2ZWwiOjEsInN0eWxlIjp7Im5hbWUiOiJhZGp1bmN0aW9uIn19XV0=)
+
+## 利用例: 右随伴は極限と交換する
+
+圏$\mathbf{C}$, $\mathbf{D}$を考えて、それらの間の関手$F: \mathbf{D} \to \mathbf{C}$と$G : \mathbf{C} \to \mathbf{D}$とが随伴関手$F \dashv G$であるとする。
+
+圏$\mathbf{C}$上に二対象$X, X' \in \mathbf{C}$の直積$X \times X' \in \mathbf{C}$が存在するとき、圏$\mathbf{D}$上の$G(X \times X')$は$G(X) \times G(X')$に一致する。
+
+すなわち下の可換図式で、$g = G(p')$一意な仲介射$u: Y \to G(X \times X')$が存在する。
+
+[![](https://storage.googleapis.com/zenn-user-upload/d97e10b0f7ec-20250205.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIlgiXSxbMCwyLCJYIFxcdGltZXMgWCciXSxbMCwzLCJYJyJdLFsxLDAsIlxcbWF0aGJme0R9Il0sWzIsMSwiRyhYKSJdLFsyLDIsIkcoWCBcXHRpbWVzIFgnKSJdLFsyLDMsIkcoWCcpIl0sWzEsMiwiWSJdLFsyLDEsInAiXSxbMiwzLCJwJyIsMl0sWzYsNSwiRyhwKSIsMl0sWzYsNywiRyhwJykiXSxbOCw1LCJnIl0sWzgsNywiZyciLDJdLFs4LDYsIl57XFxleGlzdHMhfXUiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+## 証明
+
+圏$\mathbf{D}$において、射$g: Y \to G(X)$および$g' : Y \to G(X')$を備えた任意の対象$Y \in \mathrm{ob}(\mathbf{D})$を考える。
+
+![](https://storage.googleapis.com/zenn-user-upload/e889b23d10c0-20250205.png)
+
+$F \dashv G$より自然同型$\Phi$が存在するため、圏$\mathbf{D}$には$\Phi$で$g$および$g'$を写した射$\Phi^{-1}_{Y, X}(g) : F(Y) \to X$および$\Phi^{-1}_{Y, X'}(g')$が存在する。
+
+このとき$X \times X'$は直積であるため、$\Phi^{-1}_{Y, X}(g) = p \circ u$かつ$\Phi^{-1}_{Y, X'}(g') = p' \circ u$を満たす仲介射$u : F(Y) \to X \times X'$が一意に存在する。
+
+![](https://storage.googleapis.com/zenn-user-upload/0dbff758db5f-20250205.png)
+
+この可換図式を再び自然同型$\Phi$で写すと、可換性が保たれる性質から、$g = G(p) \circ \Phi_{Y, X \times X'}(u)$かつ$g' = G(p') \circ \Phi_{Y, X \times X'}(u)$を満たす一意な射$\Phi_{Y, X \times X'}(u)$を見つけることができる。
+
+![](https://storage.googleapis.com/zenn-user-upload/161b75173900-20250205.png)
+
+すなわち$G(X \times X') = G(X) \times G(X')$である。証明終了
+
+https://q.uiver.app/#q=WzAsMjIsWzEsMCwiXFxtYXRoYmZ7Q30iXSxbMiwwLCJcXG1hdGhiZntEfSJdLFs0LDAsIlxcbWF0aGJme0N9Il0sWzAsMCwiXFxtYXRoYmZ7U2V0fSJdLFswLDEsIlxcaG9tX0MoRihZKSwgWCkiXSxbMCwzLCJcXGhvbV9EKFksIEcoWCkpIl0sWzEsMiwiWCBcXHRpbWVzIFgnIl0sWzEsMSwiWCJdLFsxLDMsIlgnIl0sWzMsMiwiRyhYIFxcdGltZXMgWCcpIl0sWzMsMSwiRyhYKSJdLFszLDMsIkcoWCcpIl0sWzIsMiwiWSJdLFs0LDIsIkYoWSkiXSxbNSwxLCJYIl0sWzUsMiwiWCBcXHRpbWVzIFgnIl0sWzUsMywiWCciXSxbNiwwLCJcXG1hdGhiZntEfSJdLFs2LDIsIlkiXSxbNywyLCJHKFggXFx0aW1lcyBYJykiXSxbNywxLCJHKFgpIl0sWzcsMywiRyhYJykiXSxbNCw1LCJcXFBoaV97WSwgWH0iLDAseyJvZmZzZXQiOi0yfV0sWzYsNywicCJdLFs2LDgsInAnIiwyXSxbOSwxMCwiRyhwKSIsMl0sWzksMTEsIkcocCcpIl0sWzEyLDEwLCJnIl0sWzEyLDExLCJnJyIsMl0sWzEzLDE0LCJcXFBoaV57LTF9X3tZLCBYfShnKSJdLFsxNSwxNCwicCIsMl0sWzE1LDE2LCJwJyJdLFsxMywxNiwiXFxQaGleey0xfV97WSwgWCd9KGcnKSIsMl0sWzEzLDE1LCJee1xcZXhpc3RzIX11IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEzLDE0LCJcXGNpcmNsZWFycm93bGVmdCIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMywxNiwiXFxjaXJjbGVhcnJvd2xlZnQiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn19fV0sWzE4LDE5LCJcXFBoaV97WSwgWCBcXHRpbWVzIFgnfSh1KSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxOCwyMCwiZyJdLFsxOCwyMSwiZyciLDJdLFsxOSwyMCwiRyhwKSIsMl0sWzE5LDIxLCJHKHAnKSJdLFs1LDQsIlxcUGhpXnstMX1fe1ksIFh9IiwwLHsib2Zmc2V0IjotMn1dLFsxOCwyMCwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJjdXJ2ZSI6MSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzE4LDIxLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7ImN1cnZlIjotMSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
+
+この議論は直積を用いて示したが、一般の極限についても成り立つらしい（後でやる）
