@@ -17,7 +17,7 @@ $$
 \hom_{\mathrm{Set}^C}(\hom_C(A, \_), F) \simeq F(A)
 $$
 
-[![yoneda_lemma](https://storage.googleapis.com/zenn-user-upload/07a82eed7035-20250202.png)](https://q.uiver.app/#q=WzAsMTQsWzAsMCwiXFxtYXRoYmYgQyJdLFswLDEsIkEiXSxbMywwLCJcXG1hdGhiZntTZXR9Il0sWzMsMSwiXFxob21fQyhBLCBYKSJdLFswLDIsIlgiXSxbMSwyLCJZIl0sWzUsMSwiXFxob21fQyhBLCBZKSJdLFszLDIsIkYoWCkiXSxbNSwyLCJGKFkpIl0sWzYsMiwiRihBKSJdLFs2LDEsIlxcbWF0aHJte1xcaG9tX3tcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfX19KFxcaG9tX0MoQSwgXFxfKSwgRil9Il0sWzgsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs4LDEsIlxcaG9tX0MoQSwgXFxfKSJdLFs4LDIsIkYiXSxbNCw1LCJmIiwyXSxbMyw2LCJcXGhvbV9DKEEsIGYpIFxcY29sb25lcXEgZyBcXG1hcHN0byBmIFxcY2lyYyBnIl0sWzEsNCwiZyIsMl0sWzMsNywiXFxldGFfWCIsMl0sWzYsOCwiXFxldGFfWSJdLFs3LDgsIkYoZikiLDJdLFsxMiwxMywiXFxldGEiXSxbMTAsOSwieSJdXQ==)
+[![yoneda_lemma](https://storage.googleapis.com/zenn-user-upload/f09f548a4225-20250212.png)](https://q.uiver.app/#q=WzAsMTQsWzAsMCwiXFxtYXRoYmYgQyJdLFswLDEsIkEiXSxbMiwwLCJcXG1hdGhiZntTZXR9Il0sWzIsMSwiXFxob21fQyhBLCBYKSJdLFswLDIsIlgiXSxbMSwyLCJZIl0sWzQsMSwiXFxob21fQyhBLCBZKSJdLFsyLDIsIkYoWCkiXSxbNCwyLCJGKFkpIl0sWzUsMiwiRihBKSJdLFs1LDEsIlxcbWF0aHJte1xcaG9tX3tcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfX19KFxcaG9tX0MoQSwgXFxfKSwgRil9Il0sWzYsMCwiXFxtYXRoYmZ7U2V0fV5cXG1hdGhiZntDfSJdLFs2LDEsIlxcaG9tX0MoQSwgXFxfKSJdLFs2LDIsIkYiXSxbNCw1LCJmIiwyXSxbMyw2LCJcXGhvbV9DKEEsIGYpIFxcY29sb25lcXEgZiBcXGNpcmMgLSJdLFsxLDQsImciLDJdLFszLDcsIlxcZXRhX1giLDJdLFs2LDgsIlxcZXRhX1kiXSxbNyw4LCJGKGYpIiwyXSxbMTIsMTMsIlxcZXRhIl0sWzEwLDksInkiXSxbMSw1LCJnIFxcY2lyYyBmIl1d)
 
 上図において$\eta$は適当な$\hom_{\mathrm{Set}^C}(\hom_C(A, \_), F)$の要素である。
 
@@ -89,16 +89,15 @@ $$
 
 以上で米田写像$y$は全単射であることが証明できた。
 
-## 双対
+## 反変hom関手を用いた定義
 
-上の補題では共変hom関手を用いたが、反変hom関手を用いれば双対を得ることができる。
-この双対も米田の補題と呼ばれる。
+上では共変hom関手を用いたが、反変hom関手を用いた定義を考えることができる。これも同様に米田の補題と呼ばれる。
 
-局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定した反変hom関手$\hom_C(\_, A)$, 反変関手$F: \mathbf{C}^{\mathrm{op}} \to \mathbf{Set}$および自然変換$\hom_C(\_, A) \Rightarrow F$のすべての集合$\hom_{\mathrm{Set}^{C^\mathrm{op}}}(\hom_{C}(\_, A) \Rightarrow F)$を考える。
+すなわち、局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定した反変hom関手$\hom_C(\_, A)$, 反変関手$F: \mathbf{C}^{\mathrm{op}} \to \mathbf{Set}$および自然変換$\hom_C(\_, A) \Rightarrow F$のすべての集合$\hom_{\mathrm{Set}^{C^\mathrm{op}}}(\hom_{C}(\_, A), F)$を考える。
 
-このとき$A$および$F$について自然な同型写像$y: \hom_{\mathrm{Set}^{C^\mathrm{op}}}(\hom_C(\_, A) \Rightarrow F) \to F(A)$が存在する。
+このとき$A$および$F$について自然な同型写像$y: \hom_{\mathrm{Set}^{C^\mathrm{op}}}(\hom_C(\_, A), F) \to F(A)$が存在する。
 
-[![covariant_yoneda_lemma](https://storage.googleapis.com/zenn-user-upload/c25f89e86cf3-20250202.png)](https://q.uiver.app/#q=WzAsMTQsWzgsMCwiXFxtYXRoYmZ7U2V0fV57Q157XFxtYXRocm17b3B9fX0iXSxbOCwxLCJcXGhvbV9DKFxcXywgQSkiXSxbOCwyLCJHIl0sWzYsMSwiXFxob21fe1xcbWF0aHJte1NldH1ee0Nee1xcbWF0aHJte29wfX19fShcXGhvbV9DKFxcXywgQSksIEYpIl0sWzYsMiwiRyhBKSJdLFszLDEsIlxcaG9tX3tDXntcXG1hdGhybXtvcH19fShYLCBBKSJdLFs1LDEsIlxcaG9tX3tDXntcXG1hdGhybXtvcH19fShZLCBBKSJdLFszLDIsIkcoWCkiXSxbNSwyLCJHKFkpIl0sWzAsMSwiQSJdLFswLDIsIlgiXSxbMSwyLCJZIl0sWzAsMCwiXFxtYXRoYmYgQyJdLFszLDAsIlxcbWF0aGJme1NldH0iXSxbMSwyLCJcXGVwc2lsb24iXSxbMyw0LCJ5Il0sWzgsNywiRyhmKSJdLFs2LDUsIlxcaG9tX3tDXntcXG1hdGhybXtvcH19fShmLCBBKSBcXGNvbG9uZXFxIGcgXFxtYXBzdG8gZyBcXGNpcmMgZiIsMl0sWzUsNywiXFxlcHNpbG9uX1giLDJdLFs2LDgsIlxcZXBzaWxvbl9ZIl0sWzksMTAsImciLDJdLFsxMCwxMSwiZiIsMl1d)
+[![covariant_yoneda_lemma](https://storage.googleapis.com/zenn-user-upload/7ee7ce885227-20250212.png)](https://q.uiver.app/#q=WzAsMTQsWzYsMCwiXFxtYXRoYmZ7U2V0fV57Q157XFxtYXRocm17b3B9fX0iXSxbNiwxLCJcXGhvbV9DKFxcXywgQSkiXSxbNiwyLCJGIl0sWzUsMSwiXFxob21fe1xcbWF0aHJte1NldH1ee0Nee1xcbWF0aHJte29wfX19fShcXGhvbV9DKFxcXywgQSksIEYpIl0sWzUsMiwiRihBKSJdLFsyLDEsIlxcaG9tX3tDfShYLCBBKSJdLFs0LDEsIlxcaG9tX3tDfShZLCBBKSJdLFsyLDIsIkYoWCkiXSxbNCwyLCJGKFkpIl0sWzAsMSwiQSJdLFswLDIsIlgiXSxbMSwyLCJZIl0sWzAsMCwiXFxtYXRoYmYgQyJdLFsyLDAsIlxcbWF0aGJme1NldH0iXSxbMSwyLCJcXGV0YSJdLFszLDQsInkiXSxbOCw3LCJGKGYpIl0sWzYsNSwiXFxob21fe0N9KGYsIEEpIFxcY29sb25lcXEgLSBcXGNpcmMgZiIsMl0sWzYsOCwiXFxldGFfWSJdLFsxMCwxMSwiZiIsMl0sWzExLDksImciLDJdLFsxMCw5LCJnIFxcY2lyYyBmIl0sWzUsNywiXFxldGFfWCIsMl1d)
 
 ## Haskellでの米田写像の実装
 

@@ -31,7 +31,7 @@ free: false
 
 可換図式で表現すると次の通りだ。
 
-[![hom_C(_, B)](https://storage.googleapis.com/zenn-user-upload/9c5105f17420-20250202.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZiBDIl0sWzAsMSwiWCJdLFsxLDEsIlkiXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzQsMywiXFxob21fQyhCLCBCKSJdLFs0LDEsIlxcaG9tX0MoWCwgQikiXSxbNiwxLCJcXGhvbV9DKFksIEIpIl0sWzAsMiwiQiJdLFsyLDEsImgiLDJdLFsxLDcsImciLDJdLFs3LDIsImcgXFxjaXJjIGgiLDJdLFs1LDYsIlxcaG9tX0MoaCwgQik9ZyBcXG1hcHN0byBnIFxcY2lyYyBoIl0sWzQsNSwiXFxob21fQyhnLCBCKT1lIFxcbWFwc3RvIGUgXFxjaXJjIGciXSxbNCw2LCJcXGhvbV9DKGcgXFxjaXJjIGgsIEIpPWUgXFxtYXBzdG8gZSBcXGNpcmMgZyBcXGNpcmMgaCIsMix7ImxhYmVsX3Bvc2l0aW9uIjo5MH1dXQ==)
+[![hom_C(_, B)](https://storage.googleapis.com/zenn-user-upload/75c2a7cc4f54-20250212.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZiBDIl0sWzAsMSwiWCJdLFsxLDEsIlkiXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzQsMywiXFxob21fQyhCLCBCKSJdLFs0LDEsIlxcaG9tX0MoWCwgQikiXSxbNiwxLCJcXGhvbV9DKFksIEIpIl0sWzAsMiwiQiJdLFsyLDEsImgiLDJdLFsxLDcsImciLDJdLFsyLDcsImcgXFxjaXJjIGgiXSxbNSw2LCJcXGhvbV9DKGgsIEIpPWcgXFxtYXBzdG8gZyBcXGNpcmMgaCJdLFs0LDUsIlxcaG9tX0MoZywgQik9ZSBcXG1hcHN0byBlIFxcY2lyYyBnIl0sWzQsNiwiXFxob21fQyhnIFxcY2lyYyBoLCBCKT1lIFxcbWFwc3RvIGUgXFxjaXJjIGcgXFxjaXJjIGgiLDIseyJsYWJlbF9wb3NpdGlvbiI6MTAwfV1d)
 
 上の二つの可換図をぴったり重ね合わせると、次の可換図式が得られる。
 $\hom_C(A, \_)$の可換図式の$X$, $Y$を$B$, $B'$に、$\hom_C(\_, B)$の可換図式の$X$, $Y$を$A$, $A'$に対応させる。$g$はそのままだ。
