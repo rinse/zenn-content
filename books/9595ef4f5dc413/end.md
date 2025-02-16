@@ -1,0 +1,56 @@
+---
+title: "エンド"
+free: false
+---
+
+
+## 定義
+
+圏$C$, $D$, 関手$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to D$を考える。
+
+圏$\mathbf{D}$において、圏$\mathbf{C}$の任意の対象$A$, $B$とそれらの間の射$f : A \to B$に対して、$F(\mathrm{id}_A, f) \circ \alpha_A = F(f, \mathrm{id}_B) \circ \alpha_B$を満たす対象$W$と射の族$\alpha$の組$(W, \alpha)$を、楔(*wedge*)と呼ぶ。
+
+[![](https://storage.googleapis.com/zenn-user-upload/e7207fc8b098-20250216.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzMsMCwiXFxtYXRoYmZ7RH0iXSxbMywxLCJXIl0sWzIsMiwiRihBLCBBKSJdLFs0LDIsIkYoQiwgQikiXSxbMywzLCJGKEEsIEIpIl0sWzQsNiwiXFxlcHNpbG9uX0IiXSxbNSw3LCJGKFxcbWF0aHJte2lkfV9BLCBmKSIsMl0sWzYsNywiRihmLCBcXG1hdGhybXtpZH1fQikiXSxbNCw1LCJcXGVwc2lsb25fQSIsMl0sWzQsNywiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyLCJmIl1d)
+
+
+エンド (*end*) とは、楔$(E, \eta)$であって、任意の楔$(W, \epsilon)$に対して一意な仲介射$u : W \to E$が存在して、$\mathbf{C}$の任意の対象$A$に対して$\epsilon_A = \eta_A \circ u$が成り立つものをいう。
+
+[![](https://storage.googleapis.com/zenn-user-upload/a740f4d04ee5-20250216.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMywyLCJFIl0sWzIsMywiRihBLCBBKSJdLFs0LDMsIkYoQiwgQikiXSxbMyw0LCJGKEEsIEIpIl0sWzMsMSwiVyJdLFs0LDYsIlxcZXRhX0IiLDFdLFs1LDcsIkYoXFxtYXRocm17aWR9X0EsIGYpIiwyXSxbNiw3LCJGKGYsIFxcbWF0aHJte2lkfV9CKSJdLFs0LDUsIlxcZXRhX0EiLDFdLFs0LDcsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMiwiZiJdLFs4LDUsIlxcZXBzaWxvbl9BIiwyLHsiY3VydmUiOjF9XSxbOCw0LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzgsNiwiXFxlcHNpbG9uX0IiLDAseyJjdXJ2ZSI6LTF9XSxbOCw1LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDYsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+## 普遍射
+
+エンドは、関手$\Delta : \mathbf{D} \to \mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$から対象$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to \mathbf{D}$への普遍射として定義できる。
+
+[![](https://storage.googleapis.com/zenn-user-upload/3d4d4cade4d3-20250217.png)](https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFszLDAsIlxcbWF0aGJme0R9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH0gXFx0aW1lcyBcXG1hdGhiZntDfX0iXSxbNCwyLCJcXERlbHRhKFcpIl0sWzQsMSwiXFxEZWx0YShFKSJdLFszLDEsIkYiXSxbMiwyLCJXIl0sWzIsMSwiRSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzEsMiwiZiJdLFs1LDYsIlxcZXRhIiwyXSxbNCw2LCJcXGVwc2lsb24iXSxbNCw1LCJcXERlbHRhKGcpIiwyXSxbNyw4LCJnIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNiwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJvZmZzZXQiOjQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+圏$\mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$の可換図式を圏$\mathbf{D}$上に展開すれば、上の定義と同じ図式が得られる。（[極限](./limit.md)も参照）
+
+## コエンド
+
+エンドの双対をコエンド (*coend*) と呼ぶ。
+
+![coend](https://storage.googleapis.com/zenn-user-upload/feb9bd0fd33b-20250217.png)
+
+コエンドは対象$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to \mathbf{D}$から関手$\Delta : \mathbf{D} \to \mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$への普遍射として定義できる。
+
+![coend_ump](https://storage.googleapis.com/zenn-user-upload/1ff1ac98f211-20250217.png)
+
+https://q.uiver.app/#q=WzAsMjQsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFszLDAsIlxcbWF0aGJme0R9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH0gXFx0aW1lcyBcXG1hdGhiZntDfX0iXSxbNCwyLCJcXERlbHRhKFcpIl0sWzQsMSwiXFxEZWx0YShFKSJdLFszLDEsIkYiXSxbMiwyLCJXIl0sWzIsMSwiRSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzYsMiwiXFxEZWx0YShFKShBLCBBKSJdLFs2LDEsIlxcRGVsdGEoVykoQSwgQSkiXSxbNSwzLCJGKEEsIEEpIl0sWzcsMiwiXFxEZWx0YShFKShCLCBCKSJdLFs3LDEsIlxcRGVsdGEoVykoQiwgQikiXSxbOCwzLCJGKEIsIEIpIl0sWzYsNCwiRihCLCBBKSJdLFs3LDQsIkYoQiwgQSkiXSxbMTAsMSwiVyJdLFsxMCwyLCJFIl0sWzExLDMsIkYoQixCKSJdLFs5LDMsIkYoQSwgQSkiXSxbOSw0XSxbMTAsNCwiRihCLCBBKSJdLFsxLDIsImYiXSxbNiw1LCJcXGV0YSJdLFs2LDQsIlxcZXBzaWxvbiIsMl0sWzUsNCwiXFxEZWx0YShnKSJdLFs0LDYsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsib2Zmc2V0Ijo0LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsMTEsIlxcZXRhX0EiLDAseyJjdXJ2ZSI6LTF9XSxbMTIsMTAsIlxcZXBzaWxvbl9BIiwxXSxbMTUsMTMsIlxcZXBzaWxvbl9CIiwxXSxbMTUsMTQsIlxcZXBzaWxvbl9CIiwyLHsiY3VydmUiOjF9XSxbMTAsMTEsIlxcRGVsdGEoZylfQSIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMywxNCwiXFxEZWx0YShnKV9CIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzE2LDEyLCJGKGYsIFxcbWF0aHJte2lkfV9BKSJdLFsxNywxNSwiRihcXG1hdGhybXtpZH1fQiwgZikiLDJdLFsxNiwxNywiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMCwxMywiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMSwxNCwiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxOSwxOCwiZyIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyMSwxOSwiXFxlcHNpbG9uX0EiLDFdLFsyMSwxOCwiXFxldGFfQSIsMCx7ImN1cnZlIjotMX1dLFsyMCwxOCwiXFxldGFfQiIsMix7ImN1cnZlIjoxfV0sWzIwLDE5LCJcXGVwc2lsb25fQiIsMV0sWzIxLDE4LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyMCwxOCwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMjMsMjEsIkYoZiwgXFxtYXRocm17aWR9X0EpIl0sWzIzLDIwLCJGKFxcbWF0aHJte2lkfV9CLCBmKSIsMl0sWzIzLDE5LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDcsImciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMzgsMzcsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
+
+## 感想
+
+図形の形が[プルバック](./pullback.md)に似ている。
+
+## 記法
+
+エンドは通常インテグラルを使って以下のように表記する：
+
+$$
+\int_{c \in \mathbf{C}} F(c, c)
+$$
+
+コエンドは上付きにして次のように表記する：
+
+$$
+\int^{c \in \mathbf{C}} F(c, c)
+$$

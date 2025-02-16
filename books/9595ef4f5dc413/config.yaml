@@ -69,3 +69,5 @@ chapters:
   - f-algebra
   - catamorphism
   - kan-extension
+  - dinatural-transformation
+  - end
