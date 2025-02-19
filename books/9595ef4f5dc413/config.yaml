@@ -63,6 +63,7 @@ chapters:
   - bifunctor
   - monoidal-category
   - monad
+  - adjunctions-derive-monads
   - forgetful-functors
   - free-functors
   - initial-objects
