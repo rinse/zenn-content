@@ -70,5 +70,6 @@ chapters:
   - f-algebra
   - catamorphism
   - kan-extension
+  - kan-extension-limit
   - dinatural-transformation
   - end
