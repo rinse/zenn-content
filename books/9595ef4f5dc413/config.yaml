@@ -71,5 +71,7 @@ chapters:
   - catamorphism
   - kan-extension
   - kan-extension-limit
+  - functor-commutes-with-kan-extension
+  - absolute-kan-extension
   - dinatural-transformation
   - end
