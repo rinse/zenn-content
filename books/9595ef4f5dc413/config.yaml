@@ -62,6 +62,7 @@ chapters:
   - product-category
   - bifunctor
   - monoidal-category
+  - endo-functor
   - monad
   - adjunctions-derive-monads
   - forgetful-functors
