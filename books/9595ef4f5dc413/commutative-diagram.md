@@ -3,15 +3,23 @@ title: "可換図式"
 free: false
 ---
 
-圏$\mathbf{C}$において、3つの射$f: A \to B$, $g: B \to C$, $h: A \to C$が$g \circ f = h$を満たすことを、しばしば次の図式を使って示す。
+## 可換図式(*Commutative diagram*)
 
-![triangle-commutative-diagram](https://storage.googleapis.com/zenn-user-upload/65110400b19d-20240727.png)
+圏は対象とそれらの間の射によって定義される。射の合成は、2つの射とそれらの合成射からなる三角形を作る。
 
-この図式を**可換図式**(*Commutative diagram*)と呼ぶ。
-また前述の3つの射$f: A \to B$, $g: B \to C$, $h: A \to C$が同じ条件を満たすことを、**図式を可換にする**などとも言う。
+![diagram](https://storage.googleapis.com/zenn-user-upload/f2b82f568b1c-20231203.png)
 
-しばしば可換図式は四角形の形で使われる。次の図式が可換であるとは、すなわち$g \circ f = g' \circ f$を満たすことである。
+この三角形が可換である(*Commutes*)とは、その2つの射とそれらの合成射が"等しい"ことを意味し、記号$\circlearrowright$で表す。
+つまり下図は、右回りに$f$, $g$と行くのと、左回りに$g \circ f$を一息に行くことが"等しい"ことを表している。（下図が可換であることは、圏の定義より自明に成り立つ）
 
-[![square-commutative-diagram](https://storage.googleapis.com/zenn-user-upload/0fe5ae6cb001-20240818.png)](https://q.uiver.app/#q=WzAsNyxbMiwwLCJBIl0sWzMsMCwiQiJdLFszLDEsIkMiXSxbMiwxLCJEIl0sWzAsMCwiQSJdLFsxLDAsIkIiXSxbMSwxLCJDIl0sWzAsMSwiZiJdLFsxLDIsImciXSxbMCwzLCJmJyIsMl0sWzMsMiwiZyciLDJdLFs1LDYsImciXSxbNCw1LCJmIl0sWzQsNiwiaCIsMl0sWzQsNiwiXFxjaXJjbGVhcnJvd3JpZ2h0Il0sWzAsMiwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+![commutative_diagram](https://storage.googleapis.com/zenn-user-upload/76d7cf8092d7-20250309.png)
 
-これ以降、作画ツールの都合で$\circlearrowright$の記号をしばしば省略する。
+この図は可換図式(*Commutative diagram*)と呼ばれ、圏論の議論では分かりやすさのために多用される。Zennのマークダウンで作図をするのはつらいので、[quivar](https://q.uiver.app/)というサイトを使って図を作成している。
+
+## 可換図式のバリエーション
+
+可換図式は必ずしも三角形ではなく、様々な形で射が"等しい"ことを表す。
+
+例えば以下の可換図式は、$f' \circ f = g' \circ g$であることを意味している。
+
+![](https://storage.googleapis.com/zenn-user-upload/c4dc64492b0d-20250309.png)
