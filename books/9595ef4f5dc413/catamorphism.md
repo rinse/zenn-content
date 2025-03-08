@@ -5,7 +5,7 @@ free: false
 
 ## 定義
 
-[F-代数](f-algebra)とその始代数$(I, i)$を考える。
+[F-代数](./f-algebra.md)とその始代数$(I, i)$を考える。
 
 このとき始代数の性質より、対象$I$から任意の対象への準同型が存在する。この準同型の族をCatamorphismと呼び、$\mathrm{cata}$と書く。
 
