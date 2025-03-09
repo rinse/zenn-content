@@ -74,6 +74,7 @@ chapters:
   - kan-extension-limit
   - functor-commutes-with-kan-extension
   - absolute-kan-extension
+  - pointwise-kan-extension
   - dinatural-transformation
   - end
   - haskell
