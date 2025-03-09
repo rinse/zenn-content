@@ -19,7 +19,7 @@ free: false
 
 局所的に小さな圏$\mathbf{C}$の対象$A \in \mathrm{ob}(\mathbf{C})$を固定した[hom関手](hom-functor)$\hom_C(A, \_): \mathbf C \to \mathbf{Set}$を考える。
 
-このhom関手を$H^A$と書くと、この操作を反変関手$H^-: \mathbf{C} \to \mathbf{Set}^\mathbf{C}$と捉えることができる。すなわち：
+このhom関手を$H^A$と書くと、この操作を反変関手$H^-: \mathbf{C}^\mathrm{op} \to \mathbf{Set}^\mathbf{C}$と捉えることができる。すなわち：
 
 - 圏$\mathbf{C}$の任意の対象$A$をhom関手$H^A = \hom_C(A, \_)$に写す
 - 圏$\mathbf{C}$の任意の射$w: B \to A$を、米田写像によって自然変換$\eta: H^A \Rightarrow H^B$に写す
