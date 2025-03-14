@@ -40,7 +40,7 @@ https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCIoTSBcXG90aW1lc
 
 ## 強モノイダル圏
 
-モノイダル圏$(\mathbf{C}, \otimes, I, \alpha, \lambda, \rho)$のうち、自然同型$\alpha$, $\lambda$, $\rho$のいずれもが恒等射であるとき、これを特に強モノイダル圏と呼ぶ。
+モノイダル圏$(\mathbf{C}, \otimes, I, \alpha, \lambda, \rho)$のうち、自然同型$\alpha$, $\lambda$, $\rho$のいずれもが恒等射であるとき、これを特に強モノイダル圏(*Strict monoidal category*)と呼ぶ。
 
 ## 記法
 
