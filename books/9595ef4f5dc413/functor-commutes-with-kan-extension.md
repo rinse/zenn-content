@@ -3,6 +3,8 @@ title: "関手がKan拡張と交換するとは"
 free: false
 ---
 
+Kan拡張$\lang L, \eta \rang$が関手$H$と交換するとは、$\lang H \circ L, H \ast \eta \rang$がKan拡張であることをいう。
+
 ## 定義
 
 $G : \mathbf{A} \to \mathbf{C}$の$F : \mathbf{A} \to \mathbf{B}$に沿った左Kan拡張$\lang L, \eta \rang$と、関手$H : \mathbf{C} \to \mathbf{D}$を仮定する。
