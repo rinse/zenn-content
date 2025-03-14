@@ -23,7 +23,7 @@ free: false
 
 [![](https://storage.googleapis.com/zenn-user-upload/3d4d4cade4d3-20250217.png)](https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFszLDAsIlxcbWF0aGJme0R9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH0gXFx0aW1lcyBcXG1hdGhiZntDfX0iXSxbNCwyLCJcXERlbHRhKFcpIl0sWzQsMSwiXFxEZWx0YShFKSJdLFszLDEsIkYiXSxbMiwyLCJXIl0sWzIsMSwiRSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzEsMiwiZiJdLFs1LDYsIlxcZXRhIiwyXSxbNCw2LCJcXGVwc2lsb24iXSxbNCw1LCJcXERlbHRhKGcpIiwyXSxbNyw4LCJnIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsNiwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJvZmZzZXQiOjQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
 
-圏$\mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$の可換図式を圏$\mathbf{D}$上に展開すれば、上の定義と同じ図式が得られる。（[極限](./limit.md)も参照）
+圏$\mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$の可換図式を圏$\mathbf{D}$上に展開すれば、上の定義と同じ図式が得られる。（[極限](./limit)も参照）
 
 ## コエンド
 
@@ -39,7 +39,7 @@ https://q.uiver.app/#q=WzAsMjQsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQ
 
 ## 感想
 
-図形の形が[プルバック](./pullback.md)に似ている。
+図形の形が[プルバック](./pullback)に似ている。
 
 ## 記法
 

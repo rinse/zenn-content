@@ -13,17 +13,17 @@ https://wiki.haskell.org/Hask
 
 ## "実用的な"Hask圏の性質
 
-- Hask圏は[始対象と終対象](./initial-objects.md)を持つ
+- Hask圏は[始対象と終対象](./initial-objects)を持つ
     * `Void`が始対象、`()`が終対象である
-- Hask圏は[完備かつ余完備](./complete.md)である
+- Hask圏は[完備かつ余完備](./complete)である
     * すなわち任意の型どうしの直積・直和が存在する
-- Hask圏は[局所小](./largeness-of-categories.md)である
-- `Functor`のインスタンスは[自己関手](./endo-functor.md)である
-- `Monad`のインスタンスは[モナド](./monad.md)である
-- WriterモナドはReaderモナドの[左随伴](./adjunction-hom-functor.md)
+- Hask圏は[局所小](./largeness-of-categories)である
+- `Functor`のインスタンスは[自己関手](./endo-functor)である
+- `Monad`のインスタンスは[モナド](./monad)である
+- WriterモナドはReaderモナドの[左随伴](./adjunction-hom-functor)
     * `(a,) -| (a ->)`が成り立つ
     * ここで随伴を定める自然同型は、カリー化と非カリー化である
-    * この[随伴から導かれるモナド](./adjunctions-derive-monads.md)はStateモナドであり、
+    * この[随伴から導かれるモナド](./adjunctions-derive-monads)はStateモナドであり、
       同様に導かれるコモナドはStoreコモナドである。
 
 ## 諸概念のHaskell上での表現

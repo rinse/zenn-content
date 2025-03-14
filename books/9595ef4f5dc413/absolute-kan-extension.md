@@ -6,7 +6,7 @@ free: false
 ## 定義
 
 左Kan拡張 $\lang L, \eta \rang$ が絶対左Kan拡張であるとは、
-圏$\mathbf{C}$から任意の圏$\mathbf{D}$をへの任意の関手$H : \mathbf{C} \to \mathbf {D}$が $\lang L, \eta \rang$ と[交換する](./functor-commutes-with-kan-extension.md)ことをいう。
+圏$\mathbf{C}$から任意の圏$\mathbf{D}$をへの任意の関手$H : \mathbf{C} \to \mathbf {D}$が $\lang L, \eta \rang$ と[交換する](./functor-commutes-with-kan-extension)ことをいう。
 
 [![](https://storage.googleapis.com/zenn-user-upload/5e4c93ff99fa-20250301.png)](https://q.uiver.app/#q=WzAsNSxbMCwxLCJcXG1hdGhiZntBfSJdLFswLDIsIlxcbWF0aGJme0J9Il0sWzEsMiwiXFxtYXRoYmZ7Q30iXSxbMiwyLCJeXFxmb3JhbGwgXFxtYXRoYmZ7RH0iXSxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzAsMSwiRiIsMl0sWzAsMiwiRyJdLFsxLDIsIkwiLDJdLFsyLDMsIkgiLDJdLFs2LDcsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d)
 

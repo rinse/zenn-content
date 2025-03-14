@@ -13,7 +13,7 @@ free: false
 
 ### 普遍射の定義の確認
 
-圏$\mathbf{D}$の各対象$D$から関手$G$への[普遍射](./universal-mapping-property.md)を$\lang C_D, \eta_D \rang$と書くことにする。
+圏$\mathbf{D}$の各対象$D$から関手$G$への[普遍射](./universal-mapping-property)を$\lang C_D, \eta_D \rang$と書くことにする。
 このとき任意の射$f : D \to G(C)$について、$\=f : C_D \to C$が一意に存在して、$f = G(\=f) \circ \eta_D$を満たす。
 
 ![](https://storage.googleapis.com/zenn-user-upload/2e5ff0fdf620-20250224.png)
