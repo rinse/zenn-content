@@ -39,12 +39,35 @@ $G$の$F$に沿った左Kan拡張$\lang L, \eta \rang$を考える。
 
 [![](https://storage.googleapis.com/zenn-user-upload/26a2052481c7-20250305.png)](https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntCfSJdLFsyLDIsIlxcbWF0aGJme0N9Il0sWzAsMSwiRiBcXGRvd25hcnJvdyBCIl0sWzAsMiwiXFxtYXRoYmZ7MX0iXSxbMSwyLCJGIiwyXSxbMiwzLCJMIiwyXSxbMSwzLCJHIl0sWzQsNSwiVCIsMl0sWzQsMSwiVSJdLFs1LDIsIlxcdGlsZGUgQiIsMl0sWzgsNywiXFxldGEiLDIseyJvZmZzZXQiOjIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=)
 
-## 証明
+### 証明
 
 TODO
 
+## 定理2
+
+$\lang T, \eta \rang$が$F$に沿った$E$の各点左Kan拡張であると仮定する。
+このとき、$D \in \mathrm{ob}(\mathbf{D})$, $U \in \mathrm{ob}(\mathbf{U})$ について自然に以下の等式が成り立つ。
+
+$$
+\hom_U(T(D), U) \simeq \hom_{\mathbf{Set}^{\mathbf{C}^\mathrm{op}}}(\hom_D(F(\_), D), \hom_U(E(\_), U))
+$$
+
+すなわち以下の図式で$\lang T, \eta \rang$が$F$に沿った$E$の各点左Kan拡張だとする。
+
+![](https://storage.googleapis.com/zenn-user-upload/1480812b022a-20250314.png)
+
+すると、圏$U$における射と、圏$\mathbf{C}^\mathrm{op}$から圏$\mathbf{Set}$への反変関手$\hom_D(F(\_), D)$から$\hom_U(E(\_), U)$への自然変換との間に、一対一対応が存在する。
+
+![](https://storage.googleapis.com/zenn-user-upload/d084fcf00837-20250314.png)
+
+https://q.uiver.app/#q=WzAsMTIsWzAsMSwiXFxtYXRoYmZ7Q30iXSxbMSwyLCJcXG1hdGhiZntVfSJdLFswLDIsIlxcbWF0aGJme0R9Il0sWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbNCwxLCJcXGhvbV9VKFQoRCksIFUpIl0sWzIsMCwiXFxtYXRoYmZ7VX0iXSxbMiwxLCJUKEQpIl0sWzMsMSwiVSJdLFs1LDEsIlxcaG9tX3tcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH19fShcXGhvbV9EKEYoXFxfKSwgRCksIFxcaG9tX1UoRShcXF8pLCBVKSkiXSxbNCwyLCJ1Il0sWzUsMiwiXFxnYW1tYSJdLFswLDEsIkUiXSxbMCwyLCJGIiwyXSxbMiwxLCJUIiwyXSxbNyw4LCJ1Il0sWzExLDksIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw5LCJcXHNpbWVxIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEwLDExLCLkuIDlr77kuIDlr77lv5wiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzEwLDUsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsMTQsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJ0YXJnZXQiOmZhbHNlfX1dXQ==
+
+$\mathbf{C}$の各要素について自然変換を書き下すと次の通りだ。
+
+[![](https://storage.googleapis.com/zenn-user-upload/60d2f3d60c1e-20250315.png)](https://q.uiver.app/#q=WzAsMTcsWzMsMCwiXFxtYXRoYmZ7U2V0fV57XFxtYXRoYmZ7Q31eXFxtYXRocm17b3B9fSJdLFszLDEsIlxcaG9tX0QoRihcXF8pLCBEKSJdLFszLDIsIlxcaG9tX1UoRShcXF8pLCBVKSJdLFswLDEsIlxcbWF0aGJme0R9Il0sWzEsMSwiRihDKSJdLFsyLDEsIkQiXSxbMSwyLCJFKEMpIl0sWzIsMiwiVSJdLFswLDIsIlxcbWF0aGJme1V9Il0sWzAsMywiXFxtYXRoYmZ7Q30iXSxbMSwzLCJDIl0sWzIsMywiQyciXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzQsMSwiXFxob21fRChGKEMpLCBEKSJdLFs0LDIsIlxcaG9tX1UoRShDKSwgVSkiXSxbNSwxLCJcXGhvbV9EKEYoQycpLCBEKSJdLFs1LDIsIlxcaG9tX1UoRShDJyksIFUpIl0sWzQsNV0sWzEsMiwiXFxnYW1tYSJdLFsxNSwxMywiXFxob21fRChGKGMpLCBEKSIsMl0sWzE2LDE0LCJcXGhvbV9VKEUoYyksIFUpIl0sWzEzLDE2LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMywxNCwiXFxnYW1tYV9DIiwyXSxbMTUsMTYsIlxcZ2FtbWFfe0MnfSJdLFsxMCwxMSwiYyJdLFs2LDddXQ==)
+
 ## 元ネタ
 
-例によって元ネタはalg-dさんの動画だ。
+元ネタはalg-dさんの動画です。
 
 https://www.youtube.com/watch?v=kgoaLnlYr1Y&t=582s
