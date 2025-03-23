@@ -110,20 +110,20 @@ yonedaMap tau = tau id
 yonedaMap' :: Functor f => f a -> (forall x. (a -> x) -> f x)
 yonedaMap' a = \f -> fmap f a
 
-coyonedaMap :: (forall x. (x -> a) -> f x) -> f a
-coyonedaMap tau = tau id
+contrayonedaMap :: (forall x. (x -> a) -> f x) -> f a
+contrayonedaMap tau = tau id
 
-coyonedaMap' :: Contravariant f => f a -> (forall x. (x -> a) -> f x)
-coyonedaMap' a = \f -> contramap f a
+contrayonedaMap' :: Contravariant f => f a -> (forall x. (x -> a) -> f x)
+contrayonedaMap' a = \f -> contramap f a
 ```
 
-https://play.haskell.org/saved/a4gbhdpa
+https://play.haskell.org/saved/R4ovaKvY
 
-適当な関手`Hom`, `Cohom`と自然変換を実装すれば、より圏論の表記に近づけた実装もできる。
+適当な関手`Hom`, `Contrahom`と自然変換を実装すれば、より圏論の表記に近づけた実装もできる。
 
 ```Haskell
 newtype Hom a x = Hom (a -> x)
-newtype Cohom a x = Cohom (x -> a)
+newtype Contrahom a x = Contrahom (x -> a)
 type f ~> g = forall a. f a -> g a
 
 yonedaMap :: (Hom a ~> f) -> f a
@@ -132,11 +132,11 @@ yonedaMap tau = tau (Hom id)
 yonedaMap' :: Functor f => f a -> (Hom a ~> f)
 yonedaMap' a = \(Hom f) -> fmap f a
 
-coyonedaMap :: (Cohom a ~> f) -> f a
-coyonedaMap tau = tau (Cohom id)
+contrayonedaMap :: (Contrahom a ~> f) -> f a
+contrayonedaMap tau = tau (Contrahom id)
 
-coyonedaMap' :: Contravariant f => f a -> (Cohom a ~> f)
-coyonedaMap' a = \(Cohom f) -> contramap f a
+contrayonedaMap' :: Contravariant f => f a -> (Contrahom a ~> f)
+contrayonedaMap' a = \(Contrahom f) -> contramap f a
 ```
 
-https://play.haskell.org/saved/DQDNx0fn
+https://play.haskell.org/saved/EDjwLqf4
