@@ -48,6 +48,7 @@ chapters:
   - category-of-small-categories
   - comma-category
   - variants-of-comma-category
+  - comma-category-meets-ump
   - slice-category
   - hom-functor
   - theorems-on-hom-functors
