@@ -42,7 +42,7 @@ chapters:
   - monic-and-epic-morphisms
   - equaliser
   - coequaliser
-  - complete
+  - complete-category
   - adjunction-ump
   - opposite-functors
   - category-of-small-categories
