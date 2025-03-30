@@ -5,7 +5,7 @@ free: false
 
 ## 定理
 
-$G : \mathbf{C} \to \mathbf{D}$ の $F : \mathbf{1} \to \mathbf{D}$ に沿った右Kan拡張が存在するとき、圏$\mathbf{D}$において$G$の極限$\lang \varprojlim_{c \in \mathbf{C}} G(C), \eta \rang$が存在する。
+$G : \mathbf{C} \to \mathbf{D}$ の $F : \mathbf{C} \to \mathbf{D}$ に沿った右Kan拡張が存在するとき、圏$\mathbf{D}$において$G$の極限$\lang \varprojlim_{c \in \mathbf{C}} G(C), \eta \rang$が存在する。
 
 [![](https://storage.googleapis.com/zenn-user-upload/ecf0a4f8b1f5-20250303.png)](https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzAsMSwiXFxtYXRoYmZ7Q30iXSxbMSwyLCJcXG1hdGhiZntEfSJdLFswLDIsIlxcbWF0aGJmezF9Il0sWzEsMiwiRyJdLFsxLDMsIkYiLDJdLFszLDIsIlIiLDJdLFs2LDQsIlxcZXRhIiwwLHsib2Zmc2V0IjotMiwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfSwiZWRnZV9hbGlnbm1lbnQiOnsic291cmNlIjpmYWxzZSwidGFyZ2V0IjpmYWxzZX19XV0=)
 
