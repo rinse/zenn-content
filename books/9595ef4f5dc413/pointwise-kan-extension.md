@@ -3,71 +3,81 @@ title: "各点Kan拡張"
 free: false
 ---
 
-## アイデア
+## 定義
 
-$G$の$F$に沿った左Kan拡張$\lang L, \eta \rang$を考える。
+$G$の$F$に沿った左Kan拡張$\lang \mathrm{Lan}_F G, \eta \rang$を考える。
 
-[![](https://storage.googleapis.com/zenn-user-upload/c61ea4cc1504-20250305.png)](https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzAsMSwiXFxtYXRoYmZ7QX0iXSxbMCwyLCJcXG1hdGhiZntCfSJdLFsxLDIsIlxcbWF0aGJme0N9Il0sWzEsMiwiRiIsMl0sWzIsMywiTCIsMl0sWzEsMywiRyJdLFs2LDUsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d)
+[![](https://storage.googleapis.com/zenn-user-upload/2a173fad0cec-20250329.png)](https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzAsMSwiXFxtYXRoYmZ7QX0iXSxbMCwyLCJcXG1hdGhiZntCfSJdLFsxLDIsIlxcbWF0aGJme0N9Il0sWzEsMiwiRiIsMl0sWzIsMywiXFxtYXRocm17TGFufV9GIEciLDJdLFsxLDMsIkciXSxbNiw1LCJcXGV0YSIsMix7Im9mZnNldCI6Miwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
 
-このとき、関手$L$とは実際のところ、どういう関手なのだろうか？
-特に、$\mathbf{B}$の対象$B$を写した$L(B)$は、圏$\mathbf{C}$ではどのような性質を持つ対象なのだろうか。
+余域の圏$\mathbf{C}$が余極限を持つ場合、圏$\mathbf{B}$の各対象（点）ごとにKan拡張を構成できる。
 
-圏$\mathbf{B}$のある対象$B$に注目するために、$\tilde B(\ast) = B$であるような関手$\tilde B : \mathbf{1} \to \mathbf{B}$を考える。
-（これは対象の関手への[格上げ](./elevation)である）
+すなわち圏$\mathbf{B}$の各対象$B$について、これを[格上げ](./elevation)した関手$\tilde B$と関手$F$とのコンマ圏$F \downarrow \tilde B$を考える。
+このとき関手$(\mathrm{Lan}_F G) \circ \tilde B : \mathbf{1} \to \mathbf{C}$は$G \circ P_0$ の $P_1$ に沿った左Kan拡張$\mathrm{Lan}_{P_1} (G \circ P_0)$である。
 
-そうすると、[関手の上方から成る圏](./variants-of-comma-category.md#関手の上方の対象から成る圏) $F \downarrow B$ （あるいは同じことだがコンマ圏 $F \downarrow \tilde B$）、忘却関手$U : F \downarrow B \to \mathbf{A}$、小さい圏の圏の終対象$\mathbf{1}$への射である関手$T$が存在するから、下のように図に書き加えられる。
+なお自然変換$\phi : F \circ P_0 \Rightarrow \tilde B \circ P_1$は[コンマ圏の普遍性](./comma-category-meets-ump)で導入されるもので、 $\phi_{\lang A, \ast, f \rang} \mapsto f: F(A) \to B$ である。
 
-[![](https://storage.googleapis.com/zenn-user-upload/26a2052481c7-20250305.png)](https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntCfSJdLFsyLDIsIlxcbWF0aGJme0N9Il0sWzAsMSwiRiBcXGRvd25hcnJvdyBCIl0sWzAsMiwiXFxtYXRoYmZ7MX0iXSxbMSwyLCJGIiwyXSxbMiwzLCJMIiwyXSxbMSwzLCJHIl0sWzQsNSwiVCIsMl0sWzQsMSwiVSJdLFs1LDIsIlxcdGlsZGUgQiIsMl0sWzgsNywiXFxldGEiLDIseyJvZmZzZXQiOjIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=)
+[![](https://storage.googleapis.com/zenn-user-upload/433d5e7ea239-20250330.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntCfSJdLFsyLDIsIlxcbWF0aGJme0N9Il0sWzAsMSwiRiBcXGRvd25hcnJvdyBcXHRpbGRlIEIiXSxbMCwyLCJcXG1hdGhiZnsxfSJdLFszLDEsIkYgXFxkb3duYXJyb3cgXFx0aWxkZSBCIl0sWzUsMiwiXFxtYXRoYmZ7Q30iXSxbMywyLCJcXG1hdGhiZnsxfSJdLFsxLDIsIkYiLDJdLFsyLDMsIlxcbWF0aHJte0xhbn1fRiBHIiwyXSxbMSwzLCJHIl0sWzQsNSwiUF8xIiwyXSxbNCwxLCJQXzAiXSxbNSwyLCJcXHRpbGRlIEIiLDJdLFsxLDUsIlxccGhpIiwyLHsibGV2ZWwiOjJ9XSxbOCw3LCJcXG1hdGhybXtMYW59X3tQXzF9IChHIFxcY2lyYyBQXzApIiwyXSxbNiw3LCJHIFxcY2lyYyBQXzAiXSxbNiw4LCJQXzEiLDJdLFsxMSwxMCwiXFxldGEiLDIseyJvZmZzZXQiOjIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbMTcsMTYsIlxcZXRhJyIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sImVkZ2VfYWxpZ25tZW50Ijp7InNvdXJjZSI6ZmFsc2UsInRhcmdldCI6ZmFsc2V9fV1d)
 
-（ちなみにコンマ圏$F \downarrow B$は次のような圏である）
+このようにして構成されるKan拡張を備えているKan拡張は、各点Kan拡張 (*Pointwise kan extension*) と呼ばれる。
 
-[![](https://storage.googleapis.com/zenn-user-upload/d6acf406a6e6-20250305.png)](https://q.uiver.app/#q=WzAsMTUsWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFsxLDEsIlxcbWF0aGJme0F9Il0sWzIsMSwiXFxtYXRoYmZ7Qn0iXSxbMCwxLCJGIFxcZG93bmFycm93IEIiXSxbNCwxLCJcXG1hdGhiZnsxfSJdLFswLDIsIlxcbGFuZyBBLCBmIFxccmFuZyJdLFswLDMsIlxcbGFuZyBBJywgZicgXFxyYW5nIl0sWzEsMiwiQSJdLFsxLDMsIkEnIl0sWzIsMiwiRihBKSJdLFszLDIsIlxcdGlsZGUgQihcXGFzdCkiXSxbMywzLCJcXHRpbGRlIEIoXFxhc3QpIl0sWzIsMywiRihBJykiXSxbNCwyLCJcXGFzdCJdLFs0LDMsIlxcYXN0Il0sWzEsMiwiRiJdLFszLDEsIlUiXSxbNCwyLCJcXHRpbGRlIEIiLDJdLFs1LDYsImEiLDJdLFs3LDgsImEiLDJdLFs5LDEwLCJmIl0sWzEwLDExLCJcXHRpbGRlIEIoXFxtYXRocm17aWR9X1xcYXN0KSJdLFs5LDEyLCJGKGEpIiwyXSxbMTIsMTEsImYnIiwyXSxbMTMsMTQsIlxcbWF0aHJte2lkfV9cXGFzdCJdLFs5LDExLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+## 定理1
 
-そうすると、もう少し大きな三角形が見えるようになる。
-もしこの三角形について、$T$に沿った$G \circ U$の左Kan拡張$\lang L \circ \tilde B, \sigma \rang$が存在した場合、$L(\tilde B(\ast))$は圏$\mathbf{C}$における余極限に一致する。（[極限はKan拡張である](./kan-extension-limit)）
-
-[格上げ](./elevation)の定義より$\tilde B(\ast) = B$であるため、つまるところ$L(B)$とは、（この三角形が左Kan拡張である場合）$\mathbf{C}$において余極限であることになる。
-
-[![](https://storage.googleapis.com/zenn-user-upload/c7dfd9fd7ece-20250305.png)](https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMiwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGIFxcZG93bmFycm93IEIiXSxbMCwyLCJcXG1hdGhiZnsxfSJdLFsyLDMsIlQiLDJdLFsyLDEsIkcgXFxjaXJjIFUiXSxbMywxLCJMIFxcY2lyYyBcXHRpbGRlIEIiLDJdLFs1LDYsIlxcc2lnbWEiLDIseyJvZmZzZXQiOjIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=)
-
-## 定理
-
-任意の$B \in \mathrm{ob}(\mathbf{B})$について余極限$\varinjlim G \circ U$が存在する場合、
-左Kan拡張$\lang L, \eta \rang$が存在して、$L(B) \simeq \varinjlim G \circ U$となる。
-
-また$\mathbf{C}$が[余完備](./complete)であれば、$\lang L, \eta \rang$は存在する。（正確には$\mathbf{A}$が小圏で$\mathbf{B}$が局所的に小さい圏でなければならないらしい）
-
-[![](https://storage.googleapis.com/zenn-user-upload/26a2052481c7-20250305.png)](https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntCfSJdLFsyLDIsIlxcbWF0aGJme0N9Il0sWzAsMSwiRiBcXGRvd25hcnJvdyBCIl0sWzAsMiwiXFxtYXRoYmZ7MX0iXSxbMSwyLCJGIiwyXSxbMiwzLCJMIiwyXSxbMSwzLCJHIl0sWzQsNSwiVCIsMl0sWzQsMSwiVSJdLFs1LDIsIlxcdGlsZGUgQiIsMl0sWzgsNywiXFxldGEiLDIseyJvZmZzZXQiOjIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=)
+$\mathrm{Lan}_F G$が各点Kan拡張であるとき、任意の対象$B \in \mathrm{ob}(\mathbf{B})$について$(\mathrm{Lan}_F G)(B)$は圏$\mathbf{C}$における余極限である。
 
 ### 証明
 
-TODO
+仮定より、$\mathrm{Lan}_F G$が各点Kan拡張であるから、各対象$B \in \mathrm{ob}(\mathbf{B})$について、左Kan拡張$\mathrm{Lan}_{P_1} (G \circ P_0)$が存在する。
+このとき、[極限はKan拡張である](./kan-extension-limit)から、余極限 $\varinjlim (G \circ P_0)$ が存在する。
+
+この余極限は、次の可換図式を$P_1(A) = P_1(B) = \ast$によって括って三角形にして得られる。
+
+[![](https://storage.googleapis.com/zenn-user-upload/497fcaa77b81-20250330.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFswLDEsIkYgXFxkb3duYXJyb3cgXFx0aWxkZSBCIl0sWzAsMiwiXFxtYXRoYmZ7MX0iXSxbMSwyLCJcXG1hdGhiZntEfSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzUsMSwiXFxtYXRocm17TGFufV97UF8xfSAoRyBcXGNpcmMgUF8wKShcXGFzdCkiXSxbNCwyLCIoRyBcXGNpcmMgUF8wKShBKSJdLFs2LDIsIihHIFxcY2lyYyBQXzApKEIpIl0sWzUsMCwiUyhcXGFzdCkiXSxbMiwxLCJcXG1hdGhybXtMYW59X3tQXzF9KEcgXFxjaXJjIFBfMCkoUF8xKEEpKSJdLFszLDEsIlxcbWF0aHJte0xhbn1fe1BfMX0oRyBcXGNpcmMgUF8wKShQXzEoQikpIl0sWzIsMiwiKEcgXFxjaXJjIFBfMCkoQSkiXSxbMywyLCIoRyBcXGNpcmMgUF8wKShCKSJdLFsxLDIsIlBfMSIsMl0sWzIsMywiXFxtYXRocm17TGFufV97UF8wfSAoRyBcXGNpcmMgUF8wKSIsMl0sWzEsMywiRyBcXGNpcmMgUF8wIl0sWzYsNywiKEcgXFxjaXJjIFBfMCkoZikiLDJdLFs2LDUsIlxcZXRhX0EiXSxbNyw1LCJcXGV0YV9CIiwyXSxbNiw3LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7Im9mZnNldCI6LTUsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDgsImgiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNiw4LCJcXGVwc2lsb25fQSIsMCx7ImN1cnZlIjotMX1dLFs3LDgsIlxcZXBzaWxvbl9CIiwyLHsiY3VydmUiOjF9XSxbMTEsMTIsIihHIFxcY2lyYyBQXzApKGYpIiwyXSxbMTIsMTAsIlxcZXRhX0IiLDJdLFs5LDEwLCJcXG1hdGhybXtMYW59X3tQXzF9KEcgXFxjaXJjIFBfMCkoUF8xKGYpKSIsMCx7Im9mZnNldCI6LTJ9XSxbMTEsMTAsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzExLDksIlxcZXRhX0EiXSxbMTUsMTQsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJzb3VyY2UiOmZhbHNlLCJ0YXJnZXQiOmZhbHNlfX1dXQ==)
+
+普遍性の条件も足して、次のような形の余極限になる。
+
+[![](https://storage.googleapis.com/zenn-user-upload/cfcaf726279a-20250330.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFswLDEsIkYgXFxkb3duYXJyb3cgXFx0aWxkZSBCIl0sWzAsMiwiXFxtYXRoYmZ7MX0iXSxbMSwyLCJcXG1hdGhiZntEfSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzUsMSwiXFxtYXRocm17TGFufV97UF8xfSAoRyBcXGNpcmMgUF8wKShcXGFzdCkiXSxbNCwyLCIoRyBcXGNpcmMgUF8wKShBKSJdLFs2LDIsIihHIFxcY2lyYyBQXzApKEIpIl0sWzUsMCwiUyhcXGFzdCkiXSxbMiwxLCJcXG1hdGhybXtMYW59X3tQXzF9KEcgXFxjaXJjIFBfMCkoUF8xKEEpKSJdLFszLDEsIlxcbWF0aHJte0xhbn1fe1BfMX0oRyBcXGNpcmMgUF8wKShQXzEoQikpIl0sWzIsMiwiKEcgXFxjaXJjIFBfMCkoQSkiXSxbMywyLCIoRyBcXGNpcmMgUF8wKShCKSJdLFsxLDIsIlBfMSIsMl0sWzIsMywiXFxtYXRocm17TGFufV97UF8wfSAoRyBcXGNpcmMgUF8wKSIsMl0sWzEsMywiRyBcXGNpcmMgUF8wIl0sWzYsNywiKEcgXFxjaXJjIFBfMCkoZikiLDJdLFs2LDUsIlxcZXRhX0EiXSxbNyw1LCJcXGV0YV9CIiwyXSxbNiw3LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7Im9mZnNldCI6LTUsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDgsImgiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNiw4LCJcXGVwc2lsb25fQSIsMCx7ImN1cnZlIjotMX1dLFs3LDgsIlxcZXBzaWxvbl9CIiwyLHsiY3VydmUiOjF9XSxbMTEsMTIsIihHIFxcY2lyYyBQXzApKGYpIiwyXSxbMTIsMTAsIlxcZXRhX0IiLDJdLFs5LDEwLCJcXG1hdGhybXtMYW59X3tQXzF9KEcgXFxjaXJjIFBfMCkoUF8xKGYpKSIsMCx7Im9mZnNldCI6LTJ9XSxbMTEsMTAsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzExLDksIlxcZXRhX0EiXSxbMTUsMTQsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJzb3VyY2UiOmZhbHNlLCJ0YXJnZXQiOmZhbHNlfX1dXQ==)
+
+よって$\mathrm{Lan}_{P_1}(G \circ P_0)(\ast)$は余極限$\varinjlim(G \circ P_0)$である。
+
+ここで$\mathrm{Lan}_{P_1}(G \circ P_0) \simeq (\mathrm{Lan}_F G) \circ \tilde B$であるから、以下が成り立つ。
+
+$$
+\begin{aligned}
+\mathrm{Lan}_{P_1}(G \circ P_0)(\ast) & \simeq (\mathrm{Lan}_F G) (\tilde B(\ast)) \\
+ & \simeq (\mathrm{Lan}_F G)(B)
+\end{aligned}
+$$
+
+よって$(\mathrm{Lan}_F G) (B)$は余極限$\varinjlim(G \circ P_0)$である。
 
 ## 定理2
 
-$\lang T, \eta \rang$が$F$に沿った$E$の各点左Kan拡張であると仮定する。
-このとき、$D \in \mathrm{ob}(\mathbf{D})$, $U \in \mathrm{ob}(\mathbf{U})$ について自然に以下の等式が成り立つ。
+$\mathbf{A}$が小さい圏であって$\mathbf{C}$が有限完備ならば、圏$\mathbf{C}$は局所小圏であって、関手$G : \mathbf{A} \to \mathbf{C}$の各点右Kan拡張$\mathrm{Ran}_F G : \mathbf{B} \to \mathbf{C}$が存在する。また$B \in \mathrm{ob}(\mathbf{B})$における$\mathrm{Ran}_F G$の値 $(\mathrm{Ran}_F G)(B)$ の値は、次の極限で与えられる。
 
 $$
-\hom_U(T(D), U) \simeq \hom_{\mathbf{Set}^{\mathbf{C}^\mathrm{op}}}(\hom_D(F(\_), D), \hom_U(E(\_), U))
+(\mathrm{Ran}_F G)(B) \simeq \varprojlim (G \circ P_0)
 $$
 
-すなわち以下の図式で$\lang T, \eta \rang$が$F$に沿った$E$の各点左Kan拡張だとする。
+[![](https://storage.googleapis.com/zenn-user-upload/9ba0c7d8b0af-20250330.png)](https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzEsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntCfSJdLFsyLDIsIlxcbWF0aGJme0N9Il0sWzAsMSwiRiBcXGRvd25hcnJvdyBcXHRpbGRlIEIiXSxbMCwyLCJcXG1hdGhiZnsxfSJdLFsxLDIsIkYiLDJdLFsyLDMsIlxcbWF0aHJte1Jhbn1fRiBHIiwyXSxbMSwzLCJHIl0sWzQsMSwiUF8wIl0sWzQsNSwiUF8xIiwyXSxbNSwyLCJcXHRpbGRlIEIiLDJdLFsxLDUsIlxccGhpIiwyLHsibGV2ZWwiOjJ9XSxbNyw4LCJcXGV0YSIsMCx7Im9mZnNldCI6LTIsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=)
 
-![](https://storage.googleapis.com/zenn-user-upload/1480812b022a-20250314.png)
+## 定理3
 
-すると、圏$U$における射と、圏$\mathbf{C}^\mathrm{op}$から圏$\mathbf{Set}$への反変関手$\hom_D(F(\_), D)$から$\hom_U(E(\_), U)$への自然変換との間に、一対一対応が存在する。
+任意の$B \in \mathrm{ob}(\mathbf{B})$に対して$\varinjlim_{j \in F \downarrow \tilde B}(G \circ P_0)$が存在するとき、$\mathrm{Lan}_F G$が存在して、$(\mathrm{Lan}_F G)(B) \simeq \varinjlim_{j \in F \downarrow \tilde B}(G \circ P_0)$を満たす。
 
-![](https://storage.googleapis.com/zenn-user-upload/d084fcf00837-20250314.png)
+[![](https://storage.googleapis.com/zenn-user-upload/2f8d2e1d1e2c-20250330.png)](https://q.uiver.app/#q=WzAsNixbMSwxLCJcXG1hdGhiZntBfSJdLFsxLDIsIlxcbWF0aGJme0J9Il0sWzIsMiwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJGIFxcZG93bmFycm93IFxcdGlsZGUgQiJdLFswLDIsIlxcbWF0aGJmezF9Il0sWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFswLDEsIkYiLDJdLFswLDIsIkciXSxbMyw0LCJQXzEiLDJdLFs0LDEsIlxcdGlsZGUgQiIsMl0sWzMsMCwiUF8wIl0sWzAsNCwiXFxwaGkiLDIseyJsZXZlbCI6Mn1dXQ==)
 
-https://q.uiver.app/#q=WzAsMTIsWzAsMSwiXFxtYXRoYmZ7Q30iXSxbMSwyLCJcXG1hdGhiZntVfSJdLFswLDIsIlxcbWF0aGJme0R9Il0sWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbNCwxLCJcXGhvbV9VKFQoRCksIFUpIl0sWzIsMCwiXFxtYXRoYmZ7VX0iXSxbMiwxLCJUKEQpIl0sWzMsMSwiVSJdLFs1LDEsIlxcaG9tX3tcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH19fShcXGhvbV9EKEYoXFxfKSwgRCksIFxcaG9tX1UoRShcXF8pLCBVKSkiXSxbNCwyLCJ1Il0sWzUsMiwiXFxnYW1tYSJdLFswLDEsIkUiXSxbMCwyLCJGIiwyXSxbMiwxLCJUIiwyXSxbNyw4LCJ1Il0sWzExLDksIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw5LCJcXHNpbWVxIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEwLDExLCLkuIDlr77kuIDlr77lv5wiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzEwLDUsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsMTQsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJ0YXJnZXQiOmZhbHNlfX1dXQ==
+## 定理4
 
-$\mathbf{C}$の各要素について自然変換を書き下すと次の通りだ。
+$F$に沿った$G$の各点左Kan拡張$\mathrm{Lan}_F G$が存在するとき、$B \in \mathrm{ob}(\mathbf{B})$, $C \in \mathrm{ob}(\mathbf{C})$ について自然に以下の等式が成り立つ。
 
-[![](https://storage.googleapis.com/zenn-user-upload/60d2f3d60c1e-20250315.png)](https://q.uiver.app/#q=WzAsMTcsWzMsMCwiXFxtYXRoYmZ7U2V0fV57XFxtYXRoYmZ7Q31eXFxtYXRocm17b3B9fSJdLFszLDEsIlxcaG9tX0QoRihcXF8pLCBEKSJdLFszLDIsIlxcaG9tX1UoRShcXF8pLCBVKSJdLFswLDEsIlxcbWF0aGJme0R9Il0sWzEsMSwiRihDKSJdLFsyLDEsIkQiXSxbMSwyLCJFKEMpIl0sWzIsMiwiVSJdLFswLDIsIlxcbWF0aGJme1V9Il0sWzAsMywiXFxtYXRoYmZ7Q30iXSxbMSwzLCJDIl0sWzIsMywiQyciXSxbNCwwLCJcXG1hdGhiZntTZXR9Il0sWzQsMSwiXFxob21fRChGKEMpLCBEKSJdLFs0LDIsIlxcaG9tX1UoRShDKSwgVSkiXSxbNSwxLCJcXGhvbV9EKEYoQycpLCBEKSJdLFs1LDIsIlxcaG9tX1UoRShDJyksIFUpIl0sWzQsNV0sWzEsMiwiXFxnYW1tYSJdLFsxNSwxMywiXFxob21fRChGKGMpLCBEKSIsMl0sWzE2LDE0LCJcXGhvbV9VKEUoYyksIFUpIl0sWzEzLDE2LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMywxNCwiXFxnYW1tYV9DIiwyXSxbMTUsMTYsIlxcZ2FtbWFfe0MnfSJdLFsxMCwxMSwiYyJdLFs2LDddXQ==)
+$$
+\hom_C((\mathrm{Lan}_F G)(B), C) \simeq \hom_{\mathbf{Set}^{\mathbf{A}^\mathrm{op}}}(\hom_B(F(\_), B), \hom_C(G(\_), C))
+$$
 
-## 元ネタ
+すなわち以下の図式で$\lang \mathrm{Lan}_F G, \eta \rang$が$F$に沿った$G$の各点左Kan拡張だとする。
 
-元ネタはalg-dさんの動画です。
+[![](https://storage.googleapis.com/zenn-user-upload/2a173fad0cec-20250329.png)](https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhiZntDYXR9Il0sWzAsMSwiXFxtYXRoYmZ7QX0iXSxbMCwyLCJcXG1hdGhiZntCfSJdLFsxLDIsIlxcbWF0aGJme0N9Il0sWzEsMiwiRiIsMl0sWzIsMywiXFxtYXRocm17TGFufV9GIEciLDJdLFsxLDMsIkciXSxbNiw1LCJcXGV0YSIsMix7Im9mZnNldCI6Miwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
 
-https://www.youtube.com/watch?v=kgoaLnlYr1Y&t=582s
+すると、圏$C$における射と、圏$\mathbf{C}^\mathrm{op}$から圏$\mathbf{Set}$への反変関手$\hom_D(F(\_), D)$から$\hom_U(E(\_), U)$への自然変換との間に、一対一対応が存在する。
+
+[![](https://storage.googleapis.com/zenn-user-upload/f33efa2c5fcd-20250330.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMSwiXFxtYXRoYmZ7QX0iXSxbMSwyLCJcXG1hdGhiZntDfSJdLFswLDIsIlxcbWF0aGJme0J9Il0sWzAsMCwiXFxtYXRoYmZ7Q2F0fSJdLFs0LDAsIlxcbWF0aGJme1NldH0iXSxbNCwxLCJcXGhvbV9DKChcXG1hdGhybXtMYW59X0YgRykoQiksIEMpIl0sWzIsMCwiXFxtYXRoYmZ7Q30iXSxbMiwxLCIoXFxtYXRocm17TGFufV9GIEcpKEIpIl0sWzIsMiwiQyJdLFs0LDIsIlxcaG9tX3tcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH19fShcXGhvbV9CKEYoXFxfKSwgQiksIFxcaG9tX0MoRyhcXF8pLCBDKSkiXSxbMywwLCJcXG1hdGhiZntTZXR9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH19Il0sWzMsMSwiXFxob21fQihGKFxcXyksIEIpIl0sWzMsMiwiXFxob21fQyhHKFxcXyksICBDKSJdLFswLDEsIkciXSxbMCwyLCJGIiwyXSxbMiwxLCJcXG1hdGhybXtMYW59X0YgRyIsMl0sWzcsOCwiYyJdLFsxMSwxMiwiXFx0aGV0YSJdLFs1LDksIlxcc2ltZXEiXSxbMTMsMTUsIlxcZXRhIiwyLHsib2Zmc2V0IjoyLCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJ0YXJnZXQiOmZhbHNlfX1dXQ==)
