@@ -75,6 +75,7 @@ chapters:
   - kan-extension-limit
   - functor-commutes-with-kan-extension
   - absolute-kan-extension
+  - kan-extension-adjunction
   - pointwise-kan-extension
   - yoneda-extension
   - kan-extension-of-yoneda-embedding
