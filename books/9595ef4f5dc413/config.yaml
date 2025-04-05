@@ -78,6 +78,7 @@ chapters:
   - pointwise-kan-extension
   - yoneda-extension
   - kan-extension-of-yoneda-embedding
+  - nerve-and-realization
   - dinatural-transformation
   - end
   - haskell
