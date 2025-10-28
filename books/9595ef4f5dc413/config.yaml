@@ -33,6 +33,7 @@ chapters:
   - adjunction-unit-counit
   - universal-mapping-property
   - product
+  - ump-induces-functor
   - diagram-and-index-category
   - category-of-functors
   - constant-functors
