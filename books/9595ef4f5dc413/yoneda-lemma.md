@@ -3,7 +3,16 @@ title: "米田の補題"
 free: false
 ---
 
-米田の補題(*Yoneda lemma*)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定した$\hom$関手から関手$F: \mathbf{C} \to \mathbf{Set}$への自然変換と集合$F(A)$とが同型であるという定理である。
+米田の補題(*Yoneda lemma*)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定した$\hom$関手から集合値関手$F: \mathbf{C} \to \mathbf{Set}$または$F : \mathbf{C}^\mathrm{op} \to \mathbf{Set}$への自然変換と集合$F(A)$とが同型であるという定理である。
+
+$F$として反変関手を取ったものは、$C$の反対圏を取れば全く同じ議論ができるため、同様に米田の補題として扱う。
+
+$$
+\begin{aligned}
+\hom_{\mathbf{Set}^\mathbf C}(\hom_\mathbf C(A, \_), F) &\simeq F(A) \\
+\hom_{\mathbf{Set}^\mathbf{C^{\mathrm{op}}}}(\hom_\mathbf C(\_, A), F) &\simeq F(A) \\
+\end{aligned}
+$$
 
 ## 定義
 
