@@ -55,6 +55,12 @@ $H^- \simeq H_-$であるため、この関手$H_-: \mathbf{C} \to \mathbf{Set}^
 
 ## 表記
 
-米田埋め込みは、$Y$や$よ$（ひらがな！）と書かれることがある。
+米田埋め込みは、$Y$, $y$, $よ$（ひらがな！）などと書かれることがある。
 
 https://ncatlab.org/nlab/show/Yoneda+embedding#ReferencesNotation
+
+例えば次のような具合だ。
+
+$$
+y(A) : \mathbf C^\mathrm{op} \to \mathbf{Set}
+$$
