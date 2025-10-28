@@ -45,6 +45,12 @@ https://q.uiver.app/#q=WzAsOSxbMSwwLCJcXG1hdGhiZiBDIl0sWzQsMCwiXFxtYXRoYmYgQyBcX
 
 よって確かに、対角関手$\Delta: \mathbf C \to \mathbf C \times \mathbf C$から$\mathbf C \times \mathbf C$の対象$(X_1$, $X_2)$への普遍射は積を表している。
 
+## 余積
+
+積の双対を余積(*Coproduct*)と呼ぶ。
+
+[![](https://storage.googleapis.com/zenn-user-upload/984115edc421-20251029.png)](https://q.uiver.app/#q=WzAsNCxbMSwxLCJBICsgQiJdLFswLDEsIkEiXSxbMiwxLCJCIl0sWzEsMCwiWCJdLFsxLDAsInBfMCIsMl0sWzIsMCwicF8xIl0sWzAsMywiaCIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDMsInFfMSIsMl0sWzEsMywicV8wIl1d)
+
 ## Haskellでの積
 
 Haskellで積を書いてみよう。

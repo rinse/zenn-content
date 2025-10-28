@@ -9,7 +9,7 @@ free: false
 
 ## 定義
 
-$D: \mathbf J \to \mathbf C$をCにおける図式とすると、$D$への錐とは、$\mathbf J$の対象をすべて$\mathbf C$の対象$N$に写し、$\mathbf J$の射をすべて$\mathrm{id}_N$に写す定関手$\Delta_N: \mathbf J \to \mathbf C$から図式$D$への自然変換$\epsilon: \Delta_N \Rightarrow D$としてあらわされる。
+$D: \mathbf J \to \mathbf C$をCにおける図式とすると、$D$への錐(*Cone*)とは、$\mathbf J$の対象をすべて$\mathbf C$の対象$N$に写し、$\mathbf J$の射をすべて$\mathrm{id}_N$に写す定関手$\Delta_N: \mathbf J \to \mathbf C$から図式$D$への自然変換$\epsilon: \Delta_N \Rightarrow D$としてあらわされる。
 
 [![redundant_cone](https://storage.googleapis.com/zenn-user-upload/aad39b1ad3a4-20250216.png)](https://q.uiver.app/#q=WzAsOCxbMywwLCJcXG1hdGhiZiBDIl0sWzIsMSwiXFxEZWx0YV9OKEEpIl0sWzIsMiwiRChBKSJdLFs0LDIsIkQoQikiXSxbMCwwLCJcXG1hdGhiZiBKIl0sWzAsMSwiQSJdLFsxLDEsIkIiXSxbNCwxLCJcXERlbHRhX04oQikiXSxbMiwzLCJEKGYpIiwyXSxbMSwyLCJcXGVwc2lsb25fQSIsMl0sWzUsNiwiZiJdLFs3LDMsIlxcZXBzaWxvbl9CIl0sWzEsNywiXFxEZWx0YV9OKGYpPWlkX04iXSxbMSwzLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
 
@@ -22,6 +22,10 @@ $D: \mathbf J \to \mathbf C$をCにおける図式とすると、$D$への錐と
 $D$の極限とは、$D$への錐$(L, \eta)$であって、任意の錐の対象$N$に対して一意な仲介射(*Mediating morphism*)$u: N \to L$が存在して、$\mathbf J$の任意の対象$X$に対して$\epsilon_X = \eta_X \circ u$を満たすものである。
 
 [![limit](https://storage.googleapis.com/zenn-user-upload/bd97da2f588d-20250216.png)](https://q.uiver.app/#q=WzAsOCxbMywwLCJcXG1hdGhiZiBDIl0sWzIsMywiRChBKSJdLFs0LDMsIkQoQikiXSxbMCwwLCJcXG1hdGhiZiBKIl0sWzAsMSwiQSJdLFsxLDEsIkIiXSxbMywyLCJMIl0sWzMsMSwiTiJdLFsxLDIsIkQoZikiLDJdLFs0LDUsImYiXSxbNiwyLCJcXGV0YV9CIiwxXSxbNiwxLCJcXGV0YV9BIiwxXSxbNywxLCJcXGVwc2lsb25fQSIsMix7ImN1cnZlIjoxfV0sWzcsMiwiXFxlcHNpbG9uX0IiLDAseyJjdXJ2ZSI6LTF9XSxbNyw2LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEsMiwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJvZmZzZXQiOi01LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNywxLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs3LDIsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+このような$L$を、しばしば（$X$と$Y$の積を$X \times Y$と書いたように）図式$D$の極限として$\varprojlim_{j \in \mathbf J} D(j)$のように書く。
+
+![[](https://q.uiver.app/#q=WzAsOCxbMywwLCJcXG1hdGhiZiBDIl0sWzIsMywiRChBKSJdLFs0LDMsIkQoQikiXSxbMCwwLCJcXG1hdGhiZiBKIl0sWzAsMSwiQSJdLFsxLDEsIkIiXSxbMywyLCJcXHZhcnByb2psaW1fe2ogXFxpbiBcXG1hdGhiZiBKfSBEKGopIl0sWzMsMSwiTiJdLFsxLDIsIkQoZikiLDJdLFs0LDUsImYiXSxbNiwyLCJcXGV0YV9CIiwxXSxbNiwxLCJcXGV0YV9BIiwxXSxbNywxLCJcXGVwc2lsb25fQSIsMix7ImN1cnZlIjoxfV0sWzcsMiwiXFxlcHNpbG9uX0IiLDAseyJjdXJ2ZSI6LTF9XSxbNyw2LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEsMiwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJvZmZzZXQiOi01LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNywxLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs3LDIsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)](https://storage.googleapis.com/zenn-user-upload/5396585a0267-20251028.png)
 
 ## 普遍性を用いた定義
 
@@ -59,12 +63,21 @@ $D$の極限とは、$D$への錐$(L, \eta)$であって、任意の錐の対象
 
 図式$D: \mathbf 2 \to \mathbf C$は、圏$\mathbf C$の中から2つ対象を選ぶ関手であると捉えられるから、この図はまさに積を表しているといえる。
 
+## 余極限
+
+極限の双対を余極限と呼ぶ。
+
+すなわち、$D: \mathbf J \to \mathbf C$をCにおける図式とすると、$D$への余錐とは、組$\lang N, \epsilon \rang$であって任意の射$f : A \to B$について$\epsilon_A = \epsilon_B \circ D(f)$を満たすものである。
+余極限とは、余錐$\lang L, \eta \rang$であって、任意の余錐$\lang N, \epsilon \rang$について一意な射$h : L \to N$が存在して、任意の対象$A \in \mathrm{ob}(\mathbf J)$について$\epsilon_A = h \circ \eta_A$を満たすものである。
+
+余錐を構成する対象をしばしば$\varinjlim_{j \in \mathbf J}D(j)$と書く。
+
+[![](https://storage.googleapis.com/zenn-user-upload/5540725b790e-20251029.png)](https://q.uiver.app/#q=WzAsNCxbMSwxLCJcXHZhcmluamxpbV97aiBcXGluIFxcbWF0aGJmIEp9IEQoaikiXSxbMCwyLCJEKEEpIl0sWzIsMiwiRChCKSJdLFsxLDAsIk4iXSxbMSwyLCJEKGYpIiwyXSxbMSwwLCJcXGV0YV9BIiwxXSxbMiwwLCJcXGV0YV9CIiwxXSxbMSwyLCJcXGNpcmNsZWFycm93bGVmdCIsMCx7Im9mZnNldCI6LTMsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDMsImgiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiwzLCJcXGVwc2lsb25fQiIsMix7ImN1cnZlIjoxfV0sWzEsMywiXFxlcHNpbG9uX0EiLDAseyJjdXJ2ZSI6LTF9XV0=)
+
 ## 記法
 
-- 図式$F : \mathbf{J} \to \mathbf{C}$の極限$(L, \eta)$を$\varprojlim_{j \in \mathbf{J}} F_j$と書くことがある。
-    * この場合、図式$F : \mathbf{J} \to \mathbf{C}$の余極限を$\varinjlim_{j \in \mathbf{J}} F_j$と書く。
-- より簡潔に$\varprojlim{F_j}$や$\varprojlim{F}$と書くこともある。
-    * 同様に余極限を$\varinjlim{F_j}$や$\varinjlim F$と書く。
-- またこれらの記号を、そのまま極限の組$(L, \eta)$のうち対象$L$を示すのに使うことがある。
-    * すなわち$\varprojlim_{j \in \mathbf{J}} F_j \in \mathrm{ob}(\mathbf{C})$.
+- 記事中でも触れたが、図式$D : \mathbf{J} \to \mathbf{C}$の極限$(L, \eta)$のうち対象$L$をしばしば$\varprojlim_{j \in \mathbf{J}} D(j)$と書く。
+    * 図式$D : \mathbf{J} \to \mathbf{C}$の余極限を$\varinjlim_{j \in \mathbf{J}} D(j)$と書く。
+- より簡潔に$\varprojlim{D_j}$や$\varprojlim{D}$と書くこともある。
+    * 同様に余極限を$\varinjlim{D_j}$や$\varinjlim D$と書く。
 - 矢印の向きに注意。極限が左向きで、余極限が右向き。

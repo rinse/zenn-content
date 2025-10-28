@@ -17,6 +17,10 @@ free: false
 
 [![](https://storage.googleapis.com/zenn-user-upload/a740f4d04ee5-20250216.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMywyLCJFIl0sWzIsMywiRihBLCBBKSJdLFs0LDMsIkYoQiwgQikiXSxbMyw0LCJGKEEsIEIpIl0sWzMsMSwiVyJdLFs0LDYsIlxcZXRhX0IiLDFdLFs1LDcsIkYoXFxtYXRocm17aWR9X0EsIGYpIiwyXSxbNiw3LCJGKGYsIFxcbWF0aHJte2lkfV9CKSJdLFs0LDUsIlxcZXRhX0EiLDFdLFs0LDcsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMiwiZiJdLFs4LDUsIlxcZXBzaWxvbl9BIiwyLHsiY3VydmUiOjF9XSxbOCw0LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzgsNiwiXFxlcHNpbG9uX0IiLDAseyJjdXJ2ZSI6LTF9XSxbOCw1LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDYsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
+エンドを構成する対象をしばしばインテグラルを使って$\int_{c \in \mathbf{C}} F(c, c)$と書き表す。
+
+[![](https://storage.googleapis.com/zenn-user-upload/8affa21e25c0-20251029.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMywyLCJcXGludF97YyBcXGluIFxcbWF0aGJmIEN9RihjLCBjKSJdLFsyLDMsIkYoQSwgQSkiXSxbNCwzLCJGKEIsIEIpIl0sWzMsNCwiRihBLCBCKSJdLFszLDEsIlciXSxbNCw2LCJcXGV0YV9CIiwxXSxbNSw3LCJGKFxcbWF0aHJte2lkfV9BLCBmKSIsMl0sWzYsNywiRihmLCBcXG1hdGhybXtpZH1fQikiXSxbNCw1LCJcXGV0YV9BIiwxXSxbNCw3LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDIsImYiXSxbOCw1LCJcXGVwc2lsb25fQSIsMix7ImN1cnZlIjoxfV0sWzgsNCwidSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs4LDYsIlxcZXBzaWxvbl9CIiwwLHsiY3VydmUiOi0xfV1d)
+
 ## 普遍射
 
 エンドは、関手$\Delta : \mathbf{D} \to \mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$から対象$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to \mathbf{D}$への普遍射として定義できる。
@@ -29,7 +33,8 @@ free: false
 
 エンドの双対をコエンド (*coend*) と呼ぶ。
 
-![coend](https://storage.googleapis.com/zenn-user-upload/feb9bd0fd33b-20250217.png)
+[![](https://storage.googleapis.com/zenn-user-upload/7c0da1b0de2f-20251029.png)](https://q.uiver.app/#q=WzAsNSxbMSwwLCJXIl0sWzEsMSwiXFxpbnRee2MgXFxpbiBcXG1hdGhiZiBDfUYoYywgYykiXSxbMiwyLCJGKEIsQikiXSxbMCwyLCJGKEEsIEEpIl0sWzEsMywiRihCLCBBKSJdLFsxLDAsImciLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMywxLCJcXGVwc2lsb25fQSIsMV0sWzMsMCwiXFxldGFfQSIsMCx7ImN1cnZlIjotMX1dLFsyLDAsIlxcZXRhX0IiLDIseyJjdXJ2ZSI6MX1dLFsyLDEsIlxcZXBzaWxvbl9CIiwxXSxbNCwzLCJGKGYsIFxcbWF0aHJte2lkfV9BKSJdLFs0LDIsIkYoXFxtYXRocm17aWR9X0IsIGYpIiwyXSxbNCwxLCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
 
 コエンドは対象$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to \mathbf{D}$から関手$\Delta : \mathbf{D} \to \mathbf{D}^{\mathbf{C}^\mathrm{op} \times \mathbf{C}}$への普遍射として定義できる。
 
@@ -43,7 +48,7 @@ https://q.uiver.app/#q=WzAsMjQsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQ
 
 ## 記法
 
-エンドは通常インテグラルを使って以下のように表記する：
+エンドはインテグラルを使って以下のように表記する：
 
 $$
 \int_{c \in \mathbf{C}} F(c, c)
