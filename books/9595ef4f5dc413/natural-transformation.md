@@ -11,9 +11,7 @@ free: false
 
 すなわち以下の図式を可換にする。
 
-![Natural_transformation](https://storage.googleapis.com/zenn-user-upload/e10b73a83847-20231203.png)
-
-https://q.uiver.app/#q=WzAsOCxbMywxLCJGKEEpIl0sWzQsMSwiRihCKSJdLFszLDIsIkcoQSkiXSxbNCwyLCJHKEIpIl0sWzMsMCwiXFxtYXRoYmYgRCJdLFswLDAsIlxcbWF0aGJmIEMiXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFsyLDMsIkcoZikiLDJdLFswLDIsIlxcZXRhX1giLDJdLFsxLDMsIlxcZXRhX1kiXSxbNiw3LCJmIl0sWzAsMSwiRihmKSJdXQ==
+[![](https://storage.googleapis.com/zenn-user-upload/eeca522e6379-20251029.png)](https://q.uiver.app/#q=WzAsOCxbMywxLCJGKEEpIl0sWzQsMSwiRihCKSJdLFszLDIsIkcoQSkiXSxbNCwyLCJHKEIpIl0sWzMsMCwiXFxtYXRoYmYgRCJdLFswLDAsIlxcbWF0aGJmIEMiXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFsyLDMsIkcoZikiLDJdLFswLDIsIlxcZXRhX1giLDJdLFsxLDMsIlxcZXRhX1kiXSxbNiw3LCJmIl0sWzAsMSwiRihmKSJdLFswLDMsIlxcY2lyY2xlYXJyb3dyaWdodCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
 
 このノートでは、$\mathbf C$の対象で添え字づけられる自然変換を、$\eta: F \Rightarrow G$のように表す。
 

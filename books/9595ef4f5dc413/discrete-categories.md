@@ -3,7 +3,7 @@ title: "離散圏"
 free: false
 ---
 
-圏論において有用な具体的な圏がある。
+離散圏は、圏論において有用な具体圏である。
 
 非自明な射（単位射以外の射）を持たない圏を、離散圏(*Discrete category*)と呼ぶ。
 
@@ -19,13 +19,17 @@ https://q.uiver.app/#q=WzAsMixbMCwxLCJcXGFzdCJdLFswLDAsIlxcbWF0aGJmIDEiXSxbMCwwL
 
 ## 2
 
-$\mathbf{2}$とは、二つの対象$1$, $2$と二つの射$\mathrm{id}_{1}$, $\mathrm{id}_2$のみから成る圏である。
+離散圏$\mathbf{2}$とは、二つの対象$1$, $2$と二つの射$\mathrm{id}_{1}$, $\mathrm{id}_2$のみから成る圏である。
 
 ![2](https://storage.googleapis.com/zenn-user-upload/eeb101596cd1-20240724.png)
 
 https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiAyIl0sWzAsMSwiMSJdLFsxLDEsIjIiXSxbMSwxLCJcXG1hdGhybXtpZH1fMSIsMix7InJhZGl1cyI6LTN9XSxbMiwyLCJcXG1hdGhybXtpZH1fMiIsMix7InJhZGl1cyI6LTN9XV0=
 
 以降、離散圏をそれが持つ対象の数に応じて$\mathbf{3}$, $\mathbf{4}$などと書く。
+
+なお$\mathbf 2$については、文脈によっては非自明な射をただ一つ持つ圏として扱われることがあるので気を付ける必要がある。
+
+[![](https://storage.googleapis.com/zenn-user-upload/ffb4bd21a5bd-20251029.png)](https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiAyIl0sWzAsMSwiMSJdLFsxLDEsIjIiXSxbMSwyLCJmIl1d)
 
 ## 0
 
