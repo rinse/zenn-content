@@ -31,13 +31,13 @@ $$
 
 自然同型$\alpha$, $\lambda$, $\rho$ がいずれも恒等射であるため、自己関手の圏は強モノイダル圏である。
 
-コヒーレンス条件は関手の合成から自明である。
+コヒーレンス条件は関手の合成の結合律から自明である。
 
 [![](https://storage.googleapis.com/zenn-user-upload/bbd52397eed4-20251031.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZiBDXlxcbWF0aGJmIEMiXSxbMCwxLCIoKEYgXFxjaXJjIEcpIFxcY2lyYyBIKSBcXGNpcmMgSSJdLFsxLDEsIihGIFxcY2lyYyAoRyBcXGNpcmMgSCkpIFxcY2lyYyBJIl0sWzEsMiwiRiBcXGNpcmMgKChHIFxcY2lyYyBIKSBcXGNpcmMgSSkiXSxbMCwzLCIoRiBcXGNpcmMgRykgXFxjaXJjIChIIFxcY2lyYyBJKSJdLFsxLDMsIkYgXFxjaXJjIChHIFxcY2lyYyAoSCBcXGNpcmMgSSkpIl0sWzAsNCwiKEYgXFxjaXJjIDFfXFxtYXRoYmYgQykgXFxjaXJjIEciXSxbMSw0LCJGIFxcY2lyYyAoMV9cXG1hdGhiZiBDIFxcY2lyYyBHKSJdLFsxLDUsIkYgXFxjaXJjIEciXSxbMSwyXSxbMSw0XSxbMiwzXSxbMyw1XSxbNCw1XSxbNiw3XSxbNiw4XSxbNyw4XV0=)
 
 ### モノイド対象
 
-自己関手の圏を強モノイダル圏とみなしたときのモノイド対象は[モナド](./monad)と呼ばれる。
+自己関手の圏上の強モノイダル圏$\lang \mathbf C^\mathbf C, \circ, 1_\mathbf C \rang$のモノイド対象$\lang M : \mathbf C \to \mathbf C \in \mathrm{ob}(\mathbf C^\mathbf C), \mu : M^2 \to M, \eta : 1_\mathbf C \to M \rang$は[モナド](./monad)と呼ばれる。
 
 ## 表記
 
