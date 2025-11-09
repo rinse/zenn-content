@@ -1,0 +1,42 @@
+---
+title: "Codensityモナド"
+free: false
+---
+
+## 定義
+
+関手の自身に沿った右Kan拡張は[モナド](./monad)になる。これをCodensityモナドと呼ぶ。
+
+[![](https://storage.googleapis.com/zenn-user-upload/7dc3d0fb0514-20251108.png)](https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiBDIl0sWzEsMSwiXFxtYXRoYmYgRCJdLFswLDEsIlxcbWF0aGJmIEQiXSxbMCwyLCJGIiwyXSxbMiwxLCJcXG1hdGhybXtSYW59X0YgRiIsMl0sWzAsMSwiRiJdLFs0LDUsIlxccmhvIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfSwiZWRnZV9hbGlnbm1lbnQiOnsic291cmNlIjpmYWxzZSwidGFyZ2V0IjpmYWxzZX19XV0=)
+
+関手$F : \mathbf C \to \mathbf D$の自身に沿った右Kan拡張を考えたとき、以下の2つの自然変換が存在して、$\lang \mathrm{Ran}_F F, \mu, \eta \rang$はモナドの条件を満たす。
+
+1. $\mu : (\mathrm{Ran}_F F) \circ (\mathrm{Ran}_F F) \Rightarrow \mathrm{Ran}_F F$
+2. $\eta : 1_\mathbf D \Rightarrow \mathrm{Ran}_F F$
+
+### 証明
+
+簡単のために$\mathrm{Ran}_F F$を$F^\dag F$と記述する。また自己関手の自身との合成を指数表記を使って$F \circ F = F^2$と記述する。
+
+$\lang F^\dag F, \rho \rang$が右Kan拡張であるとする。
+
+Kan拡張の三角形を二つ貼り合わせて得られる自然変換$\rho \circ (F^\dag F \ast \rho) : (F^\dag F)^2 \circ F \Rightarrow F$を考えると、Kan拡張の一意性により自然変換$\mu : (F^\dag F)^2 \Rightarrow F^\dag F$が一意に存在して$\rho \circ (F^\dag F \ast \rho) = \rho \circ (\mu \ast F)$を満たす。
+
+[![](https://storage.googleapis.com/zenn-user-upload/b63823416c1d-20251109.png)](https://q.uiver.app/#q=WzAsMTEsWzcsMSwiXFxtYXRoYmYgRCJdLFs1LDEsIlxcbWF0aGJmIEQiXSxbNSwwLCJcXG1hdGhiZiBDIl0sWzcsMiwiXFxtYXRoYmYgRCJdLFswLDAsIlxcbWF0aGJmIEMiXSxbMCwxLCJcXG1hdGhiZiBEIl0sWzEsMSwiXFxtYXRoYmYgRCJdLFsyLDAsIlxcbWF0aGJmIEMiXSxbMiwxLCJcXG1hdGhiZiBEIl0sWzQsMSwiXFxtYXRoYmYgRCJdLFs0LDAsIlxcbWF0aGJmIEQiXSxbMSwwLCJGXlxcZGFnIEYiLDFdLFsyLDAsIkYiXSxbMSwzLCJGXlxcZGFnIEYiLDJdLFszLDAsIkZeXFxkYWcgRiIsMl0sWzQsNSwiRiIsMl0sWzUsNiwiRl5cXGRhZyBGIiwyXSxbNCw2LCJGIl0sWzgsOSwiRl5cXGRhZyBGIiwyXSxbNyw4LCJGIiwyXSxbNyw5LCJGIiwxXSxbNywxMCwiRiJdLFs5LDEwLCJGXlxcZGFnIEYiLDJdLFsyLDEsIkYiLDJdLFsxMSwxMiwiXFxyaG8iLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJzb3VyY2UiOmZhbHNlLCJ0YXJnZXQiOmZhbHNlfX1dLFsxMywxMSwiXFxtdSIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxNiwxNywiXFxyaG8iLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzE4LDIwLCJcXHJobyIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbMjAsMjEsIlxccmhvIiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
+
+次に自明な自然変換$1_F : F \Rightarrow F$を考えると、Kan拡張の一意性により自然変換$\eta : 1_\mathbf D \Rightarrow F^\dag F$が一意に存在して$1_F = \rho \circ (\eta \ast F)$を満たす。
+
+[![](https://storage.googleapis.com/zenn-user-upload/b3797a9d62df-20251110.png)](https://q.uiver.app/#q=WzAsMTEsWzcsMSwiXFxtYXRoYmYgRCJdLFs1LDEsIlxcbWF0aGJmIEQiXSxbNSwwLCJcXG1hdGhiZiBDIl0sWzAsMCwiXFxtYXRoYmYgQyJdLFswLDEsIlxcbWF0aGJmIEQiXSxbMSwxLCJcXG1hdGhiZiBEIl0sWzIsMCwiXFxtYXRoYmYgQyJdLFsyLDEsIlxcbWF0aGJmIEQiXSxbNCwxLCJcXG1hdGhiZiBEIl0sWzIsNSwiXFxtYXRoYmYgQyJdLFs0LDUsIlxcbWF0aGJmIEQiXSxbMSwwLCJGXlxcZGFnIEYiLDFdLFsyLDAsIkYiXSxbMyw0LCJGIiwyXSxbNCw1LCJGXlxcZGFnIEYiLDJdLFszLDUsIkYiXSxbNyw4LCIxX1xcbWF0aGJmIEQiLDJdLFs2LDcsIkYiLDJdLFs2LDgsIkYiXSxbMiwxLCJGIiwyXSxbOSwxMCwiRiIsMCx7Im9mZnNldCI6LTEsImN1cnZlIjotMn1dLFs5LDEwLCIoRl5cXGRhZyBGKV4yIFxcY2lyYyBGIiwyLHsib2Zmc2V0IjoxLCJjdXJ2ZSI6Mn1dLFsxLDAsIjFfXFxtYXRoYmYgRCIsMix7Im9mZnNldCI6MywiY3VydmUiOjJ9XSxbMTEsMTIsIlxccmhvIiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfSwiZWRnZV9hbGlnbm1lbnQiOnsic291cmNlIjpmYWxzZSwidGFyZ2V0IjpmYWxzZX19XSxbMTQsMTUsIlxccmhvIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsxNiwxOCwiMV9GIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsyMSwyMCwiXFxyaG8gXFxjaXJjIChGXlxcZGFnIEYgXFxhc3QgXFxyaG8pIiwyLHsib2Zmc2V0IjotNSwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsyMiwxMSwiXFxldGEiLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+$\lang F^\dag F, \mu, \eta \rang$がモナドを構成する。
+
+TODO: モナド則を示す。
+
+[![](https://storage.googleapis.com/zenn-user-upload/9239b8bbbe29-20251110.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmYgQyJdLFswLDEsIlxcbWF0aGJmIEQiXSxbMSwxLCJcXG1hdGhiZiBEIl0sWzEsNSwiXFxtYXRoYmYgQyJdLFszLDUsIlxcbWF0aGJmIEQiXSxbMiwwLCIoRl5cXGRhZyBGKV4zIl0sWzMsMSwiRl5cXGRhZyBGIl0sWzMsMCwiKEZeXFxkYWcgRileMiJdLFsyLDEsIihGXlxcZGFnIEYpXjIiXSxbNCwwLCJGXlxcZGFnIEYiXSxbNSwwLCIoRl5cXGRhZyBGKV4yIl0sWzQsMSwiKEZeXFxkYWcgRileMiJdLFs1LDEsIkZeXFxkYWcgRiJdLFswLDEsIkYiLDJdLFsxLDIsIkZeXFxkYWcgRiIsMl0sWzAsMiwiRiJdLFszLDQsIkYiLDAseyJvZmZzZXQiOi0xLCJjdXJ2ZSI6LTJ9XSxbMyw0LCIoRl5cXGRhZyBGKV4yIFxcY2lyYyBGIiwyLHsib2Zmc2V0IjoxLCJjdXJ2ZSI6Mn1dLFs3LDYsIlxcbXUiXSxbNSw3LCJcXG11IFxcYXN0IChGXlxcZGFnIEYpIl0sWzUsOCwiKEZeXFxkYWcgRikgXFxhc3QgXFxtdSIsMl0sWzgsNiwiXFxtdSIsMl0sWzUsNiwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzksMTAsIlxcZXRhIFxcYXN0IChGXlxcZGFnIEYpIl0sWzEwLDEyLCJcXG11Il0sWzksMTEsIihGXlxcZGFnIEYpIFxcYXN0IFxcZXRhIiwyXSxbMTEsMTIsIlxcbXUiLDJdLFs5LDEyLCJcXGNpcmNsZWFycm93cmlnaHQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTQsMTUsIlxccmhvIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsxNywxNiwiXFxyaG8gXFxjaXJjIChGXlxcZGFnIEYgXFxhc3QgXFxyaG8pIiwyLHsib2Zmc2V0IjotNSwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
+
+## densityコモナド
+
+双対として、関手$F : \mathbf C \to \mathbf D$の自身に沿った左Kan拡張を考えたとき、以下の2つの自然変換が存在して、$\lang \mathrm{Lan}_F F, \nu, \epsilon \rang$はコモナドの条件を満たす。これをdensityコモナドと呼ぶ。
+
+1. $\nu : \mathrm{Lan}_F F \Rightarrow (\mathrm{Lan}_F F) \circ (\mathrm{Lan}_F F)$
+2. $\epsilon : \mathrm{Lan}_F F \Rightarrow 1_\mathbf D$
