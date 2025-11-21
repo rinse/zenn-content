@@ -1,5 +1,5 @@
 ---
-title: "Codensityモナド"
+title: "モナドはKan拡張である"
 free: false
 ---
 
@@ -34,9 +34,41 @@ TODO: モナド則を示す。
 
 [![](https://storage.googleapis.com/zenn-user-upload/9239b8bbbe29-20251110.png)](https://q.uiver.app/#q=WzAsMTMsWzAsMCwiXFxtYXRoYmYgQyJdLFswLDEsIlxcbWF0aGJmIEQiXSxbMSwxLCJcXG1hdGhiZiBEIl0sWzEsNSwiXFxtYXRoYmYgQyJdLFszLDUsIlxcbWF0aGJmIEQiXSxbMiwwLCIoRl5cXGRhZyBGKV4zIl0sWzMsMSwiRl5cXGRhZyBGIl0sWzMsMCwiKEZeXFxkYWcgRileMiJdLFsyLDEsIihGXlxcZGFnIEYpXjIiXSxbNCwwLCJGXlxcZGFnIEYiXSxbNSwwLCIoRl5cXGRhZyBGKV4yIl0sWzQsMSwiKEZeXFxkYWcgRileMiJdLFs1LDEsIkZeXFxkYWcgRiJdLFswLDEsIkYiLDJdLFsxLDIsIkZeXFxkYWcgRiIsMl0sWzAsMiwiRiJdLFszLDQsIkYiLDAseyJvZmZzZXQiOi0xLCJjdXJ2ZSI6LTJ9XSxbMyw0LCIoRl5cXGRhZyBGKV4yIFxcY2lyYyBGIiwyLHsib2Zmc2V0IjoxLCJjdXJ2ZSI6Mn1dLFs3LDYsIlxcbXUiXSxbNSw3LCJcXG11IFxcYXN0IChGXlxcZGFnIEYpIl0sWzUsOCwiKEZeXFxkYWcgRikgXFxhc3QgXFxtdSIsMl0sWzgsNiwiXFxtdSIsMl0sWzUsNiwiXFxjaXJjbGVhcnJvd3JpZ2h0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzksMTAsIlxcZXRhIFxcYXN0IChGXlxcZGFnIEYpIl0sWzEwLDEyLCJcXG11Il0sWzksMTEsIihGXlxcZGFnIEYpIFxcYXN0IFxcZXRhIiwyXSxbMTEsMTIsIlxcbXUiLDJdLFs5LDEyLCJcXGNpcmNsZWFycm93cmlnaHQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTQsMTUsIlxccmhvIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsxNywxNiwiXFxyaG8gXFxjaXJjIChGXlxcZGFnIEYgXFxhc3QgXFxyaG8pIiwyLHsib2Zmc2V0IjotNSwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
 
-## densityコモナド
+## Densityコモナド
 
 双対として、関手$F : \mathbf C \to \mathbf D$の自身に沿った左Kan拡張を考えたとき、以下の2つの自然変換が存在して、$\lang \mathrm{Lan}_F F, \nu, \epsilon \rang$はコモナドの条件を満たす。これをdensityコモナドと呼ぶ。
 
 1. $\nu : \mathrm{Lan}_F F \Rightarrow (\mathrm{Lan}_F F) \circ (\mathrm{Lan}_F F)$
 2. $\epsilon : \mathrm{Lan}_F F \Rightarrow 1_\mathbf D$
+
+## Codensityモナドは随伴から作られるモナドに一致する
+
+随伴関手$F \dashv G$があるとき、$G \circ F$はモナドになるのであった。
+このとき$G \circ F$は、Codensityモナド$\mathrm{Ran}_G G$に一致する。
+
+### 定理
+
+$F \dashv G$ならば、右Kan拡張$\mathrm{Ran}_G G$が存在して、以下が成り立つ。
+
+$$
+G \circ F \simeq \mathrm{Ran}_G G
+$$
+
+### 証明
+
+随伴関手を$F \dashv G : \mathbf C \to \mathbf D$とすると、[随伴はKan拡張である](./kan-extension-adjunction)より、$G$に沿った$1_\mathbf D$の[絶対右Kan拡張](./absolute-kan-extension)$\mathrm{Ran}_G 1_\mathbf D \simeq F$が存在する。（$\epsilon$はcounit）
+
+[![](https://storage.googleapis.com/zenn-user-upload/7ebabfbcd4e5-20251113.png)](https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXG1hdGhiZiBEIl0sWzEsMSwiXFxtYXRoYmYgRCJdLFswLDEsIlxcbWF0aGJmIEMiXSxbMCwyLCJHIiwyXSxbMiwxLCJGIiwyXSxbMCwxLCIxX1xcbWF0aGJmIEQiXSxbNCw1LCJcXGVwc2lsb24iLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9LCJlZGdlX2FsaWdubWVudCI6eyJzb3VyY2UiOmZhbHNlLCJ0YXJnZXQiOmZhbHNlfX1dXQ==)
+
+
+絶対右Kan拡張は任意の関手と交換するので、$G$と交換することを考えると、$G$に沿った$G$の右Kan拡張$\mathrm{Ran}_G G \simeq G \circ F$が存在する。
+
+[![](https://storage.googleapis.com/zenn-user-upload/e7ebde50fb36-20251113.png)](https://q.uiver.app/#q=WzAsNyxbMCwwLCJcXG1hdGhiZiBEIl0sWzEsMSwiXFxtYXRoYmYgRCJdLFswLDEsIlxcbWF0aGJmIEMiXSxbMiwxLCJcXG1hdGhiZiBDIl0sWzMsMCwiXFxtYXRoYmYgRCJdLFszLDEsIlxcbWF0aGJmIEMiXSxbNSwxLCJcXG1hdGhiZiBDIl0sWzAsMiwiRyIsMl0sWzAsMSwiMV9cXG1hdGhiZiBEIl0sWzEsMywiRyIsMl0sWzQsNSwiRyIsMl0sWzUsNiwiRyBcXGNpcmMgRiIsMl0sWzQsNiwiRyJdLFsyLDEsIkYiLDJdLFsxMSwxMiwiRyBcXGFzdCBcXGVwc2lsb24iLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzEzLDgsIlxcZXBzaWxvbiIsMCx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sImVkZ2VfYWxpZ25tZW50Ijp7InNvdXJjZSI6ZmFsc2UsInRhcmdldCI6ZmFsc2V9fV1d)
+
+証明終わり。
+
+## T-代数の圏
+
+任意のモナド$T$から、[T-代数の自由-忘却随伴](./t-algebra)$F_T \dashv U_T$を生成できる。この$U_T \circ F_T$はモナド$T$に一致する。
+
+$T \simeq U_T \circ F_T \simeq \mathrm{Ran}_{U_T} U_T$であるから、任意のモナドはKan拡張である。
