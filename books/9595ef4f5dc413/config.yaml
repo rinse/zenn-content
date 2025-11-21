@@ -82,6 +82,7 @@ chapters:
   - kan-extension-of-yoneda-embedding
   - nerve-and-realization
   - dinatural-transformation
+  - t-algebra
   - codensity-monad
   - end
   - haskell
