@@ -5,6 +5,12 @@ free: false
 
 随伴関手は普遍射を用いて定義できる。
 
+[普遍射による関手の誘導](./ump-induces-functor)で、任意の対象に対して普遍射が存在するとき、逆向きの関手が存在することを紹介したが、実はそれらの関手は随伴の関係になっている。
+
+すなわち、圏$\mathbf{D}$の任意の対象から$G$への普遍射が存在するとき、ある関手$F: \mathbf{D} \to \mathbf{C}$が存在して、$F \dashv G$を満たす。
+
+また関手$G : \mathbf{C} \to \mathbf{D}$から圏$\mathbf{D}$の任意の対象への普遍射が存在するとき、ある関手$F: \mathbf{D} \to \mathbf{C}$が存在して、$G \dashv F$を満たす。
+
 ## 左随伴を得る
 
 圏$\mathbf{C}$, 圏$\mathbf{D}$とそれらの間の関手$G: \mathbf{C} \to \mathbf{D}$を考える。
