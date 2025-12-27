@@ -87,4 +87,8 @@ chapters:
   - t-algebra
   - codensity-monad
   - end
+  - end-nat
+  - power
+  - pointwise-kan-extension-coend
+  - coyoneda-lemma
   - haskell
