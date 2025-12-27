@@ -79,6 +79,7 @@ chapters:
   - kan-extension-adjunction
   - functor-between-functors
   - pointwise-kan-extension
+  - pointwise-kan-extension-isomorphism
   - yoneda-extension
   - kan-extension-of-yoneda-embedding
   - nerve-and-realization
