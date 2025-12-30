@@ -3,17 +3,16 @@ title: "エンド"
 free: false
 ---
 
-
 ## 定義
 
-圏$C$, $D$, 関手$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to D$を考える。
+圏$C$, $D$, 関手$F : \mathbf{C}^\mathrm{op} \times \mathbf{C} \to \mathbf D$を考える。
 
-圏$\mathbf{D}$において、圏$\mathbf{C}$の任意の対象$A$, $B$とそれらの間の射$f : A \to B$に対して、$F(\mathrm{id}_A, f) \circ \alpha_A = F(f, \mathrm{id}_B) \circ \alpha_B$を満たす対象$W$と射の族$\alpha$の組$(W, \alpha)$を、楔(*wedge*)と呼ぶ。
+圏$\mathbf{D}$において、圏$\mathbf{C}$の任意の対象$A$, $B$とそれらの間の射$f : A \to B$に対して、$F(\mathrm{id}_A, f) \circ \alpha_A = F(f, \mathrm{id}_B) \circ \alpha_B$を満たす対象$W$と[双自然変換](./dinatural-transformation)$\alpha : \Delta_W \.\Rightarrow F$の組$\lang W, \alpha \rang$を、楔(*wedge*)と呼ぶ。（$\Delta_W : \mathbf C^\mathrm{op} \times \mathbf C \to \mathbf D$は、任意の対象$P \in \mathbf C^\mathrm{op} \times \mathbf C$を$W \in \mathbf D$に写す定関手）
 
 [![](https://storage.googleapis.com/zenn-user-upload/e7207fc8b098-20250216.png)](https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzMsMCwiXFxtYXRoYmZ7RH0iXSxbMywxLCJXIl0sWzIsMiwiRihBLCBBKSJdLFs0LDIsIkYoQiwgQikiXSxbMywzLCJGKEEsIEIpIl0sWzQsNiwiXFxlcHNpbG9uX0IiXSxbNSw3LCJGKFxcbWF0aHJte2lkfV9BLCBmKSIsMl0sWzYsNywiRihmLCBcXG1hdGhybXtpZH1fQikiXSxbNCw1LCJcXGVwc2lsb25fQSIsMl0sWzQsNywiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyLCJmIl1d)
 
-
-エンド (*end*) とは、楔$(E, \eta)$であって、任意の楔$(W, \epsilon)$に対して一意な仲介射$u : W \to E$が存在して、$\mathbf{C}$の任意の対象$A$に対して$\epsilon_A = \eta_A \circ u$が成り立つものをいう。
+エンド (*end*) とは、普遍性を満たす楔をいう。
+すなわち楔$\lang E, \eta \rang$であって、任意の楔$\lang W, \epsilon \rang$に対して一意な仲介射$u : W \to E$が存在して、$\mathbf{C}$の任意の対象$A$に対して$\epsilon_A = \eta_A \circ u$が成り立つものをいう。
 
 [![](https://storage.googleapis.com/zenn-user-upload/a740f4d04ee5-20250216.png)](https://q.uiver.app/#q=WzAsOSxbMCwwLCJcXG1hdGhiZntDfSJdLFswLDEsIkEiXSxbMSwxLCJCIl0sWzIsMCwiXFxtYXRoYmZ7RH0iXSxbMywyLCJFIl0sWzIsMywiRihBLCBBKSJdLFs0LDMsIkYoQiwgQikiXSxbMyw0LCJGKEEsIEIpIl0sWzMsMSwiVyJdLFs0LDYsIlxcZXRhX0IiLDFdLFs1LDcsIkYoXFxtYXRocm17aWR9X0EsIGYpIiwyXSxbNiw3LCJGKGYsIFxcbWF0aHJte2lkfV9CKSJdLFs0LDUsIlxcZXRhX0EiLDFdLFs0LDcsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMiwiZiJdLFs4LDUsIlxcZXBzaWxvbl9BIiwyLHsiY3VydmUiOjF9XSxbOCw0LCJ1IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzgsNiwiXFxlcHNpbG9uX0IiLDAseyJjdXJ2ZSI6LTF9XSxbOCw1LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDYsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
@@ -42,10 +41,6 @@ free: false
 
 https://q.uiver.app/#q=WzAsMjQsWzAsMCwiXFxtYXRoYmZ7Q30iXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFszLDAsIlxcbWF0aGJme0R9XntcXG1hdGhiZntDfV5cXG1hdGhybXtvcH0gXFx0aW1lcyBcXG1hdGhiZntDfX0iXSxbNCwyLCJcXERlbHRhKFcpIl0sWzQsMSwiXFxEZWx0YShFKSJdLFszLDEsIkYiXSxbMiwyLCJXIl0sWzIsMSwiRSJdLFsyLDAsIlxcbWF0aGJme0R9Il0sWzYsMiwiXFxEZWx0YShFKShBLCBBKSJdLFs2LDEsIlxcRGVsdGEoVykoQSwgQSkiXSxbNSwzLCJGKEEsIEEpIl0sWzcsMiwiXFxEZWx0YShFKShCLCBCKSJdLFs3LDEsIlxcRGVsdGEoVykoQiwgQikiXSxbOCwzLCJGKEIsIEIpIl0sWzYsNCwiRihCLCBBKSJdLFs3LDQsIkYoQiwgQSkiXSxbMTAsMSwiVyJdLFsxMCwyLCJFIl0sWzExLDMsIkYoQixCKSJdLFs5LDMsIkYoQSwgQSkiXSxbOSw0XSxbMTAsNCwiRihCLCBBKSJdLFsxLDIsImYiXSxbNiw1LCJcXGV0YSJdLFs2LDQsIlxcZXBzaWxvbiIsMl0sWzUsNCwiXFxEZWx0YShnKSJdLFs0LDYsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsib2Zmc2V0Ijo0LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsMTEsIlxcZXRhX0EiLDAseyJjdXJ2ZSI6LTF9XSxbMTIsMTAsIlxcZXBzaWxvbl9BIiwxXSxbMTUsMTMsIlxcZXBzaWxvbl9CIiwxXSxbMTUsMTQsIlxcZXBzaWxvbl9CIiwyLHsiY3VydmUiOjF9XSxbMTAsMTEsIlxcRGVsdGEoZylfQSIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMywxNCwiXFxEZWx0YShnKV9CIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzE2LDEyLCJGKGYsIFxcbWF0aHJte2lkfV9BKSJdLFsxNywxNSwiRihcXG1hdGhybXtpZH1fQiwgZikiLDJdLFsxNiwxNywiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMCwxMywiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMSwxNCwiPSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxOSwxOCwiZyIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyMSwxOSwiXFxlcHNpbG9uX0EiLDFdLFsyMSwxOCwiXFxldGFfQSIsMCx7ImN1cnZlIjotMX1dLFsyMCwxOCwiXFxldGFfQiIsMix7ImN1cnZlIjoxfV0sWzIwLDE5LCJcXGVwc2lsb25fQiIsMV0sWzIxLDE4LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyMCwxOCwiXFxjaXJjbGVhcnJvd2xlZnQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMjMsMjEsIkYoZiwgXFxtYXRocm17aWR9X0EpIl0sWzIzLDIwLCJGKFxcbWF0aHJte2lkfV9CLCBmKSIsMl0sWzIzLDE5LCJcXGNpcmNsZWFycm93bGVmdCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDcsImciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMzgsMzcsIlxcY2lyY2xlYXJyb3dsZWZ0IiwxLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
 
-## 感想
-
-図形の形が[プルバック](./pullback)に似ている。
-
 ## 記法
 
 エンドはインテグラルを使って以下のように表記する：
@@ -59,3 +54,7 @@ $$
 $$
 \int^{c \in \mathbf{C}} F(c, c)
 $$
+
+## 感想
+
+極限の双関手（双自然変換）バージョンに見える。
