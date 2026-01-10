@@ -28,16 +28,13 @@ https://wiki.haskell.org/Hask
 
 ## 諸概念のHaskell上での表現
 
-知っての通りHaskellは圏論から多くの概念を導入しているが、
-実用上不要だからか、Haskellに導入されていない概念も存在する。
-
-それらをHaskellコードで書いていく。
+いくつかの圏論的な概念をHaskellで書いていく。
 
 ### 関手
 
 Preludeの`Functor`型クラスは自己関手$F : \mathbf{Hask} \to \mathbf{Hask}$である。
 
-この型クラスは$\mathbf{C}$から$\mathbf{D}$への関手を表す型クラスである。
+ここで定義する型クラスは、$\mathbf{C}$から$\mathbf{D}$への関手を表す型クラスである。
 
 ```Haskell
 class Functor c d f | f -> c, f -> d where
@@ -172,3 +169,86 @@ maybeToList (Just a) = [a]
 ```
 
 https://play.haskell.org/saved/4VEy6T7g
+
+### 米田の補題
+
+[米田の補題](./yoneda-lemma)とは、$A$を固定した米田埋め込みから集合値関手$F$への自然変換全体の集合が$F(A)$と同型になるという定理だった。
+
+$$
+F(A) \simeq \hom_{\mathbf{Set}^\mathbf{C^{\mathrm{op}}}}(\hom_{\mathbf C}(-, A), F)
+$$
+
+Haskellでは上の等式の右辺を、米田埋め込みと自然変換を使って次のように定義できる。
+
+```Haskell
+newtype Y a b = Y (b -> a)
+type f ~> g = forall a. f a -> g a
+
+newtype Yoneda f a = Yoneda (Y a ~> f)
+```
+
+`Yoneda f a`と`f a`の間の同型射は次の写像で与えられる。
+
+```Haskell
+yoneda :: Yoneda f a -> f a
+yoneda (Yoneda f) = f (Y id)
+
+yoneda' :: Contravariant f => f a -> Yoneda f a
+yoneda' a = Yoneda $ \(Y f) -> contramap f a
+```
+
+`Yoneda f`は定義に照らして自明に（反変）関手を実装する。
+
+```Haskell
+instance Contravariant (Yoneda f) where
+  contramap f (Yoneda g) = Yoneda $ \(Y h) -> g (Y (f . h))
+```
+
+https://play.haskell.org/saved/U3Gtc4aH
+
+### 余米田の補題
+
+[余米田の補題](./coyoneda-lemma)とは、米田の補題を右Kan拡張で表したときに、同じものを左Kan拡張で表したものであった。
+
+$$
+F(A) \simeq \int^{C \in \mathbf C^\mathrm{op}} \hom_{\mathbf C}(A, C) \times F(C)
+$$
+
+Haskellでは一般的に次のように表される。
+
+```Haskell
+data Coyoneda f b = forall a. Coyoneda (a -> b) (f a)
+```
+
+分かりやすさと実装上の都合で少し式を変形しているので、それを追っていこう。
+まず変数名から合わる。Haskellコードでは`b`を固定していて、コエンドの変数として`a`を利用している。
+次に`f`が共変関手を想定しているので、これに合わせてopの取り方を変える。
+最後にhom集合のopを取れば、Haskellコードに対応する式が得られる。
+
+$$
+\begin{aligned}
+F(B) &\simeq \int^{A \in \mathbf C^\mathrm{op}} \hom_{\mathbf C}(B, A) \times F(A) \\
+&\simeq \int^{A \in \mathbf C} \hom_{\mathbf C^\mathrm{op}}(B, A) \times F(A) \\
+&\simeq \int^{A \in \mathbf C} \hom_{\mathbf C}(A, B) \times F(A) \\
+\end{aligned}
+$$
+
+同型射は次のように得られる。
+
+```Haskell
+coyoneda :: Functor f => Coyoneda f a -> f a
+coyoneda (Coyoneda f a) = fmap f a
+
+coyoneda' :: f a -> Coyoneda f a
+coyoneda' = Coyoneda id
+```
+
+また`Coyoneda f`は定義に照らして自明に関手を実装する。
+ここで`f`が共変関手になるように式変形を行っていたのが活きる。
+
+```Haskell
+instance Functor (Coyoneda f) where
+  fmap f (Coyoneda g a) = Coyoneda (f . g) a
+```
+
+https://play.haskell.org/saved/kjk4Pb7e
