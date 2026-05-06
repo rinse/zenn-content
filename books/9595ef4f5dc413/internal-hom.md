@@ -9,18 +9,8 @@ title: "内部 hom 関手"
 
 ## 定義
 
-内部 hom 関手 (*internal hom functor*) とは、hom 関手のようなふるまいを持つ関手 $[-, -] : \mathbf C^\mathrm{op} \times \mathbf C \to \mathbf C$ のことをいう。
+内部 hom 関手 (*internal hom functor*) とは、双関手 $[-, -] : \mathbf C^\mathrm{op} \times \mathbf C \to \mathbf C$ であって、hom 関手のようなふるまう関手をいう。
 
-また内部 hom 関手を持つ圏を閉圏と呼ぶ。
+また内部 hom 関手を持つ圏を閉圏 (*Closed category*) と呼ぶ。
 
-## モノイダル閉圏の内部 hom 関手
-
-[モノイダル圏](./monoidal-category.md) $\mathbf C$ において、モノイダル積の片側を任意の対象 $B$ で固定して得られる関手 $- \otimes B : \mathbf C \to \mathbf C$ が右随伴関手 $-^B : \mathbf C \to \mathbf C$ を持つとき、この圏をモノイダル閉圏 (*Closed monoidal category*) と呼ぶ。
-
-この関手によって得られる指数対象は、モノイダル閉圏の内部 hom である。
-
-またモノイダル閉圏には、カリー化として知られる以下の同型が存在する。
-
-$$
-\hom_\mathbf C(A, C^B) \simeq \hom_\mathbf C(A \otimes B, C)
-$$
+特にカルテシアン閉圏やモノイダル閉圏では、積と内部 hom 関手との随伴 $- \otimes B \dashv [B, -]$ が成り立ち、この随伴を hom 集合で表した式 $\hom_\mathbf C(A \otimes B, C) \simeq \hom_\mathbf C(A, [B, C])$ は特にカリー化と呼ばれる。
