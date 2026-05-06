@@ -64,6 +64,7 @@ chapters:
   - product-category
   - bifunctor
   - monoidal-category
+  - internal-hom
   - endo-functor
   - monad
   - adjunctions-derive-monads
