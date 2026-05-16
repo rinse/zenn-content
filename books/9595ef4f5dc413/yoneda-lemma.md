@@ -12,18 +12,18 @@ $$
 
 米田の補題(*Yoneda lemma*)とは、局所的に小さな圏$\mathbf{C}$において対象$A$を固定した$\hom$関手から集合値関手$F: \mathbf{C} \to \mathbf{Set}$または$F : \mathbf{C}^\mathrm{op} \to \mathbf{Set}$への自然変換全体の集合と集合$F(A)$とが同型であるという定理である。
 
-$F$として反変関手を取ったものは、$C$の反対圏を取れば全く同じ議論ができるため、同様に米田の補題として扱う。
+$F$として反変関手を取ったものは、$\mathbf C$の反対圏を取れば全く同じ議論ができるため、同様に米田の補題として扱う。
 
 ## 定理
 
-局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定したhom関手$\hom_C(A, \_)$, 関手$F: \mathbf{C} \to \mathbf{Set}$およびこれら関手の間の自然変換$\hom_C(A, \_) \Rightarrow F$のすべての集合$\hom_{\mathrm{Set}^C}(\hom_C(A, \_), F)$を考える。
+局所的に小さな圏$\mathbf{C}$と$\mathbf{C}$の対象$A$を任意に固定したhom関手$\hom_\mathbf C(A, \_)$, 関手$F: \mathbf{C} \to \mathbf{Set}$およびこれら関手の間の自然変換$\hom_\mathbf C(A, \_) \Rightarrow F$のすべての集合$\hom_{\mathbf{Set}^{\mathbf C}}(\hom_\mathbf C(A, \_), F)$を考える。
 
-このとき集合の圏に米田写像(*Yoneda map*)と呼ばれる同型写像$y: \hom_{\mathrm{Set}^C}(\hom_C(A, \_), F) \to F(A)$が存在する。これは$A$および$F$について自然である。
+このとき集合の圏に米田写像(*Yoneda map*)と呼ばれる同型写像$y: \hom_{\mathbf{Set}^\mathbf C}(\hom_\mathbf C(A, \_), F) \to F(A)$が存在する。これは$A$および$F$について自然である。
 
 すなわち以下が成り立つ：
 
 $$
-\hom_{\mathrm{Set}^C}(\hom_C(A, \_), F) \simeq F(A)
+\hom_{\mathbf{Set}^\mathbf C}(\hom_\mathbf C(A, \_), F) \simeq F(A)
 $$
 
 ## 証明
@@ -47,9 +47,9 @@ x \mapsto \{g \colon (A \to X) \mapsto F(g)(x)\}_{X \in \mathbf C}
 $$
 
 $y^{-1}$ が写す先 $\hom_{\widehat{\mathbf C}}(H_A, F)$ は自然変換なので、$\mathbf C$ の元で添え字づけられた $\mathbf{Set}$ の射の族になる。
-代表として $X \in \mathrm{ob}(\mathbf C$ を使うと、自然変換の $X$ 成分 $\hom(X, A) \to F(X)$ に対応づければよいことになる。
+代表として $X \in \mathrm{ob}(\mathbf C)$ を使うと、自然変換の $X$ 成分 $\hom(X, A) \to F(X)$ に対応づければよいことになる。
 
-$g : X \to A$ を $F$ で写すと $F(g) : F(A) \to F(X)$ が得られる ($F$ は反変関手である) ので、これで $x \in F(A)$ を写せば $F(X) が得られる。
+$g : X \to A$ を $F$ で写すと $F(g) : F(A) \to F(X)$ が得られる ($F$ は反変関手である) ので、これで $x \in F(A)$ を写せば $F(X)$ の元が得られる。
 
 $\{g : (X \to A) \mapsto F(g)(x)\}_{X \in \mathbf C}$ が自然変換であることを確かめるには、$F(-)(x) \circ (- \circ f) = F(f) \circ F(-)(x)$ を示せればよい。
 
@@ -59,7 +59,9 @@ https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGhvbShYLCBBKSJdLFsxLDAsIlxcaG9tKFksIEEpI
 
 $$
 \begin{aligned}
-&s \overset{- \circ f}{\mapsto} s \circ f \overset{F(-)(x)}{\mapsto} F(s \circ f)(x) = (F(f) \circ F(s))(x) = F(f)(F(s)(x)) \\
+&s \overset{- \circ f}{\mapsto} s \circ f \overset{F(-)(x)}{\mapsto} F(s \circ f)(x) \\
+&= (F(f) \circ F(s))(x) \\
+&= F(f)(F(s)(x)) \\
 \\
 &s \overset{F(-)(x)}{\mapsto} F(s)(x) \overset{F(f)}{\mapsto} F(f)(F(s)(x))
 \end{aligned}
@@ -78,7 +80,7 @@ $$
 
 $\eta$ は自然変換なので、$F(g) \circ \eta_A = \eta_X \circ \hom(g, A)$ が成り立つ。
 
-https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGhvbShBLCBBKSJdLFsxLDAsIlxcaG9tKFgsIEEpIl0sWzAsMSwiRihBKSJdLFsxLDEsIkYoWCkiXSxbMCwyLCJcXGV0YV9BIiwyXSxbMiwzLCJGKGcpIiwyXSxbMCwxLCJcXGhvbShnLCBBKSA9IC0gXFxjaXJjIGciXSxbMSwzLCJcXGV0YV9YIl1d
+https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGhvbShBLCBBKSJdLFsxLDAsIlxcaG9tKFgsIEEpIl0sWzAsMSwiRihBKSJdLFsxLDEsIkYoWCkiXSxbMCwyLCJcXGV0YV9BIiwyXSxbMiwzLCJGKGcpIiwyXSxbMCwxLCJcXGhvbShnLCBBKSA9IC0gXFxjaXJjIGciXSxbMSwzLCJcXGV0YV9YIl0sWzAsMywiXFxjaXJjbGVhcnJvd3JpZ2h0IiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
 
 $$
 \begin{aligned}
@@ -116,10 +118,10 @@ https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGhvbShIX0EsIEYpIl0sWzEsMCwiXFxob20oSF9BL
 
 $$
 \begin{aligned}
-&\alpha \overset{\eta \circ -}{\mapsto} \eta \circ \alpha \overset{y_G}{\mapsto} (\eta \circ \alpha)_A(\mathrm{id}_A) = \eta_A(\alpha_A(\mathrm{id}_A)) \\
+&\alpha \overset{\eta \circ -}{\mapsto} \eta \circ \alpha \overset{y_G}{\mapsto} (\eta \circ \alpha)_A(\mathrm{id}_A) \\
+&= \eta_A(\alpha_A(\mathrm{id}_A)) \\
 \\
 &\alpha \overset{y_F}{\mapsto} \alpha_A(\mathrm{id}_A) \overset{\eta_A}{\mapsto} \eta_A(\alpha_A(\mathrm{id}_A))
-
 \end{aligned}
 $$
 
@@ -137,7 +139,9 @@ $$
 \begin{aligned}
 &\beta \overset{y_A}{\mapsto} \beta_A(\mathrm{id}_A) \overset{F(f)}{\mapsto} F(f)(\beta_A(\mathrm{id}_A)) \\
 \\
-&\beta \overset{\hom(H_f, F)}{\mapsto} \beta \circ H_f \overset{y_B}{\mapsto} (\beta \circ H_f)_B(\mathrm{id}_B) = \beta_B((H_f)_B(\mathrm{id}_B)) = \beta_B(f \circ \mathrm{id}_B) = \beta_B(f)
+&\beta \overset{\hom(H_f, F)}{\mapsto} \beta \circ H_f \overset{y_B}{\mapsto} (\beta \circ H_f)_B(\mathrm{id}_B) \\
+&= \beta_B((H_f)_B(\mathrm{id}_B)) \\
+&= \beta_B(f \circ \mathrm{id}_B) = \beta_B(f)
 \end{aligned}
 $$
 
