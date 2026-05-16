@@ -59,6 +59,7 @@ chapters:
   - representable-functor
   - collection-of-natural-transformations
   - set-valued-functor
+  - presheaf
   - yoneda-lemma
   - yoneda-embedding
   - product-category
