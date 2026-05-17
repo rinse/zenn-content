@@ -26,6 +26,20 @@ $$
 \hom_{\mathbf{Set}^\mathbf C}(\hom_\mathbf C(A, \_), F) \simeq F(A)
 $$
 
+https://q.uiver.app/#q=WzAsNSxbMSwxLCJGKEEpIl0sWzAsMSwiXFxob20oXFxob20oQSwgXFxfKSwgRikiXSxbMSwyLCJ4Il0sWzAsMiwiXFxldGEiXSxbMCwwLCJcXG1hdGhiZntTZXR9Il0sWzAsMSwieV57LTF9IiwwLHsib2Zmc2V0IjotMn1dLFsyLDAsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwwLCJ5IiwwLHsib2Zmc2V0IjotMn1dLFszLDEsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMywyLCIiLDMseyJvZmZzZXQiOi0yLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzIsMywiIiwzLHsib2Zmc2V0IjotMiwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==
+
+あるいは反変 hom 関手 $\hom_\mathbf C(\_, A)$ と反変関手 $F : \mathbf C^\mathrm{op} \to \mathbf{Set}$ およびこれらの関手の間の自然変換 $\hom_\mathbf C(\_, A) \Rightarrow F$ のすべての集合 $\hom_{\mathbf{Set}^{\mathbf C^\mathrm{op}}}(\hom_\mathbf C(\_, A), F)$ を考える。
+
+このとき集合の圏に米田写像と呼ばれる同型写像 $y : \hom_{\mathbf{Set}^{\mathbf C^\mathrm{op}}}(\hom_\mathbf C(\_, A), F) \to F(A)$ が存在する。これは $A$ および $F$ について自然である。
+
+すなわち以下が成り立つ：
+
+$$
+\hom_{\mathbf{Set}^\mathbf{C^{\mathrm{op}}}}(\hom_\mathbf C(\_, A), F) \simeq F(A)
+$$
+
+https://q.uiver.app/#q=WzAsNSxbMSwxLCJGKEEpIl0sWzAsMSwiXFxob20oXFxob20oXFxfLCBBKSwgRikiXSxbMSwyLCJ4Il0sWzAsMiwiXFxldGEiXSxbMCwwLCJcXG1hdGhiZntTZXR9Il0sWzAsMSwieV57LTF9IiwwLHsib2Zmc2V0IjotMn1dLFsyLDAsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwwLCJ5IiwwLHsib2Zmc2V0IjotMn1dLFszLDEsIlxcaW4iLDMseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMywyLCIiLDMseyJvZmZzZXQiOi0yLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzIsMywiIiwzLHsib2Zmc2V0IjotMiwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==
+
 ## 証明
 
 反変関手の米田の補題を使って証明する。
