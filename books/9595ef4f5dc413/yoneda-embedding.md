@@ -3,6 +3,8 @@ title: "米田埋め込み"
 free: false
 ---
 
+## 米田の補題の特殊化
+
 [米田写像](yoneda-lemma)とは、局所的に小さな圏 $\mathbf{C}$ において対象 $A$ を固定した hom 関手 $\hom_{\mathbf{C}}(\_, A): \mathbf{C}^\mathrm{op} \to \mathbf{Set}$ から集合値関手 $F: \mathbf{C}^\mathrm{op} \to \mathbf{Set}$ への自然変換全体の集合 $\hom_{\mathrm{Set}^{\mathbf C^\mathrm{op}}}(\hom_\mathbf C(\_, A), F)$ と集合 $F(A)$ との間にある同型射のことであった。
 
 ここで集合値関手 $F$ に圏 $\mathbf{C}$ の対象 $B$ を固定した hom 関手 $\hom_{\mathbf{C}}(\_, B)$ をとることを考えると、米田の補題により米田写像 $y: \hom_{\mathrm{Set}^{\mathbf C^\mathrm{op}}}(\hom_{\mathbf{C}}(\_, A), \hom_{\mathbf{C}}(\_, B)) \simeq \hom_{\mathbf{C}}(A, B)$ が得られる。
@@ -41,6 +43,16 @@ $$
 $$
 (f \circ -)_Y \circ \hom(a, A) = \hom(a, B) \circ (f \circ -)_X
 $$
+
+hom 関手の定義より、$a : Y \to X$ のとき $\hom(a, A) = (g \colon X \to A) \mapsto g \circ a$, $\hom(a, B) = (g \colon X \to B) \mapsto g \circ a$ であるから、適当な射 $h : X \to A \in \mathbf{C}$ の行き先を調べると
+
+$$
+\begin{aligned}
+(f \circ (h \circ a)) &= ((f \circ h) \circ a) \\
+\end{aligned}
+$$
+
+となり、可換性を確かめられる。
 
 https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGhvbV9cXG1hdGhiZiBDKFgsIEEpIl0sWzEsMCwiXFxob21fXFxtYXRoYmYgQyhZLCBBKSJdLFswLDEsIlxcaG9tX1xcbWF0aGJmIEMoWCwgQikiXSxbMSwxLCJcXGhvbV9cXG1hdGhiZiBDKFksIEIpIl0sWzAsMiwiKGYgXFxjaXJjIC0pX1giLDJdLFswLDEsIlxcaG9tKGEsIEEpID0gLSBcXGNpcmMgYSJdLFsxLDMsIihmIFxcY2lyYyAtKV9ZIl0sWzIsMywiXFxob20oYSwgQikgPSAtIFxcY2lyYyBhIiwyXSxbMCwzLCJcXGNpcmNsZWFycm93cmlnaHQiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=
 
