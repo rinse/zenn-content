@@ -17,7 +17,8 @@ toc_depth: 2
 allow_override: true
 chapters:
   - "category"
-  - examples-of-categories
+  - "examples-of-categories"
+  - "category-of-toys"
   - "discrete-categories"
   - "largeness-of-categories"
   - "commutative-diagram"
