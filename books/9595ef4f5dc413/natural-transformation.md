@@ -3,21 +3,21 @@ title: "自然変換"
 free: false
 ---
 
+自然変換とは関手から関手への矢印であり、$\eta: F \Rightarrow G$ のように表す。
+
 ## 定義
 
-自然変換(*Natural transformation*)とは、圏$\mathbf C$, $\mathbf D$と共変関手$F, G: \mathbf C \to \mathbf D$が与えられたとき、圏$\mathbf C$の任意の対象$X$, $Y$における各関手の像$F(f): F(X) \to F(Y)$, $G(g): G(X) \to G(Y)$に対して、射$\eta_X: F(X) \to G(X)$, $\eta_Y: F(Y) \to G(Y)$を与えるものであり、以下を満たす:
+圏 $\mathbf C$, $\mathbf D$ と共変関手 $F, G: \mathbf C \to \mathbf D$ が与えられたとき、$F$ から $G$ への自然変換 (*Natural transformation*) $\eta : F \Rightarrow G$ とは、圏 $\mathbf C$ の対象で添え字づけられた圏 $\mathbf D$ の射の族 $\{ \eta_X : F(X) \to G(X) \}_{X \in \mathrm{ob}(\mathbf C)}$ であって、以下の自然性を満たすものである。
 
-- 圏$\mathbf C$の任意の対象$X, Y$に対して、$\hom_D$上の射$\eta_Y \circ F(f) = G(f) \circ \eta_X$
+すなわち圏 $\mathbf C$ の任意の射 $f : X \to Y$ について、$\eta_Y \circ F(f) = G(f) \circ \eta_X$ が成り立つ。
 
-すなわち以下の図式を可換にする。
-
-[![](https://storage.googleapis.com/zenn-user-upload/eeca522e6379-20251029.png)](https://q.uiver.app/#q=WzAsOCxbMywxLCJGKEEpIl0sWzQsMSwiRihCKSJdLFszLDIsIkcoQSkiXSxbNCwyLCJHKEIpIl0sWzMsMCwiXFxtYXRoYmYgRCJdLFswLDAsIlxcbWF0aGJmIEMiXSxbMCwxLCJBIl0sWzEsMSwiQiJdLFsyLDMsIkcoZikiLDJdLFswLDIsIlxcZXRhX1giLDJdLFsxLDMsIlxcZXRhX1kiXSxbNiw3LCJmIl0sWzAsMSwiRihmKSJdLFswLDMsIlxcY2lyY2xlYXJyb3dyaWdodCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
-
-このノートでは、$\mathbf C$の対象で添え字づけられる自然変換を、$\eta: F \Rightarrow G$のように表す。
+https://q.uiver.app/#q=WzAsOCxbMiwxLCJGKFgpIl0sWzMsMSwiRihZKSJdLFsyLDIsIkcoWSkiXSxbMywyLCJHKFkpIl0sWzIsMCwiXFxtYXRoYmYgRCJdLFswLDAsIlxcbWF0aGJmIEMiXSxbMCwxLCJYIl0sWzEsMSwiWSJdLFsyLDMsIkcoZikiLDJdLFswLDIsIlxcZXRhX1giLDJdLFsxLDMsIlxcZXRhX1kiXSxbNiw3LCJmIl0sWzAsMSwiRihmKSJdLFswLDMsIlxcY2lyY2xlYXJyb3dyaWdodCIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==
 
 ## 表記
 
-自然変換の射の族を、$\Rightarrow$でつなぐ代わりに$\dot{\to}$や単に$\to$を使う資料もある。
+このノートでは $F$ から $G$ への自然変換を $\eta: F \Rightarrow G$ のように表す。
+
+自然変換の射の族を $\Rightarrow$ でつなぐ代わりに $\dot{\to}$ や単に $\to$ を使う資料もある。
 
 ### Haskellでの表現
 
