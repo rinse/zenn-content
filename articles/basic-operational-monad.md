@@ -3,7 +3,7 @@ title: "Operationalモナドの基礎【Haskell】"
 emoji: "🧩"
 type: "tech"
 topics: ["Haskell", "Monad", "CategoryTheory"]
-published: false
+published: true
 ---
 
 ## はじめに
